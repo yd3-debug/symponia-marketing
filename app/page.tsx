@@ -4,7 +4,7 @@ import { GradientDots } from '@/components/ui/gradient-dots';
 import { AnimatePresence, motion, useInView } from 'framer-motion';
 import React, { useRef, useState } from 'react';
 
-const APP_STORE_URL = 'https://apps.apple.com/app/symponia/id6744058607';
+const APP_STORE_URL = 'https://apps.apple.com/us/app/symponia/id6760951504';
 
 const C = {
   bg: '#08080F', bgMid: '#0F0F1A',
@@ -159,7 +159,7 @@ function SacredCircleSVG() {
 
 function Nav() {
   const [open, setOpen] = useState(false);
-  const links = [['How it works','#how-it-works'],['Modes','#modes'],['Pricing','/credits'],['FAQ','#faq']];
+  const links = [['How it works','#how-it-works'],['Modes','#modes'],['About','/about'],['Pricing','/credits'],['FAQ','#faq']];
   return (
     <>
       <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, background: 'rgba(8,8,15,0.88)', backdropFilter: 'blur(24px)', borderBottom: `0.5px solid ${C.border}` }}>
@@ -626,6 +626,40 @@ function WhatItsNot() {
   );
 }
 
+// ── Founders teaser ───────────────────────────────────────────────────────────
+
+function FoundersTeaser() {
+  return (
+    <section style={{ padding: '80px 28px' }}>
+      <div style={{ maxWidth: 720, margin: '0 auto' }}>
+        <FadeIn>
+          <Card style={{ padding: '48px 44px' }}>
+            <p style={{ fontFamily: C.body, fontSize: '0.68rem', letterSpacing: '0.22em', color: C.cyan, textTransform: 'uppercase', marginBottom: 24 }}>The people behind it</p>
+            <p style={{ fontFamily: C.heading, fontWeight: 300, fontStyle: 'italic', fontSize: 'clamp(1.1rem, 2.5vw, 1.5rem)', lineHeight: 1.7, color: C.fg, marginBottom: 32 }}>
+              "Beneath every story, people are looking for<br />a way to recognise themselves."
+            </p>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 32, marginBottom: 32 }}>
+              <div>
+                <p style={{ fontFamily: C.heading, fontSize: '1rem', fontWeight: 500, color: C.fg, marginBottom: 2 }}>Dr. Alessandro Biletta</p>
+                <p style={{ fontFamily: C.body, fontSize: '0.68rem', letterSpacing: '0.16em', textTransform: 'uppercase', color: C.cyan }}>Founder</p>
+              </div>
+              <div>
+                <p style={{ fontFamily: C.heading, fontSize: '1rem', fontWeight: 500, color: C.fg, marginBottom: 2 }}>Yekta Dastranj</p>
+                <p style={{ fontFamily: C.body, fontSize: '0.68rem', letterSpacing: '0.16em', textTransform: 'uppercase', color: C.violet }}>Co-founder</p>
+              </div>
+            </div>
+            <a href="/about"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontFamily: C.body, fontSize: '0.8rem', fontWeight: 400, color: C.dim, textDecoration: 'none', letterSpacing: '0.04em' }}
+            >
+              Read our story <span style={{ opacity: 0.5 }}>→</span>
+            </a>
+          </Card>
+        </FadeIn>
+      </div>
+    </section>
+  );
+}
+
 // ── CTA ───────────────────────────────────────────────────────────────────────
 
 function CTA() {
@@ -668,7 +702,7 @@ function Footer() {
           </div>
           <div style={{ display: 'flex', gap: 52, flexWrap: 'wrap' }}>
             {[
-              { title: 'App', links: [['App Store', APP_STORE_URL], ['How it works', '#how-it-works'], ['Modes', '#modes'], ['Pricing', '/credits']] },
+              { title: 'App', links: [['App Store', APP_STORE_URL], ['How it works', '#how-it-works'], ['Modes', '#modes'], ['About', '/about'], ['Pricing', '/credits']] },
               { title: 'Legal', links: [['Privacy Policy', '/privacy'], ['Terms of Service', '/terms'], ['EULA', '/eula'], ['GDPR', '/privacy#gdpr'], ['Contact', 'mailto:hello@symponia.io']] },
             ].map(col => (
               <div key={col.title}>
@@ -728,6 +762,7 @@ export default function Home() {
         <PullQuote />
         <FAQ />
         <WhatItsNot />
+        <FoundersTeaser />
         <CTA />
         <Footer />
       </div>

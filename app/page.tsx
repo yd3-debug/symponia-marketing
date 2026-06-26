@@ -7,12 +7,12 @@ import React, { useRef, useState } from 'react';
 const APP_STORE_URL = 'https://apps.apple.com/us/app/symponia/id6760951504';
 
 const C = {
-  bg: '#EAE7FF', bgMid: '#E3DFFF',
-  bgCard: 'rgba(255,255,255,0.92)',
-  fg: '#0F0C1A', sub: '#3D345C', dim: '#6B5E92',
+  bg: '#F5F2E8', bgMid: '#EDE8D5',
+  bgCard: 'rgba(255,255,255,0.94)',
+  fg: '#0F0C0A', sub: '#2E2840', dim: '#6A6078',
   cyan: '#0891B2', violet: '#7C3AED',
-  border: '#E2DEFF',
-  borderStrong: '#C8BFED',
+  border: '#E5DFC9',
+  borderStrong: '#CFC6A8',
   heading: "var(--font-cal-sans), 'Inter', sans-serif",
   body: "var(--font-inter), 'Helvetica Neue', sans-serif",
   mono: "var(--font-jetbrains-mono), 'Courier New', monospace",
@@ -183,7 +183,7 @@ function Nav() {
   const links = [['How it works','#how-it-works'],['Modes','#modes'],['About','/about'],['Pricing','/credits'],['FAQ','#faq']];
   return (
     <>
-      <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, background: 'rgba(234,231,255,0.94)', backdropFilter: 'blur(24px)', borderBottom: `0.5px solid ${C.border}` }}>
+      <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, background: 'rgba(245,242,232,0.94)', backdropFilter: 'blur(24px)', borderBottom: `0.5px solid ${C.border}` }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 28px', height: 64, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <a href="#" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
             <img src="/logo.jpg" alt="Symponia" style={{ width: 30, height: 30, borderRadius: 8, objectFit: 'cover' }} onError={e => { (e.target as HTMLImageElement).style.display='none'; }} />
@@ -210,7 +210,7 @@ function Nav() {
       <AnimatePresence>
         {open && (
           <motion.div initial={{opacity:0,y:-4}} animate={{opacity:1,y:0}} exit={{opacity:0,y:-4}} transition={{duration:0.18}}
-            style={{position:'fixed',top:64,left:0,right:0,zIndex:49,background:'rgba(234,231,255,0.98)',backdropFilter:'blur(24px)',borderBottom:`0.5px solid ${C.border}`,padding:'24px 28px 28px'}}
+            style={{position:'fixed',top:64,left:0,right:0,zIndex:49,background:'rgba(245,242,232,0.98)',backdropFilter:'blur(24px)',borderBottom:`0.5px solid ${C.border}`,padding:'24px 28px 28px'}}
           >
             {links.map(([l,h]) => (
               <a key={l} href={h} onClick={() => setOpen(false)}
@@ -232,7 +232,7 @@ function Nav() {
 function Hero() {
   return (
     <section style={{ position: 'relative', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', overflow: 'hidden', padding: '120px 28px 80px' }}>
-      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 90% 90% at 50% 50%, rgba(234,231,255,0) 0%, rgba(234,231,255,0.6) 55%, #EAE7FF 100%)', pointerEvents: 'none' }} />
+      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 90% 90% at 50% 50%, rgba(245,242,232,0) 0%, rgba(245,242,232,0.6) 55%, #F5F2E8 100%)', pointerEvents: 'none' }} />
 
       <div style={{ position: 'relative', zIndex: 1, maxWidth: 800, margin: '0 auto' }}>
         {/* Logo */}
@@ -766,7 +766,7 @@ export default function Home() {
       `}</style>
       <div style={{ position: 'fixed', inset: 0, zIndex: 0, pointerEvents: 'none' }}>
         <GradientDots duration={50} colorCycleDuration={14} dotSize={5} spacing={13} backgroundColor={C.bg} />
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(234,231,255,0.90)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(245,242,232,0.80)' }} />
       </div>
       <div style={{ position: 'relative', zIndex: 1 }}>
         <Nav />

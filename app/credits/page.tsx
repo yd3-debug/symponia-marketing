@@ -7,11 +7,11 @@ import React from 'react';
 const APP_STORE_URL = 'https://apps.apple.com/app/symponia/id6744058607';
 
 const C = {
-  bg: '#08080F', bgCard: 'rgba(15,15,26,0.92)',
-  fg: '#F1F0FF', sub: '#AEAECE', dim: '#A8A8C8',
-  cyan: '#06B6D4', violet: '#9F67FF',
-  border: '#1A1A30',
-  borderStrong: '#2D2D50',
+  bg: '#F5F2E8', bgCard: 'rgba(255,255,255,0.94)',
+  fg: '#0F0C0A', sub: '#2E2840', dim: '#6A6078',
+  cyan: '#0891B2', violet: '#7C3AED',
+  border: '#E5DFC9',
+  borderStrong: '#CFC6A8',
   heading: "var(--font-cal-sans), 'Inter', sans-serif",
   body: "var(--font-inter), 'Helvetica Neue', sans-serif",
 };
@@ -27,7 +27,7 @@ function Card({ children, style = {}, accent = false }: { children: React.ReactN
         position: 'relative',
         borderRadius: 22,
         border: `0.5px solid ${accent ? C.violet + '50' : C.border}`,
-        background: accent ? 'rgba(159,103,255,0.05)' : C.bgCard,
+        background: accent ? 'rgba(124,58,237,0.05)' : C.bgCard,
         backdropFilter: 'blur(12px)',
         padding: '36px 32px',
         overflow: 'hidden',
@@ -73,7 +73,7 @@ function BeginCard() {
         href={APP_STORE_URL}
         target="_blank"
         rel="noopener noreferrer"
-        style={{ display: 'block', width: '100%', padding: '14px', borderRadius: 100, background: C.cyan, color: C.bg, fontFamily: C.body, fontSize: '0.82rem', fontWeight: 500, letterSpacing: '0.06em', textAlign: 'center', textDecoration: 'none', marginTop: 'auto' }}
+        style={{ display: 'block', width: '100%', padding: '14px', borderRadius: 100, background: C.cyan, color: '#fff', fontFamily: C.body, fontSize: '0.82rem', fontWeight: 500, letterSpacing: '0.06em', textAlign: 'center', textDecoration: 'none', marginTop: 'auto' }}
       >
         Download on the App Store
       </a>
@@ -103,7 +103,7 @@ function MonthlyCard() {
         <Bullet>Cancel anytime via Apple ID settings</Bullet>
       </div>
 
-      <div style={{ width: '100%', padding: '14px', borderRadius: 100, border: `0.5px solid ${C.violet + '40'}`, background: 'rgba(159,103,255,0.06)', color: C.violet, fontFamily: C.body, fontSize: '0.82rem', fontWeight: 300, letterSpacing: '0.08em', textAlign: 'center', marginTop: 'auto' }}>
+      <div style={{ width: '100%', padding: '14px', borderRadius: 100, border: `0.5px solid ${C.violet + '40'}`, background: 'rgba(124,58,237,0.06)', color: C.violet, fontFamily: C.body, fontSize: '0.82rem', fontWeight: 300, letterSpacing: '0.08em', textAlign: 'center', marginTop: 'auto' }}>
         Available in the app
       </div>
     </Card>

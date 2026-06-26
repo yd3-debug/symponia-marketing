@@ -7,7 +7,7 @@ import React, { useRef, useState } from 'react';
 const APP_STORE_URL = 'https://apps.apple.com/us/app/symponia/id6760951504';
 
 const C = {
-  bg: '#F4F2FF', bgMid: '#EDEAFF',
+  bg: '#EAE7FF', bgMid: '#E3DFFF',
   bgCard: 'rgba(255,255,255,0.92)',
   fg: '#0F0C1A', sub: '#3D345C', dim: '#6B5E92',
   cyan: '#0891B2', violet: '#7C3AED',
@@ -92,7 +92,7 @@ function ConstellationSVG() {
     [15,18],[16,19],[17,19],[18,20],[19,20],
   ];
   return (
-    <svg viewBox="0 0 700 430" style={{ width: '100%', maxWidth: 700, height: 'auto', opacity: 0.35 }}>
+    <svg viewBox="0 0 700 430" style={{ width: '100%', maxWidth: 700, height: 'auto', opacity: 0.7 }}>
       {lines.map(([a,b], i) => (
         <line key={i} x1={stars[a][0]} y1={stars[a][1]} x2={stars[b][0]} y2={stars[b][1]}
           stroke={C.cyan} strokeWidth="0.5" strokeOpacity="0.4" />
@@ -109,7 +109,7 @@ function ConstellationSVG() {
 
 function OracleSVG() {
   return (
-    <svg viewBox="0 0 200 200" style={{ width: 180, height: 180, opacity: 0.6 }}>
+    <svg viewBox="0 0 200 200" style={{ width: 180, height: 180, opacity: 0.85 }}>
       {[80,65,50,35,20].map((r,i) => (
         <circle key={i} cx="100" cy="100" r={r} fill="none" stroke={i%2===0?C.cyan:C.violet} strokeWidth="0.6" opacity={0.3 + i*0.08} />
       ))}
@@ -132,7 +132,7 @@ function OracleSVG() {
 function MoonPhaseSVG() {
   const phases = [0, 0.15, 0.35, 0.5, 0.65, 0.85, 1.0];
   return (
-    <svg viewBox="0 0 420 60" style={{ width: '100%', maxWidth: 420, height: 60, opacity: 0.55 }}>
+    <svg viewBox="0 0 420 60" style={{ width: '100%', maxWidth: 420, height: 60, opacity: 0.82 }}>
       {phases.map((phase, i) => {
         const cx = 30 + i * 60;
         const r = 18;
@@ -155,7 +155,7 @@ function MoonPhaseSVG() {
 
 function SacredCircleSVG() {
   return (
-    <svg viewBox="0 0 300 300" style={{ width: 260, height: 260, opacity: 0.3 }}>
+    <svg viewBox="0 0 300 300" style={{ width: 260, height: 260, opacity: 0.7 }}>
       <circle cx="150" cy="150" r="130" fill="none" stroke={C.violet} strokeWidth="0.6" />
       <circle cx="150" cy="150" r="100" fill="none" stroke={C.cyan} strokeWidth="0.5" />
       <circle cx="150" cy="150" r="70" fill="none" stroke={C.violet} strokeWidth="0.6" />
@@ -183,7 +183,7 @@ function Nav() {
   const links = [['How it works','#how-it-works'],['Modes','#modes'],['About','/about'],['Pricing','/credits'],['FAQ','#faq']];
   return (
     <>
-      <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, background: 'rgba(244,242,255,0.92)', backdropFilter: 'blur(24px)', borderBottom: `0.5px solid ${C.border}` }}>
+      <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, background: 'rgba(234,231,255,0.94)', backdropFilter: 'blur(24px)', borderBottom: `0.5px solid ${C.border}` }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 28px', height: 64, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <a href="#" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
             <img src="/logo.jpg" alt="Symponia" style={{ width: 30, height: 30, borderRadius: 8, objectFit: 'cover' }} onError={e => { (e.target as HTMLImageElement).style.display='none'; }} />
@@ -210,7 +210,7 @@ function Nav() {
       <AnimatePresence>
         {open && (
           <motion.div initial={{opacity:0,y:-4}} animate={{opacity:1,y:0}} exit={{opacity:0,y:-4}} transition={{duration:0.18}}
-            style={{position:'fixed',top:64,left:0,right:0,zIndex:49,background:'rgba(244,242,255,0.98)',backdropFilter:'blur(24px)',borderBottom:`0.5px solid ${C.border}`,padding:'24px 28px 28px'}}
+            style={{position:'fixed',top:64,left:0,right:0,zIndex:49,background:'rgba(234,231,255,0.98)',backdropFilter:'blur(24px)',borderBottom:`0.5px solid ${C.border}`,padding:'24px 28px 28px'}}
           >
             {links.map(([l,h]) => (
               <a key={l} href={h} onClick={() => setOpen(false)}
@@ -232,7 +232,7 @@ function Nav() {
 function Hero() {
   return (
     <section style={{ position: 'relative', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', overflow: 'hidden', padding: '120px 28px 80px' }}>
-      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 90% 90% at 50% 50%, rgba(244,242,255,0) 0%, rgba(244,242,255,0.6) 55%, #F4F2FF 100%)', pointerEvents: 'none' }} />
+      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 90% 90% at 50% 50%, rgba(234,231,255,0) 0%, rgba(234,231,255,0.6) 55%, #EAE7FF 100%)', pointerEvents: 'none' }} />
 
       <div style={{ position: 'relative', zIndex: 1, maxWidth: 800, margin: '0 auto' }}>
         {/* Logo */}
@@ -766,7 +766,7 @@ export default function Home() {
       `}</style>
       <div style={{ position: 'fixed', inset: 0, zIndex: 0, pointerEvents: 'none' }}>
         <GradientDots duration={50} colorCycleDuration={14} dotSize={5} spacing={13} backgroundColor={C.bg} />
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(244,242,255,0.72)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(234,231,255,0.90)' }} />
       </div>
       <div style={{ position: 'relative', zIndex: 1 }}>
         <Nav />

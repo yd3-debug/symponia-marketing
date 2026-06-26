@@ -777,9 +777,9 @@ export default function Home() {
         <DailyUse />
         <Modes />
         <PullQuote />
+        <FoundersTeaser />
         <FAQ />
         <WhatItsNot />
-        <FoundersTeaser />
         <CTA />
         <Footer />
       </div>

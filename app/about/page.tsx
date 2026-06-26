@@ -7,9 +7,9 @@ export const metadata: Metadata = {
 };
 
 const C = {
-  fg: '#F1F0FF', sub: '#AEAECE', dim: '#A8A8C8',
-  cyan: '#06B6D4', violet: '#9F67FF',
-  border: '#1A1A30', borderStrong: '#2D2D50',
+  fg: '#0F0C1A', sub: '#3D345C', dim: '#6B5E92',
+  cyan: '#0891B2', violet: '#7C3AED',
+  border: '#E2DEFF', borderStrong: '#C8BFED',
   heading: "var(--font-syne), 'Inter', sans-serif",
   body: "var(--font-inter), 'Helvetica Neue', sans-serif",
 };
@@ -95,15 +95,16 @@ export default function AboutPage() {
             {/* Alessandro */}
             <div style={{
               padding: '40px 36px',
-              background: 'rgba(15,15,26,0.7)',
+              background: 'rgba(255,255,255,0.92)',
               border: `0.5px solid ${C.border}`,
+              boxShadow: '0 2px 20px rgba(109,40,217,0.06), 0 1px 4px rgba(0,0,0,0.04)',
               borderRadius: '16px 4px 4px 16px',
             }}>
               <div style={{ marginBottom: 20 }}>
                 <div style={{
                   width: 40, height: 40, borderRadius: 12,
-                  background: `rgba(6,182,212,0.12)`,
-                  border: `0.5px solid rgba(6,182,212,0.25)`,
+                  background: `rgba(8,145,178,0.1)`,
+                  border: `0.5px solid rgba(8,145,178,0.22)`,
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                   marginBottom: 20,
                 }}>
@@ -135,15 +136,16 @@ export default function AboutPage() {
             {/* Yekta */}
             <div style={{
               padding: '40px 36px',
-              background: 'rgba(15,15,26,0.7)',
+              background: 'rgba(255,255,255,0.92)',
               border: `0.5px solid ${C.border}`,
+              boxShadow: '0 2px 20px rgba(109,40,217,0.06), 0 1px 4px rgba(0,0,0,0.04)',
               borderRadius: '4px 16px 16px 4px',
             }}>
               <div style={{ marginBottom: 20 }}>
                 <div style={{
                   width: 40, height: 40, borderRadius: 12,
-                  background: `rgba(159,103,255,0.12)`,
-                  border: `0.5px solid rgba(159,103,255,0.25)`,
+                  background: `rgba(124,58,237,0.1)`,
+                  border: `0.5px solid rgba(124,58,237,0.22)`,
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                   marginBottom: 20,
                 }}>
@@ -216,8 +218,8 @@ export default function AboutPage() {
         {/* ── Closing ───────────────────────────────────────────────── */}
         <div style={{
           padding: '40px 44px',
-          background: 'rgba(6,182,212,0.04)',
-          border: `0.5px solid rgba(6,182,212,0.18)`,
+          background: 'rgba(8,145,178,0.06)',
+          border: `0.5px solid rgba(8,145,178,0.2)`,
           borderRadius: 16,
           textAlign: 'center',
         }}>

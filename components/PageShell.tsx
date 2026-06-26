@@ -5,8 +5,8 @@ import React, { useState } from 'react';
 
 const APP_STORE_URL = 'https://apps.apple.com/us/app/symponia/id6760951504';
 const C = {
-  bg: '#08061c', fg: '#eae6f8', sub: '#b8b0d8', dim: '#7c70a8',
-  cyan: '#5ce8d0', border: 'rgba(255,255,255,0.07)',
+  bg: '#F4F2FF', fg: '#0F0C1A', sub: '#3D345C', dim: '#6B5E92',
+  cyan: '#0891B2', border: 'rgba(0,0,0,0.08)',
   heading: "var(--font-cormorant), 'Georgia', serif",
   body: "var(--font-inter), 'Helvetica Neue', sans-serif",
 };
@@ -44,7 +44,7 @@ export function PageShell({ children }: { children: React.ReactNode }) {
 
   return (
     <div style={{ background: C.bg, minHeight: '100vh' }}>
-      <nav style={{ position: 'sticky', top: 0, zIndex: 50, background: 'rgba(8,6,28,0.9)', backdropFilter: 'blur(24px)', borderBottom: `0.5px solid ${C.border}` }}>
+      <nav style={{ position: 'sticky', top: 0, zIndex: 50, background: 'rgba(244,242,255,0.92)', backdropFilter: 'blur(24px)', borderBottom: `0.5px solid ${C.border}` }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 28px', height: 64, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <a href="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
             <img src="/logo.jpg" alt="Symponia" style={{ width: 28, height: 28, borderRadius: 7, objectFit: 'cover' }} />
@@ -71,7 +71,7 @@ export function PageShell({ children }: { children: React.ReactNode }) {
       <AnimatePresence>
         {open && (
           <motion.div initial={{opacity:0,y:-4}} animate={{opacity:1,y:0}} exit={{opacity:0,y:-4}} transition={{duration:0.18}}
-            style={{position:'fixed',top:64,left:0,right:0,zIndex:49,background:'rgba(8,6,28,0.97)',backdropFilter:'blur(24px)',borderBottom:`0.5px solid ${C.border}`,padding:'24px 28px 28px'}}
+            style={{position:'fixed',top:64,left:0,right:0,zIndex:49,background:'rgba(244,242,255,0.98)',backdropFilter:'blur(24px)',borderBottom:`0.5px solid ${C.border}`,padding:'24px 28px 28px'}}
           >
             {links.map(([l,h]) => (
               <a key={l} href={h} onClick={() => setOpen(false)}

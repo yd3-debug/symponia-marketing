@@ -7,12 +7,12 @@ import React, { useRef, useState } from 'react';
 const APP_STORE_URL = 'https://apps.apple.com/us/app/symponia/id6760951504';
 
 const C = {
-  bg: '#08080F', bgMid: '#0F0F1A',
-  bgCard: 'rgba(15,15,26,0.92)',
-  fg: '#F1F0FF', sub: '#AEAECE', dim: '#A8A8C8',
-  cyan: '#06B6D4', violet: '#9F67FF',
-  border: '#1A1A30',
-  borderStrong: '#2D2D50',
+  bg: '#F4F2FF', bgMid: '#EDEAFF',
+  bgCard: 'rgba(255,255,255,0.92)',
+  fg: '#0F0C1A', sub: '#3D345C', dim: '#6B5E92',
+  cyan: '#0891B2', violet: '#7C3AED',
+  border: '#E2DEFF',
+  borderStrong: '#C8BFED',
   heading: "var(--font-cal-sans), 'Inter', sans-serif",
   body: "var(--font-inter), 'Helvetica Neue', sans-serif",
   mono: "var(--font-jetbrains-mono), 'Courier New', monospace",
@@ -34,7 +34,7 @@ function FadeIn({ children, delay = 0, style = {} }: { children: React.ReactNode
 
 function Card({ children, style = {} }: { children: React.ReactNode; style?: React.CSSProperties }) {
   return (
-    <div style={{ background: C.bgCard, border: `0.5px solid ${C.border}`, borderRadius: 20, backdropFilter: 'blur(12px)', position: 'relative', overflow: 'hidden', ...style }}>
+    <div style={{ background: C.bgCard, border: `0.5px solid ${C.border}`, borderRadius: 20, backdropFilter: 'blur(12px)', position: 'relative', overflow: 'hidden', boxShadow: '0 2px 24px rgba(109,40,217,0.06), 0 1px 4px rgba(0,0,0,0.04)', ...style }}>
       <div style={{ position: 'absolute', inset: '0 0 auto 0', height: '0.5px', background: C.borderStrong }} />
       {children}
     </div>
@@ -183,7 +183,7 @@ function Nav() {
   const links = [['How it works','#how-it-works'],['Modes','#modes'],['About','/about'],['Pricing','/credits'],['FAQ','#faq']];
   return (
     <>
-      <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, background: 'rgba(8,8,15,0.88)', backdropFilter: 'blur(24px)', borderBottom: `0.5px solid ${C.border}` }}>
+      <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, background: 'rgba(244,242,255,0.92)', backdropFilter: 'blur(24px)', borderBottom: `0.5px solid ${C.border}` }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 28px', height: 64, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <a href="#" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
             <img src="/logo.jpg" alt="Symponia" style={{ width: 30, height: 30, borderRadius: 8, objectFit: 'cover' }} onError={e => { (e.target as HTMLImageElement).style.display='none'; }} />
@@ -210,7 +210,7 @@ function Nav() {
       <AnimatePresence>
         {open && (
           <motion.div initial={{opacity:0,y:-4}} animate={{opacity:1,y:0}} exit={{opacity:0,y:-4}} transition={{duration:0.18}}
-            style={{position:'fixed',top:64,left:0,right:0,zIndex:49,background:'rgba(8,8,15,0.97)',backdropFilter:'blur(24px)',borderBottom:`0.5px solid ${C.border}`,padding:'24px 28px 28px'}}
+            style={{position:'fixed',top:64,left:0,right:0,zIndex:49,background:'rgba(244,242,255,0.98)',backdropFilter:'blur(24px)',borderBottom:`0.5px solid ${C.border}`,padding:'24px 28px 28px'}}
           >
             {links.map(([l,h]) => (
               <a key={l} href={h} onClick={() => setOpen(false)}
@@ -232,7 +232,7 @@ function Nav() {
 function Hero() {
   return (
     <section style={{ position: 'relative', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', overflow: 'hidden', padding: '120px 28px 80px' }}>
-      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 90% 90% at 50% 50%, rgba(8,8,15,0.05) 0%, rgba(8,8,15,0.75) 55%, #08080F 100%)', pointerEvents: 'none' }} />
+      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 90% 90% at 50% 50%, rgba(244,242,255,0) 0%, rgba(244,242,255,0.6) 55%, #F4F2FF 100%)', pointerEvents: 'none' }} />
 
       <div style={{ position: 'relative', zIndex: 1, maxWidth: 800, margin: '0 auto' }}>
         {/* Logo */}
@@ -244,7 +244,7 @@ function Hero() {
         </motion.div>
 
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }}
-          style={{ display: 'inline-flex', alignItems: 'center', gap: 10, padding: '7px 18px', borderRadius: 100, border: `0.5px solid ${C.borderStrong}`, background: 'rgba(6,182,212,0.08)', marginBottom: 32 }}
+          style={{ display: 'inline-flex', alignItems: 'center', gap: 10, padding: '7px 18px', borderRadius: 100, border: `0.5px solid ${C.borderStrong}`, background: 'rgba(8,145,178,0.1)', marginBottom: 32 }}
         >
           <span style={{ width: 5, height: 5, borderRadius: '50%', background: C.cyan }} />
           <span style={{ fontFamily: C.body, fontSize: '0.68rem', letterSpacing: '0.22em', color: C.cyan, textTransform: 'uppercase' }}>Now on the App Store · Free to begin</span>
@@ -271,7 +271,7 @@ function Hero() {
         >
           <AppStoreBadge size="lg" />
           <a href="#how-it-works"
-            style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '15px 28px', borderRadius: 100, border: `0.5px solid ${C.borderStrong}`, color: C.sub, fontFamily: C.body, fontSize: '0.88rem', fontWeight: 300, textDecoration: 'none', background: 'rgba(255,255,255,0.02)' }}
+            style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '15px 28px', borderRadius: 100, border: `0.5px solid ${C.borderStrong}`, color: C.sub, fontFamily: C.body, fontSize: '0.88rem', fontWeight: 300, textDecoration: 'none', background: 'rgba(0,0,0,0.04)' }}
           >See how it works <span style={{ opacity: 0.5 }}>↓</span></a>
         </motion.div>
 
@@ -593,7 +593,7 @@ function FAQ() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
           {FAQS.map((faq, i) => (
             <FadeIn key={i} delay={i * 0.03}>
-              <div style={{ borderRadius: 14, overflow: 'hidden', border: `0.5px solid ${open===i?'rgba(6,182,212,0.22)':C.border}`, background: open===i?'rgba(20,20,40,0.95)':'rgba(15,15,26,0.9)', transition: 'all 0.25s' }}>
+              <div style={{ borderRadius: 14, overflow: 'hidden', border: `0.5px solid ${open===i?'rgba(8,145,178,0.28)':C.border}`, background: open===i?'rgba(255,255,255,0.98)':'rgba(255,255,255,0.72)', transition: 'all 0.25s' }}>
                 <button onClick={() => setOpen(open===i?null:i)}
                   style={{ width: '100%', textAlign: 'left', padding: '18px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 16, background: 'none', border: 'none', cursor: 'pointer' }}
                 >
@@ -682,7 +682,7 @@ function FoundersTeaser() {
 function CTA() {
   return (
     <section style={{ padding: '100px 28px', position: 'relative', overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 60% 60% at 50% 50%, rgba(6,182,212,0.06) 0%, transparent 70%)', pointerEvents: 'none' }} />
+      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 60% 60% at 50% 50%, rgba(8,145,178,0.08) 0%, transparent 70%)', pointerEvents: 'none' }} />
       <FadeIn style={{ position: 'relative', zIndex: 1, maxWidth: 600, margin: '0 auto', textAlign: 'center' }}>
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 36 }}>
           <img src="/logo.jpg" alt="Symponia" style={{ width: 64, height: 64, borderRadius: 18, objectFit: 'cover', boxShadow: '0 0 40px rgba(124,58,237,0.25)' }}
@@ -766,7 +766,7 @@ export default function Home() {
       `}</style>
       <div style={{ position: 'fixed', inset: 0, zIndex: 0, pointerEvents: 'none' }}>
         <GradientDots duration={50} colorCycleDuration={14} dotSize={5} spacing={13} backgroundColor={C.bg} />
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(8,8,15,0.84)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(244,242,255,0.72)' }} />
       </div>
       <div style={{ position: 'relative', zIndex: 1 }}>
         <Nav />

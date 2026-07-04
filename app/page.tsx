@@ -487,9 +487,10 @@ function PainPoints() {
 // ── How it works ──────────────────────────────────────────────────────────────
 
 const STEPS = [
-  { num: '01', title: 'Name your seven animals', body: 'Choose seven animals that feel like they belong to you. Six that you are drawn to, and a seventh that unsettles you. That seventh holds what the others cannot carry. It is inspired by depth psychology and Jungian archetype work.', accent: C.cyan, detail: '🐺  🦁  🦊  🐘  🦅  🐬  🕷️' },
-  { num: '02', title: 'Receive your constellation portrait', body: 'Symponia reads your seven animals together, each with its gift, its shadow, and the path between them. At the end you get a synthesis, a warm and non-judgmental portrait of the quality your whole set reveals.', accent: C.violet, detail: '◆ Gift  ·  ◆ Shadow  ·  ⚡ Action path' },
-  { num: '03', title: 'Enter the ongoing dialogue', body: 'Symponia is now calibrated to you. Every conversation is shaped by your animals, your resonance frequency, and the mode you choose. It does not forget. It does not judge. It grows more precise the more you use it.', accent: C.cyan, detail: '"i have been waiting for you"' },
+  { num: '01', title: 'Answer a few honest questions', body: 'Before anything else, Symponia asks a short series of questions about how you think, what you feel, and where you are right now. There are no right answers, only what feels true. This is how it starts to understand you.', accent: C.violet, detail: '“there are no wrong answers, only what feels true”' },
+  { num: '02', title: 'Name your seven animals', body: 'Choose seven animals that feel like they belong to you. Six that you are drawn to, and a seventh that unsettles you. That seventh holds what the others cannot carry. It is inspired by depth psychology and Jungian archetype work.', accent: C.cyan, detail: '🐺  🦁  🦊  🐘  🦅  🐬  🕷️' },
+  { num: '03', title: 'Receive your constellation portrait', body: 'Symponia reads your seven animals together, each with its gift, its shadow, and the path between them. At the end you get a synthesis, a warm and non-judgmental portrait of the quality your whole set reveals.', accent: C.violet, detail: '◆ Gift  ·  ◆ Shadow  ·  ⚡ Action path' },
+  { num: '04', title: 'Enter the ongoing dialogue', body: 'Symponia is now calibrated to you. Every conversation is shaped by your animals, how you tend to feel, and the mode you choose. It does not forget. It does not judge. It grows more precise the more you use it.', accent: C.cyan, detail: '"i have been waiting for you"' },
 ];
 
 function HowItWorks() {
@@ -502,7 +503,7 @@ function HowItWorks() {
         </FadeIn>
         <FadeIn delay={0.1} style={{ textAlign: 'center', marginBottom: 52 }}>
           <p style={{ fontFamily: C.body, fontSize: '0.9rem', fontWeight: 300, color: C.dim, maxWidth: 480, margin: '16px auto 0', lineHeight: 1.85 }}>
-            Three steps. A few minutes. And a conversation that can last a lifetime.
+            A few quiet minutes, and a conversation that can last a lifetime.
           </p>
         </FadeIn>
 
@@ -523,9 +524,10 @@ function HowItWorks() {
           ))}
         </div>
 
-        <FadeIn style={{ display: 'flex', flexWrap: 'wrap', gap: 'clamp(32px, 6vw, 72px)', justifyContent: 'center', alignItems: 'center', marginTop: 64 }}>
+        <FadeIn style={{ display: 'flex', flexWrap: 'wrap', gap: 'clamp(28px, 5vw, 56px)', justifyContent: 'center', alignItems: 'center', marginTop: 64 }}>
+          <PhoneMockup src="/screens/02-here.png" alt="What brings you here, right now?" caption="First, a few questions" delay={0.05} />
           <OracleSVG />
-          <PhoneMockup src="/screens/06-animals.png" alt="Choose the animal that speaks to you most" caption="Name your seven animals" delay={0.1} />
+          <PhoneMockup src="/screens/06-animals.png" alt="Choose the animal that speaks to you most" caption="Then, your seven animals" delay={0.1} />
         </FadeIn>
       </div>
     </section>

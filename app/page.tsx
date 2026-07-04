@@ -78,6 +78,72 @@ function AppStoreBadge({ size = 'md' }: { size?: 'sm' | 'md' | 'lg' }) {
   );
 }
 
+// ── App showcase ──────────────────────────────────────────────────────────────
+
+const SCREENS = [
+  { src: '/screens/00-home.png',    alt: "Symponia home screen with today's reflection", caption: 'Your daily home' },
+  { src: '/screens/06-animals.png', alt: 'Choose the animal that speaks to you most', caption: 'Choose your seven' },
+  { src: '/screens/01-welcome.png', alt: 'Symponia welcome screen', caption: 'A resonant presence' },
+  { src: '/screens/02-here.png',    alt: 'What brings you here, right now?', caption: 'What brings you here' },
+  { src: '/screens/04-story.png',   alt: 'The story you tell about yourself', caption: 'The story you tell' },
+  { src: '/screens/05-change.png',  alt: 'How change usually arrives for you', caption: 'Where it leads' },
+];
+
+function PhoneMockup({ src, alt, caption, delay = 0 }: { src: string; alt: string; caption: string; delay?: number }) {
+  return (
+    <FadeIn delay={delay} style={{ flex: '0 0 auto', scrollSnapAlign: 'center' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 18 }}>
+        <div style={{
+          position: 'relative', width: 230, aspectRatio: '390 / 820',
+          borderRadius: 36, padding: 7,
+          background: 'linear-gradient(160deg, #2A2740 0%, #14121F 100%)',
+          border: `0.5px solid ${C.borderStrong}`,
+          boxShadow: '0 26px 60px -18px rgba(47,40,80,0.45), 0 1px 3px rgba(0,0,0,0.08)',
+        }}>
+          <div style={{ position: 'absolute', top: 15, left: '50%', transform: 'translateX(-50%)', width: 62, height: 5, borderRadius: 3, background: '#000', opacity: 0.55, zIndex: 2 }} />
+          <div style={{ position: 'relative', width: '100%', height: '100%', borderRadius: 30, overflow: 'hidden', background: '#EAF1EE' }}>
+            <img src={src} alt={alt} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+          </div>
+        </div>
+        <p style={{ fontFamily: C.body, fontSize: '0.68rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: C.dim, textAlign: 'center', maxWidth: 190 }}>{caption}</p>
+      </div>
+    </FadeIn>
+  );
+}
+
+function AppShowcase() {
+  return (
+    <section id="app" style={{ padding: '70px 0 96px', position: 'relative', overflow: 'hidden' }}>
+      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 60% 55% at 50% 42%, rgba(124,58,237,0.07) 0%, transparent 70%)', pointerEvents: 'none' }} />
+      <div style={{ position: 'relative', maxWidth: 1100, margin: '0 auto', padding: '0 28px' }}>
+        <FadeIn style={{ textAlign: 'center', marginBottom: 14 }}>
+          <Label>Inside the app</Label>
+          <H2>See Symponia<br /><em style={{ fontStyle: 'italic', color: C.dim }}>on your screen</em></H2>
+        </FadeIn>
+        <FadeIn delay={0.1} style={{ textAlign: 'center', marginBottom: 54 }}>
+          <p style={{ fontFamily: C.body, fontSize: '0.9rem', fontWeight: 300, color: C.dim, maxWidth: 480, margin: '16px auto 0', lineHeight: 1.85 }}>
+            Quiet by design. Soft light, no clutter, nothing to perform for. From your daily home to the ritual that shapes it, this is how Symponia meets you.
+          </p>
+        </FadeIn>
+      </div>
+
+      <div className="phone-scroll" style={{ position: 'relative', overflowX: 'auto', scrollSnapType: 'x proximity' }}>
+        <div style={{ display: 'flex', gap: 28, width: 'max-content', margin: '0 auto', padding: '24px 28px' }}>
+          {SCREENS.map((s, i) => (
+            <div key={i} style={{ transform: `translateY(${i % 2 === 0 ? '-14px' : '14px'})` }}>
+              <PhoneMockup {...s} delay={i * 0.08} />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <FadeIn style={{ display: 'flex', justifyContent: 'center', marginTop: 48, padding: '0 28px' }}>
+        <AppStoreBadge size="lg" />
+      </FadeIn>
+    </section>
+  );
+}
+
 // ── Spiritual SVG Illustrations ───────────────────────────────────────────────
 
 function ConstellationSVG() {
@@ -180,7 +246,7 @@ function SacredCircleSVG() {
 
 function Nav() {
   const [open, setOpen] = useState(false);
-  const links = [['How it works','#how-it-works'],['Modes','#modes'],['About','/about'],['Pricing','/credits'],['FAQ','#faq']];
+  const links = [['The app','#app'],['How it works','#how-it-works'],['Modes','#modes'],['About','/about'],['Pricing','/credits'],['FAQ','#faq']];
   return (
     <>
       <nav style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, background: 'rgba(245,242,232,0.94)', backdropFilter: 'blur(24px)', borderBottom: `0.5px solid ${C.border}` }}>
@@ -457,8 +523,9 @@ function HowItWorks() {
           ))}
         </div>
 
-        <FadeIn style={{ display: 'flex', justifyContent: 'center', marginTop: 64 }}>
+        <FadeIn style={{ display: 'flex', flexWrap: 'wrap', gap: 'clamp(32px, 6vw, 72px)', justifyContent: 'center', alignItems: 'center', marginTop: 64 }}>
           <OracleSVG />
+          <PhoneMockup src="/screens/06-animals.png" alt="Choose the animal that speaks to you most" caption="Name your seven animals" delay={0.1} />
         </FadeIn>
       </div>
     </section>
@@ -497,8 +564,9 @@ function DailyUse() {
           ))}
         </div>
 
-        {/* Moon phases */}
-        <FadeIn style={{ display: 'flex', justifyContent: 'center', marginTop: 56 }}>
+        {/* Home screen + moon phases */}
+        <FadeIn style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 44, marginTop: 56 }}>
+          <PhoneMockup src="/screens/00-home.png" alt="Symponia home screen with today's reflection" caption="Your reflection, every morning" delay={0.1} />
           <MoonPhaseSVG />
         </FadeIn>
       </div>
@@ -771,6 +839,7 @@ export default function Home() {
       <div style={{ position: 'relative', zIndex: 1 }}>
         <Nav />
         <Hero />
+        <AppShowcase />
         <WhoItsFor />
         <PainPoints />
         <HowItWorks />

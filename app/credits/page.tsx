@@ -4,7 +4,7 @@ import { PageShell } from '@/components/PageShell';
 import { motion } from 'framer-motion';
 import React from 'react';
 
-const APP_STORE_URL = 'https://apps.apple.com/app/symponia/id6744058607';
+const APP_STORE_URL = 'https://apps.apple.com/app/symponia/id6760951504';
 
 const C = {
   bg: '#F5F2E8', bgCard: 'rgba(255,255,255,0.94)',

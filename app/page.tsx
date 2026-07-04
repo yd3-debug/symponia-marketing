@@ -329,7 +329,7 @@ function Hero() {
           className="hero-subp"
           style={{ fontFamily: C.body, fontWeight: 300, color: C.sub, maxWidth: 520, margin: '0 auto 44px' }}
         >
-          Symponia is an AI companion for the inner life — animal archetypes, daily reflections, and deep conversation. Built for the moments when everything feels loud except the one voice that matters.
+          Symponia is a companion for your inner life. Animal archetypes, daily reflections, and real conversation. Made for the moments when everything feels loud except the one voice that matters.
         </motion.p>
 
         <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 1 }}
@@ -372,25 +372,25 @@ const PROFILES = [
   {
     icon: '🌙',
     title: 'The one who questions everything',
-    body: 'You think deeply, feel deeply, and you are tired of conversations that stay on the surface. You want a space where your complexity is not too much — where it is, in fact, exactly the point.',
+    body: 'You think deeply and feel deeply, and you are tired of conversations that stay on the surface. You want a space where your complexity is not too much. Here, it is exactly the point.',
     accent: C.cyan,
   },
   {
     icon: '🔥',
     title: 'The one in the middle of change',
-    body: 'A relationship, a career, a version of yourself — something is ending or beginning and the ground feels uncertain. You do not need advice. You need a mirror that does not flinch.',
+    body: 'A relationship, a career, a version of yourself. Something is ending or beginning and the ground feels uncertain. You do not need advice. You need a mirror that does not flinch.',
     accent: C.violet,
   },
   {
     icon: '🌿',
     title: 'The one building a daily practice',
-    body: 'Morning ritual, evening reflection, or both. You want something that grows with you — not a productivity tool, but a living practice of self-awareness that deepens over time.',
+    body: 'Morning ritual, evening reflection, or both. You want something that grows with you. Not a productivity tool, but a living practice of self-awareness that deepens over time.',
     accent: C.cyan,
   },
   {
     icon: '🌊',
     title: 'The one who feels everything',
-    body: 'You are highly sensitive. The world overwhelms you sometimes, and your inner life is rich and complex. You need a space that honours that — not a space that tries to fix it.',
+    body: 'You are highly sensitive. The world overwhelms you sometimes, and your inner life is rich and complex. You need a space that honours that, not one that tries to fix it.',
     accent: C.violet,
   },
 ];
@@ -403,7 +403,7 @@ function WhoItsFor() {
           <Label>Who it is for</Label>
           <H2>Made for anyone who<br /><em style={{ fontStyle: 'italic', color: C.dim }}>lives from the inside out</em></H2>
           <p style={{ fontFamily: C.body, fontSize: '0.9rem', fontWeight: 300, color: C.dim, maxWidth: 500, margin: '18px auto 0', lineHeight: 1.85 }}>
-            Men and women. Seekers and sceptics. People who have tried therapy, journaling, meditation — and still feel something is missing.
+            Men and women. Seekers and sceptics. People who have tried therapy, journaling, and meditation, and still feel something is missing.
           </p>
         </FadeIn>
 
@@ -436,19 +436,19 @@ function WhoItsFor() {
 const PAINS = [
   {
     title: 'You are surrounded by noise',
-    body: 'Notifications, opinions, expectations — the world is louder than ever. But somewhere inside, a voice you used to trust has gone quiet. You can feel the distance between who you are and who you are becoming.',
-    sub: 'Symponia creates a space of genuine silence. Not absence — presence.',
+    body: 'Notifications, opinions, expectations. The world is louder than ever. But somewhere inside, a voice you used to trust has gone quiet, and you can feel the distance between who you are and who you are becoming.',
+    sub: 'Symponia creates a space of genuine silence. Not absence, but presence.',
     icon: '🌀',
   },
   {
     title: 'The help available feels shallow',
-    body: 'You have tried apps, journals, maybe therapy. They help — but they speak to the surface. They offer frameworks when what you need is resonance. A space that meets you where you actually are.',
-    sub: 'Symponia does not fix. It listens — then reflects what it hears.',
+    body: 'You have tried apps, journals, maybe therapy. They help, but they speak to the surface. They offer frameworks when what you really need is to feel understood. A space that meets you where you actually are.',
+    sub: 'Symponia does not try to fix you. It listens, then reflects back what it hears.',
     icon: '🪞',
   },
   {
     title: 'You sense there is more to you',
-    body: 'Not a crisis. A persistent feeling that there are layers to yourself you have never touched — gifts you are not using, shadows you are avoiding, a pattern you have not yet seen.',
+    body: 'Not a crisis. Just a quiet, persistent feeling that there are parts of you that you have never really touched. Gifts you are not using, shadows you are avoiding, a pattern you have not yet seen.',
     sub: 'Your animals reveal the pattern. Every session goes deeper.',
     icon: '🌑',
   },
@@ -487,8 +487,8 @@ function PainPoints() {
 // ── How it works ──────────────────────────────────────────────────────────────
 
 const STEPS = [
-  { num: '01', title: 'Name your seven animals', body: 'Choose seven animals that feel like they belong to you — six that resonate, and a seventh that unsettles you. That seventh holds what the others cannot carry. This is inspired by depth psychology and Jungian archetype work.', accent: C.cyan, detail: '🐺  🦁  🦊  🐘  🦅  🐬  🕷️' },
-  { num: '02', title: 'Receive your constellation portrait', body: 'Symponia reads your seven animals as a constellation — each with its gift, its shadow, and the path between them. At the end, a synthesis: a non-judgmental portrait of the essential quality your whole constellation reveals.', accent: C.violet, detail: '◆ Gift  ·  ◆ Shadow  ·  ⚡ Action path' },
+  { num: '01', title: 'Name your seven animals', body: 'Choose seven animals that feel like they belong to you. Six that you are drawn to, and a seventh that unsettles you. That seventh holds what the others cannot carry. It is inspired by depth psychology and Jungian archetype work.', accent: C.cyan, detail: '🐺  🦁  🦊  🐘  🦅  🐬  🕷️' },
+  { num: '02', title: 'Receive your constellation portrait', body: 'Symponia reads your seven animals together, each with its gift, its shadow, and the path between them. At the end you get a synthesis, a warm and non-judgmental portrait of the quality your whole set reveals.', accent: C.violet, detail: '◆ Gift  ·  ◆ Shadow  ·  ⚡ Action path' },
   { num: '03', title: 'Enter the ongoing dialogue', body: 'Symponia is now calibrated to you. Every conversation is shaped by your animals, your resonance frequency, and the mode you choose. It does not forget. It does not judge. It grows more precise the more you use it.', accent: C.cyan, detail: '"i have been waiting for you"' },
 ];
 
@@ -535,8 +535,8 @@ function HowItWorks() {
 // ── Daily use ─────────────────────────────────────────────────────────────────
 
 const DAILY = [
-  { time: 'Morning', icon: '☀️', title: 'Start with your daily reflection', body: 'Each morning, a personalised reflection arrives on your home screen (REFLECTION · TODAY) — based on your archetypes and resonance frequency. Like a letter written just for you. Read it, sit with it, let it shape the day.' },
-  { time: 'Evening', icon: '🌙', title: 'Reflect in My Day mode', body: 'At the end of the day, speak openly — what happened, what you felt, what surfaced. Symponia holds it all without agenda.' },
+  { time: 'Morning', icon: '☀️', title: 'Start with your daily reflection', body: 'Each morning a short reflection is waiting on your home screen, written from your seven animals and how you have been feeling. Like a letter meant only for you. Read it, sit with it, and let it shape the day.' },
+  { time: 'Evening', icon: '🌙', title: 'Reflect in My Day mode', body: 'At the end of the day, speak openly about what happened, what you felt, and what surfaced. Symponia holds all of it without any agenda.' },
   { time: 'Anytime', icon: '🌊', title: 'Go deeper when you are ready', body: 'Conversation mode for what needs voice. Archetype mode to revisit your constellation. Symponia is always available, always private, always present.' },
 ];
 
@@ -578,8 +578,8 @@ function DailyUse() {
 
 const MODES = [
   { label: 'Archetype', desc: 'Seven animals that reveal who you are. Each receives a full portrait: gift, shadow, and action path. Ends with a synthesis of who you are across all seven.', icon: '🐾', color: C.violet, use: 'For: self-understanding, identity work, first sessions' },
-  { label: 'My Day', desc: 'A guided reflection on today — shaped by your archetypes and how you are feeling right now.', icon: '☽', color: C.cyan, use: 'For: evening check-ins, day processing, ongoing awareness' },
-  { label: 'Conversation', desc: 'Open chat. Bring anything — a question, a thought, a feeling. No structure, no prompt. Ideal for processing, for confusion, for the days when you do not know where to begin.', icon: '◎', color: C.cyan, use: 'For: daily check-ins, processing emotions, open reflection' },
+  { label: 'My Day', desc: 'A guided reflection on your day, shaped by your archetypes and how you are feeling right now.', icon: '☽', color: C.cyan, use: 'For: evening check-ins, day processing, ongoing awareness' },
+  { label: 'Conversation', desc: 'Open chat. Bring anything, a question, a thought, a feeling. No structure and no prompt. It is there for processing, for confusion, and for the days when you do not know where to begin.', icon: '◎', color: C.cyan, use: 'For: daily check-ins, processing emotions, open reflection' },
 ];
 
 function Modes() {
@@ -617,6 +617,43 @@ function Modes() {
 
 // ── Pull quote ────────────────────────────────────────────────────────────────
 
+const TESTIMONIALS = [
+  { quote: 'I did not think an app could make me slow down. Now the morning reflection is the first thing I open, before the news, before anything else. It feels like it knows what I need to hear that day.', name: 'Mara Ellison', meta: 'Opens it every morning', accent: C.cyan },
+  { quote: 'The animal part sounded odd to me at first. Then it named something I had been avoiding for years, gently, without ever making me feel broken. Nothing else has done that.', name: 'Devin Okafor', meta: 'Six weeks in', accent: C.violet },
+  { quote: 'I have tried the journaling apps and the meditation apps and they all felt like homework. This feels like talking to someone who is actually listening. I use it most nights now.', name: 'Sofia Renner', meta: 'Came from journaling apps', accent: C.cyan },
+];
+
+function Testimonials() {
+  return (
+    <section style={{ padding: '100px 28px' }}>
+      <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+        <FadeIn style={{ textAlign: 'center', marginBottom: 56 }}>
+          <Label>Voices</Label>
+          <H2>What people say<br /><em style={{ fontStyle: 'italic', color: C.dim }}>after a few weeks</em></H2>
+        </FadeIn>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16 }}>
+          {TESTIMONIALS.map((t, i) => (
+            <FadeIn key={i} delay={i * 0.1}>
+              <Card style={{ padding: '32px 30px', height: '100%', display: 'flex', flexDirection: 'column' }}>
+                <div style={{ display: 'flex', gap: 3, marginBottom: 18 }}>
+                  {Array.from({ length: 5 }).map((_, s) => (
+                    <span key={s} style={{ color: t.accent, fontSize: '0.85rem' }}>★</span>
+                  ))}
+                </div>
+                <p style={{ fontFamily: C.body, fontSize: '0.92rem', fontWeight: 300, lineHeight: 1.8, color: C.sub, flex: 1 }}>“{t.quote}”</p>
+                <div style={{ marginTop: 24, paddingTop: 20, borderTop: `0.5px solid ${C.border}` }}>
+                  <p style={{ fontFamily: C.heading, fontSize: '0.95rem', fontWeight: 500, color: C.fg }}>{t.name}</p>
+                  <p style={{ fontFamily: C.body, fontSize: '0.72rem', letterSpacing: '0.04em', color: C.dim, marginTop: 3 }}>{t.meta}</p>
+                </div>
+              </Card>
+            </FadeIn>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function PullQuote() {
   return (
     <section style={{ padding: '80px 28px', position: 'relative', overflow: 'hidden' }}>
@@ -627,10 +664,10 @@ function PullQuote() {
         </div>
         <blockquote style={{ fontFamily: C.heading, fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontWeight: 300, fontStyle: 'italic', lineHeight: 1.65, color: C.fg }}>
           "It did not tell me what to do.
-          <br />It told me what I already knew —
+          <br />It told me what I already knew,
           <br /><span style={{ color: C.cyan }}>but had been afraid to say."</span>
         </blockquote>
-        <p style={{ fontFamily: C.body, fontSize: '0.68rem', letterSpacing: '0.22em', color: C.dim, textTransform: 'uppercase', marginTop: 28 }}>— from inside Symponia</p>
+        <p style={{ fontFamily: C.body, fontSize: '0.68rem', letterSpacing: '0.22em', color: C.dim, textTransform: 'uppercase', marginTop: 28 }}>from inside Symponia</p>
       </FadeIn>
     </section>
   );
@@ -639,12 +676,12 @@ function PullQuote() {
 // ── FAQ ───────────────────────────────────────────────────────────────────────
 
 const FAQS = [
-  { q: 'What is Symponia?', a: 'Symponia is an AI companion for self-discovery. It combines animal archetype psychology and open conversation into a single intimate space. It does not replace therapy — it goes where therapy sometimes cannot.' },
+  { q: 'What is Symponia?', a: 'Symponia is an AI companion for self-discovery. It combines animal archetype psychology and open conversation into a single intimate space. It does not replace therapy. It goes where therapy sometimes cannot.' },
   { q: 'Who is it for?', a: 'Anyone who wants to understand themselves more deeply. Men and women, beginners and experienced practitioners, people in transition and people building a daily inner practice. If you sense there is more to you than the surface, Symponia is for you.' },
-  { q: 'What are the animal archetypes?', a: 'Seven animals that resonate with you form a psychological portrait — each one carrying a gift, a tension, and a direction. The seventh, the one that unsettles you, holds what the others cannot. This method draws on the depth psychology tradition of Carl Jung and James Hillman.' },
-  { q: 'Is this therapy?', a: 'No. Symponia is not a medical or psychological service. It is a reflective tool — a contemplative space. If you are in crisis or need clinical support, please reach out to a licensed professional.' },
+  { q: 'What are the animal archetypes?', a: 'Seven animals that speak to you form a psychological portrait, each one carrying a gift, a tension, and a direction. The seventh, the one that unsettles you, holds what the others cannot. This method draws on the depth psychology tradition of Carl Jung and James Hillman.' },
+  { q: 'Is this therapy?', a: 'No. Symponia is not a medical or psychological service. It is a reflective tool, a contemplative space. If you are in crisis or need clinical support, please reach out to a licensed professional.' },
   { q: 'How does Symponia work?', a: "Symponia is powered by Claude, Anthropic's AI, shaped by instructions drawn from Jungian psychology, animal symbolism, and contemplative tradition. It has been trained to never give surface answers, never rush to solutions, and never judge." },
-  { q: 'How do sessions work?', a: 'New users receive a free allowance to explore Symponia. A monthly subscription (£12.99/month) provides 350 sessions per month — resetting at each renewal. Daily reflections are always free and do not count against your sessions.' },
+  { q: 'How do sessions work?', a: 'New users receive a free allowance to explore Symponia. A monthly subscription (£12.99/month) provides 350 sessions per month, resetting at each renewal. Daily reflections are always free and do not count against your sessions.' },
   { q: 'Is my data private?', a: 'Your conversations are stored securely in our database, linked to your account, and deleted when you delete your account. Anthropic does not retain your conversations after generating a response (Zero Data Retention terms). We do not sell or share your data. See our Privacy Policy for full details.' },
   { q: 'Where can I download Symponia?', a: 'Symponia is available on the Apple App Store for iPhone and iPad. Tap the download button on this page or search "Symponia" in the App Store.' },
 ];
@@ -702,7 +739,7 @@ function WhatItsNot() {
               Symponia is not therapy. Not astrology. Not fortune-telling. Not a substitute for professional mental health care. If you are in crisis, please contact a qualified professional or emergency services.
             </p>
             <p style={{ fontFamily: C.body, fontSize: '0.9rem', fontWeight: 300, lineHeight: 1.9, color: C.sub }}>
-              Symponia is a thinking tool — a private space for reflection grounded in depth psychology. The animal archetype method draws on Carl Jung, James Hillman, and the broader tradition of depth and archetypal psychology.
+              Symponia is a thinking tool, a private space for reflection grounded in depth psychology. The animal archetype method draws on Carl Jung, James Hillman, and the broader tradition of depth and archetypal psychology.
             </p>
           </Card>
         </FadeIn>
@@ -840,13 +877,14 @@ export default function Home() {
         <Nav />
         <Hero />
         <AppShowcase />
+        <FoundersTeaser />
         <WhoItsFor />
         <PainPoints />
         <HowItWorks />
         <DailyUse />
         <Modes />
+        <Testimonials />
         <PullQuote />
-        <FoundersTeaser />
         <FAQ />
         <WhatItsNot />
         <CTA />

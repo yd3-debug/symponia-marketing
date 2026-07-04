@@ -346,7 +346,7 @@ function Hero() {
           className="stats-row"
           style={{ alignItems: 'center', justifyContent: 'center', marginTop: 60, paddingTop: 48, borderTop: `0.5px solid ${C.border}` }}
         >
-          {[['7','Animal archetypes'],['3','Conversation modes'],['∞','Depth'],['0','Judgment']].map(([v,l]) => (
+          {[['7','Animals'],['3','Modes'],['100%','Private'],['Free','To begin']].map(([v,l]) => (
             <div key={l} style={{ textAlign: 'center' }}>
               <div style={{ fontFamily: C.heading, fontSize: '1.9rem', fontWeight: 300, color: C.cyan, lineHeight: 1 }}>{v}</div>
               <div style={{ fontFamily: C.body, fontSize: '0.63rem', letterSpacing: '0.15em', color: C.dim, textTransform: 'uppercase', marginTop: 6 }}>{l}</div>
@@ -759,6 +759,9 @@ function FoundersTeaser() {
             <p style={{ fontFamily: C.body, fontSize: '0.68rem', letterSpacing: '0.22em', color: C.cyan, textTransform: 'uppercase', marginBottom: 24 }}>The people behind it</p>
             <p style={{ fontFamily: C.heading, fontWeight: 300, fontStyle: 'italic', fontSize: 'clamp(1.1rem, 2.5vw, 1.5rem)', lineHeight: 1.7, color: C.fg, marginBottom: 32 }}>
               "Beneath every story, people are looking for<br />a way to recognise themselves."
+            </p>
+            <p style={{ fontFamily: C.body, fontSize: '0.92rem', fontWeight: 300, lineHeight: 1.85, color: C.sub, marginBottom: 32, maxWidth: 560 }}>
+              A psychologist and a builder, we made the thing we both wished existed. A quiet place to actually think.
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 32, marginBottom: 32 }}>
               <div>

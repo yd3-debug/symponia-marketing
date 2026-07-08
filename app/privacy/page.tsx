@@ -43,7 +43,7 @@ export default function PrivacyPage() {
         </p>
 
         <Section title="1. Who we are (data controller)">
-          <p>Boroto Ltd is the controller of your personal data. We are registered in England and Wales. You can reach us about anything in this policy at <a href="mailto:privacy@symponia.io" style={link}>privacy@symponia.io</a>. Our company registration number and registered office address are set out in our published company filings and are available on request.</p>
+          <p>Boroto Ltd is the controller of your personal data. We are registered in England and Wales. You can reach us about anything in this policy at <a href="mailto:hello@symponia.io" style={link}>hello@symponia.io</a>. Our company registration number and registered office address are set out in our published company filings and are available on request.</p>
         </Section>
 
         <Section title="2. The personal data we collect">
@@ -117,11 +117,11 @@ export default function PrivacyPage() {
             <li><strong style={strong}>Objection</strong>: object to processing based on our legitimate interests;</li>
             <li><strong style={strong}>Withdraw consent</strong>: at any time, where we rely on your consent, without affecting earlier processing.</li>
           </ul>
-          <p style={{ marginTop: 16 }}>To exercise any of these rights, email <a href="mailto:privacy@symponia.io" style={link}>privacy@symponia.io</a>. We will not charge you or treat you differently for exercising your rights. If you are unhappy with how we handle your data, you can complain to the UK Information Commissioner&rsquo;s Office (<a href="https://ico.org.uk" style={link} target="_blank" rel="noopener noreferrer">ico.org.uk</a>) or your local supervisory authority in the EEA.</p>
+          <p style={{ marginTop: 16 }}>To exercise any of these rights, email <a href="mailto:hello@symponia.io" style={link}>hello@symponia.io</a>. We will not charge you or treat you differently for exercising your rights. If you are unhappy with how we handle your data, you can complain to the UK Information Commissioner&rsquo;s Office (<a href="https://ico.org.uk" style={link} target="_blank" rel="noopener noreferrer">ico.org.uk</a>) or your local supervisory authority in the EEA.</p>
         </Section>
 
         <Section title="10. Marketing">
-          <p>We only send marketing emails if you have opted in. Every marketing email includes an unsubscribe link, and you can opt out at any time by using it or by emailing <a href="mailto:privacy@symponia.io" style={link}>privacy@symponia.io</a>. Opting out of marketing does not affect service messages that are necessary to run your account.</p>
+          <p>We only send marketing emails if you have opted in. Every marketing email includes an unsubscribe link, and you can opt out at any time by using it or by emailing <a href="mailto:hello@symponia.io" style={link}>hello@symponia.io</a>. Opting out of marketing does not affect service messages that are necessary to run your account.</p>
         </Section>
 
         <Section title="11. Cookies and the website">
@@ -129,7 +129,7 @@ export default function PrivacyPage() {
         </Section>
 
         <Section title="12. Children">
-          <p>Symponia is intended for adults. It is not directed at anyone under 18, and we do not knowingly collect personal data from children. If you believe a child has provided us with personal data, contact us at <a href="mailto:privacy@symponia.io" style={link}>privacy@symponia.io</a> and we will delete it.</p>
+          <p>Symponia is intended for adults. It is not directed at anyone under 18, and we do not knowingly collect personal data from children. If you believe a child has provided us with personal data, contact us at <a href="mailto:hello@symponia.io" style={link}>hello@symponia.io</a> and we will delete it.</p>
         </Section>
 
         <Section title="13. Changes to this policy">
@@ -137,7 +137,7 @@ export default function PrivacyPage() {
         </Section>
 
         <Section title="14. Contact">
-          <p>For any privacy question or request, contact our privacy team at <a href="mailto:privacy@symponia.io" style={link}>privacy@symponia.io</a>.</p>
+          <p>For any privacy question or request, contact our privacy team at <a href="mailto:hello@symponia.io" style={link}>hello@symponia.io</a>.</p>
         </Section>
       </div>
     </PageShell>

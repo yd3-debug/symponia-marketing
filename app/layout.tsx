@@ -34,14 +34,14 @@ const dmSans = DM_Sans({
 });
 
 const BASE_URL = 'https://symponia.io';
-const TITLE = 'Symponia — Hear Yourself Again';
+const TITLE = 'Symponia: an AI companion for your inner life';
 const DESCRIPTION =
-  'An AI companion that speaks in the language of your soul. Daily reflections, animal archetypes, and deep conversation — crafted for those who sense there is more.';
-const OG_IMAGE = `${BASE_URL}/logo.jpg`;
+  'Symponia is an AI companion for your inner life. Meet your seven archetypes, reflect daily, and finally feel understood, not fixed. Private by design, on iOS.';
+const OG_IMAGE = `${BASE_URL}/og.png`;
 
 export const viewport: Viewport = {
-  themeColor: '#08080F',
-  colorScheme: 'dark',
+  themeColor: '#F5F2E8',
+  colorScheme: 'light',
   width: 'device-width',
   initialScale: 1,
 };
@@ -55,20 +55,20 @@ export const metadata: Metadata = {
   },
   description: DESCRIPTION,
   keywords: [
-    'AI companion',
-    'self-discovery app',
-    'depth psychology app',
+    'AI journaling app',
+    'AI companion app',
+    'self reflection app',
+    'app to understand myself',
+    'daily reflection app',
+    'guided journaling app',
+    'shadow work app',
+    'Jungian archetype quiz',
     'animal archetypes',
-    'daily reflections',
-    'self-discovery',
-    'soul guidance',
-    'inner work',
-    'moon phases',
-    'iOS journaling app',
-    'mindfulness',
-    'inner wisdom',
-    'resonance',
-    'archetypes',
+    'depth psychology app',
+    'inner work app',
+    'journaling app that remembers',
+    'app for highly sensitive people',
+    'self-discovery app',
   ],
   authors: [{ name: 'Symponia' }],
   creator: 'Symponia',
@@ -113,8 +113,8 @@ export const metadata: Metadata = {
         url: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: 'Symponia — Hear Yourself Again',
-        type: 'image/jpeg',
+        alt: 'Symponia, an AI companion for your inner life',
+        type: 'image/png',
       },
     ],
   },
@@ -168,16 +168,23 @@ const jsonLd = [
     offers: [
       {
         '@type': 'Offer',
-        name: 'Free starter credits',
+        name: 'Free allowance',
         price: '0',
-        priceCurrency: 'USD',
-        description: '25 free conversations included on first install',
+        priceCurrency: 'GBP',
+        description: 'Free to download with a free allowance to explore before subscribing.',
+      },
+      {
+        '@type': 'Offer',
+        name: 'Symponia Monthly',
+        price: '12.99',
+        priceCurrency: 'GBP',
+        description: '350 reflection sessions per month. Daily reflections are always free.',
       },
     ],
     installUrl: 'https://apps.apple.com/app/symponia/id6760951504',
     downloadUrl: 'https://apps.apple.com/app/symponia/id6760951504',
     image: OG_IMAGE,
-    screenshot: OG_IMAGE,
+    screenshot: `${BASE_URL}/screens/00-home.png`,
     featureList: [
       'Daily personalised reflections',
       'Animal archetype discovery',
@@ -222,50 +229,57 @@ const jsonLd = [
       {
         '@type': 'Question',
         name: 'What is Symponia?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Symponia is an AI-powered self-reflection app for iOS. It uses animal archetypes, daily personalised reflections, and three conversation modes to help you explore your inner life. It is powered by Claude, Anthropic\'s AI.',
-        },
+        acceptedAnswer: { '@type': 'Answer', text: 'Symponia is an AI companion for self-discovery. It combines animal archetype psychology and open conversation into a single intimate space. It does not replace therapy. It goes where therapy sometimes cannot.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who is Symponia for?',
+        acceptedAnswer: { '@type': 'Answer', text: 'Anyone who wants to understand themselves more deeply. Beginners and experienced practitioners, people in transition and people building a daily inner practice. If you sense there is more to you than the surface, Symponia is for you.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'What are the animal archetypes?',
+        acceptedAnswer: { '@type': 'Answer', text: 'Seven animals that speak to you form a psychological portrait, each one carrying a gift, a tension, and a direction. The seventh, the one that unsettles you, holds what the others cannot. This method draws on the depth psychology tradition of Carl Jung and James Hillman.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is Symponia therapy?',
+        acceptedAnswer: { '@type': 'Answer', text: 'No. Symponia is not a medical or psychological service. It is a reflective tool, a contemplative space. If you are in crisis or need clinical support, please reach out to a licensed professional.' },
       },
       {
         '@type': 'Question',
         name: 'How does Symponia work?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'You select seven animal archetypes that represent facets of your nature. Symponia uses these archetypes along with your resonance frequency to personalise all reflections and conversations. Each session draws on your unique animal constellation.',
-        },
+        acceptedAnswer: { '@type': 'Answer', text: 'Symponia is powered by Claude, Anthropic\'s AI, shaped by instructions drawn from Jungian psychology, animal symbolism, and contemplative tradition. It has been trained to never give surface answers, never rush to solutions, and never judge.' },
       },
       {
         '@type': 'Question',
-        name: 'Is Symponia free?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Symponia is free to download on the App Store. New users receive a free allowance to explore before subscribing. A monthly subscription (£12.99/month) provides 350 sessions per month, resetting at each renewal.',
-        },
+        name: 'How much does Symponia cost?',
+        acceptedAnswer: { '@type': 'Answer', text: 'New users receive a free allowance to explore Symponia. A monthly subscription (£12.99/month) provides 350 sessions per month, resetting at each renewal. Daily reflections are always free and do not count against your sessions.' },
       },
       {
         '@type': 'Question',
-        name: 'What are animal archetypes in Symponia?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Animal archetypes are symbolic animals you choose to represent different facets of your nature. Unlike quiz-assigned results, you select them deliberately. Symponia weaves these animals into all reflections and conversations.',
-        },
+        name: 'How is Symponia different from other journaling apps?',
+        acceptedAnswer: { '@type': 'Answer', text: 'Most journaling apps log how you feel. Symponia helps you understand why. Instead of repeating the same prompts, it works from your seven archetypes and remembers your context, so each reflection meets you where you actually are.' },
       },
       {
         '@type': 'Question',
-        name: 'Is Symponia therapy or a medical service?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'No. Symponia is a reflective and contemplative tool, not a medical, therapeutic, or psychological service. Nothing in the app constitutes professional advice or diagnosis. If you need mental health support, please consult a qualified professional.',
-        },
+        name: 'Is Symponia just ChatGPT?',
+        acceptedAnswer: { '@type': 'Answer', text: 'No. Symponia is powered by advanced AI, but it is built around a defined method: your seven animal archetypes, a set of attuning questions, and personalised daily reflections. It remembers your context and is shaped to listen and reflect, rather than answer like a generic chatbot.' },
       },
       {
         '@type': 'Question',
-        name: 'Is Symponia available on Android?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Symponia is currently only available on iOS via the Apple App Store.',
-        },
+        name: 'Do I have to use Symponia every day?',
+        acceptedAnswer: { '@type': 'Answer', text: 'No. Symponia is a companion, not another habit to keep up. A daily reflection is there when you want it, and you can go deeper whenever you feel like it. There is no streak to lose and no guilt for taking a break.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is my data private?',
+        acceptedAnswer: { '@type': 'Answer', text: 'Your conversations are stored securely, linked to your account, and deleted when you delete your account. Anthropic does not retain your conversations after generating a response (Zero Data Retention). We do not sell or share your data.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'Where can I download Symponia?',
+        acceptedAnswer: { '@type': 'Answer', text: 'Symponia is available on the Apple App Store for iPhone and iPad. It is currently available on iOS only.' },
       },
     ],
   },

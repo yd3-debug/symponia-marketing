@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 };
 
 const C = {
-  fg: '#eae6f8', sub: '#cac4e0', dim: '#a89ec8', cyan: '#5ce8d0',
-  border: 'rgba(255,255,255,0.07)',
+  fg: '#0F0C0A', sub: '#2E2840', dim: '#6A6078', cyan: '#0891B2',
+  border: 'rgba(0,0,0,0.08)',
   heading: "var(--font-cormorant), 'Georgia', serif",
   body: "var(--font-inter), 'Helvetica Neue', sans-serif",
 };

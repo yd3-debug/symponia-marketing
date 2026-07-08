@@ -684,6 +684,9 @@ const FAQS = [
   { q: 'Is this therapy?', a: 'No. Symponia is not a medical or psychological service. It is a reflective tool, a contemplative space. If you are in crisis or need clinical support, please reach out to a licensed professional.' },
   { q: 'How does Symponia work?', a: "Symponia is powered by Claude, Anthropic's AI, shaped by instructions drawn from Jungian psychology, animal symbolism, and contemplative tradition. It has been trained to never give surface answers, never rush to solutions, and never judge." },
   { q: 'How do sessions work?', a: 'New users receive a free allowance to explore Symponia. A monthly subscription (£12.99/month) provides 350 sessions per month, resetting at each renewal. Daily reflections are always free and do not count against your sessions.' },
+  { q: 'How is Symponia different from other journaling apps?', a: 'Most journaling apps log how you feel. Symponia helps you understand why. Instead of repeating the same prompts, it works from your seven archetypes and remembers your context, so each reflection meets you where you actually are.' },
+  { q: 'Is this just ChatGPT?', a: 'No. Symponia is powered by advanced AI, but it is built around a defined method: your seven animal archetypes, a set of attuning questions, and personalised daily reflections. It remembers your context and is shaped to listen and reflect, rather than answer like a generic chatbot.' },
+  { q: 'Do I have to use it every day?', a: 'No. Symponia is a companion, not another habit to keep up. A daily reflection is there when you want it, and you can go deeper whenever you feel like it. There is no streak to lose and no guilt for taking a break.' },
   { q: 'Is my data private?', a: 'Your conversations are stored securely in our database, linked to your account, and deleted when you delete your account. Anthropic does not retain your conversations after generating a response (Zero Data Retention terms). We do not sell or share your data. See our Privacy Policy for full details.' },
   { q: 'Where can I download Symponia?', a: 'Symponia is available on the Apple App Store for iPhone and iPad. Tap the download button on this page or search "Symponia" in the App Store.' },
 ];
@@ -829,7 +832,7 @@ function Footer() {
           <div style={{ display: 'flex', gap: 52, flexWrap: 'wrap' }}>
             {[
               { title: 'App', links: [['How it works', '#how-it-works'], ['Modes', '#modes'], ['About', '/about'], ['Pricing', '/credits']] },
-              { title: 'Legal', links: [['Privacy Policy', '/privacy'], ['Terms of Service', '/terms'], ['EULA', '/eula'], ['GDPR', '/privacy#gdpr'], ['Contact', 'mailto:hello@symponia.io']] },
+              { title: 'Legal', links: [['Privacy Policy', '/privacy'], ['Terms of Service', '/terms'], ['Refund Policy', '/refunds'], ['EULA', '/eula'], ['GDPR', '/privacy#gdpr'], ['Contact', 'mailto:hello@symponia.io']] },
             ].map(col => (
               <div key={col.title}>
                 <div style={{ fontFamily: C.body, fontSize: '0.66rem', letterSpacing: '0.2em', color: C.dim, textTransform: 'uppercase', marginBottom: 16 }}>{col.title}</div>

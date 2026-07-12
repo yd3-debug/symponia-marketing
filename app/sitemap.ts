@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { LOCALES, DEFAULT_LOCALE, type Locale } from '@/lib/i18n';
 import { urlFor } from '@/lib/seo';
+import { ARTICLES } from '@/lib/content';
 
 // Every page now exists in every language, so the sitemap is the cross product
 // of PAGES × LOCALES rather than a hand-written list. Each entry advertises all
@@ -23,7 +24,25 @@ const PAGES: {
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date('2026-07-12');
 
-  return PAGES.flatMap(({ path, changeFrequency, priority }) => {
+  // The content hub is English only, so these entries carry no hreflang
+  // alternates. Advertising translations that do not exist is worse than
+  // advertising none.
+  const content: MetadataRoute.Sitemap = [
+    {
+      url: 'https://symponia.io/shadow-work',
+      lastModified,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    ...ARTICLES.map(a => ({
+      url: `https://symponia.io/shadow-work/${a.slug}`,
+      lastModified: new Date(a.updated),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    })),
+  ];
+
+  const localised = PAGES.flatMap(({ path, changeFrequency, priority }) => {
     const languages = Object.fromEntries(
       LOCALES.map(l => [l, urlFor(path, l)]),
     ) as Record<Locale, string>;
@@ -38,4 +57,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages },
     }));
   });
+
+  return [...localised, ...content];
 }

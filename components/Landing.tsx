@@ -43,6 +43,7 @@ export default function Landing({ locale }: { locale: Locale }) {
             <a href={`${base}#mem`}>{t.nav.memory}</a>
             <a href={`${base}/about`}>{t.nav.about}</a>
             <a href={`${base}#faq`}>{t.nav.faq}</a>
+            <a href="/shadow-work">Guide</a>
           </div>
           <div className="nav-right">
             <LangMenu locale={locale} />
@@ -254,6 +255,7 @@ export default function Landing({ locale }: { locale: Locale }) {
               <a href={`${base}#how`}>{t.nav.method}</a>
               <a href={`${base}#mem`}>{t.nav.memory}</a>
               <a href={`${base}#faq`}>{t.nav.faq}</a>
+              <a href="/shadow-work">Shadow work guide</a>
               <a href={`${base}/about`}>{t.nav.about}</a>
             </nav>
 

@@ -34,9 +34,9 @@ const dmSans = DM_Sans({
 });
 
 const BASE_URL = 'https://symponia.io';
-const TITLE = 'Symponia: an AI companion for your inner life';
+const TITLE = 'Symponia: a shadow work app that names your shadow';
 const DESCRIPTION =
-  'Symponia is an AI companion for your inner life. Meet your seven archetypes, reflect daily, and finally feel understood, not fixed. Private by design, on iOS.';
+  'Most shadow work apps hand you a prompt. Symponia names your shadow: pick six animals that feel like you and one that makes your skin crawl. The seventh is the part you exiled. Depth psychology, not therapy. On iOS.';
 const OG_IMAGE = `${BASE_URL}/og.png`;
 
 export const viewport: Viewport = {
@@ -230,87 +230,6 @@ const jsonLd = [
       contactType: 'customer support',
       availableLanguage: 'English',
     },
-  },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'What is shadow work?',
-        acceptedAnswer: { '@type': 'Answer', text: 'Shadow work means looking at the parts of yourself you learned to hide, usually early and usually to stay safe. Carl Jung called this the shadow. It does not disappear when you bury it; it starts making your decisions from underground. Shadow work is the practice of bringing it back into view.' },
-      },
-      {
-        '@type': 'Question',
-        name: 'How do I find out what my shadow is?',
-        acceptedAnswer: { '@type': 'Answer', text: 'The shortcut is your own revulsion. The trait you find unbearable in other people is very often the one you exiled in yourself. Symponia uses this directly: you choose six animals that feel like you and a seventh that repels you, and the seventh is where your shadow is hiding.' },
-      },
-      {
-        '@type': 'Question',
-        name: 'How is Symponia different from a shadow work journal or prompt app?',
-        acceptedAnswer: { '@type': 'Answer', text: 'A prompt asks a question and leaves you alone with a blank page. Symponia answers. It reads what you actually wrote, not what an average user might have written, and each reply is aimed at the one thing that takes you a layer deeper. It also remembers across months, so a pattern becomes visible.' },
-      },
-      {
-        '@type': 'Question',
-        name: 'Are the animal archetypes just a personality quiz?',
-        acceptedAnswer: { '@type': 'Answer', text: 'No. Nothing is assigned to you and there is no type at the end. You choose seven animals, including one that repels you, and Symponia reads them together as a field. It is a projective method, closer in spirit to an inkblot than to a quiz, and it will never tell you your spirit animal.' },
-      },
-      {
-        '@type': 'Question',
-        name: 'What is Symponia?',
-        acceptedAnswer: { '@type': 'Answer', text: 'Symponia is an AI companion for self-discovery. It combines animal archetype psychology and open conversation into a single intimate space. It does not replace therapy. It goes where therapy sometimes cannot.' },
-      },
-      {
-        '@type': 'Question',
-        name: 'Who is Symponia for?',
-        acceptedAnswer: { '@type': 'Answer', text: 'Anyone who wants to understand themselves more deeply. Beginners and experienced practitioners, people in transition and people building a daily inner practice. If you sense there is more to you than the surface, Symponia is for you.' },
-      },
-      {
-        '@type': 'Question',
-        name: 'What are the animal archetypes?',
-        acceptedAnswer: { '@type': 'Answer', text: 'Seven animals that speak to you form a psychological portrait, each one carrying a gift, a tension, and a direction. The seventh, the one that unsettles you, holds what the others cannot. This method draws on the depth psychology tradition of Carl Jung and James Hillman.' },
-      },
-      {
-        '@type': 'Question',
-        name: 'Is Symponia therapy?',
-        acceptedAnswer: { '@type': 'Answer', text: 'No. Symponia is not a medical or psychological service. It is a reflective tool, a contemplative space. If you are in crisis or need clinical support, please reach out to a licensed professional.' },
-      },
-      {
-        '@type': 'Question',
-        name: 'How does Symponia work?',
-        acceptedAnswer: { '@type': 'Answer', text: 'Symponia is powered by Claude, Anthropic\'s AI, shaped by instructions drawn from Jungian psychology, animal symbolism, and contemplative tradition. It has been trained to never give surface answers, never rush to solutions, and never judge.' },
-      },
-      {
-        '@type': 'Question',
-        name: 'How much does Symponia cost?',
-        acceptedAnswer: { '@type': 'Answer', text: 'New users receive a free allowance to explore Symponia. A monthly subscription (£12.99/month) provides 350 sessions per month, resetting at each renewal. Daily reflections are always free and do not count against your sessions.' },
-      },
-      {
-        '@type': 'Question',
-        name: 'How is Symponia different from other journaling apps?',
-        acceptedAnswer: { '@type': 'Answer', text: 'Most journaling apps log how you feel. Symponia helps you understand why. Instead of repeating the same prompts, it works from your seven archetypes and remembers your context, so each reflection meets you where you actually are.' },
-      },
-      {
-        '@type': 'Question',
-        name: 'Is Symponia just ChatGPT?',
-        acceptedAnswer: { '@type': 'Answer', text: 'No. Symponia is powered by advanced AI, but it is built around a defined method: your seven animal archetypes, a set of attuning questions, and personalised daily reflections. It remembers your context and is shaped to listen and reflect, rather than answer like a generic chatbot.' },
-      },
-      {
-        '@type': 'Question',
-        name: 'Do I have to use Symponia every day?',
-        acceptedAnswer: { '@type': 'Answer', text: 'No. Symponia is a companion, not another habit to keep up. A daily reflection is there when you want it, and you can go deeper whenever you feel like it. There is no streak to lose and no guilt for taking a break.' },
-      },
-      {
-        '@type': 'Question',
-        name: 'Is my data private?',
-        acceptedAnswer: { '@type': 'Answer', text: 'Your conversations are stored securely, linked to your account, and deleted when you delete your account. Anthropic does not retain your conversations after generating a response (Zero Data Retention). We do not sell or share your data.' },
-      },
-      {
-        '@type': 'Question',
-        name: 'Where can I download Symponia?',
-        acceptedAnswer: { '@type': 'Answer', text: 'Symponia is available on the Apple App Store for iPhone and iPad. It is currently available on iOS only.' },
-      },
-    ],
   },
 ];
 

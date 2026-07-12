@@ -2,7 +2,7 @@ import type { LegalDict } from './types';
 
 // English is the source of truth for the legal pages. Every other language in
 // this folder is a translation of *this* file, and every other language also
-// carries a note saying the English is the binding version — because it is.
+// carries a note saying the English is the binding version, because it is.
 
 export const en: LegalDict = {
   terms: {
@@ -406,7 +406,7 @@ export const en: LegalDict = {
       bullets: [
         '350 sessions across Archetype, My Day, and Conversation modes',
         'Free daily reflections (they don’t count against sessions)',
-        'Fresh allotment each month — sessions do not carry over',
+        'Fresh allotment each month, sessions do not carry over',
         'Cancel anytime via Apple ID settings',
       ],
       cta: 'Available in the app',

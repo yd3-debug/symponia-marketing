@@ -6,7 +6,7 @@ import type { LegalDoc } from '@/lib/legal';
 
 // One renderer for Terms, Privacy and Refunds. They share a layout exactly, and
 // the only thing that ever differed between the three old page files was the
-// prose — which now lives in lib/legal/<locale>.ts.
+// prose, which now lives in lib/legal/<locale>.ts.
 
 const C = {
   fg: '#0F0C0A', sub: '#2E2840', dim: '#6A6078', cyan: '#0891B2',

@@ -52,8 +52,8 @@ export const it: Dict = {
   seven: {
     k: 'Il settimo animale',
     h2: 'Sei animali che ti somigliano. Uno che ti fa venire la pelle d’oca.',
-    lead: 'Nominane sei che ti appartengono. Poi nomina quello che ti repelle. Quel settimo è il più importante di tutti, perché porta ciò che gli altri sei non possono portare — e il tuo disgusto è l’indizio. Non si indietreggia davanti a ciò che è estraneo. Si indietreggia davanti a ciò che è stato rinnegato.',
-    lead2: 'Ogni animale viene letto per il suo dono, la sua ombra e la via che li unisce. Symponia legge l’insieme come un campo. Nulla ti viene assegnato: questo è un metodo proiettivo, non un tipo di personalità. Una lente, mai un’etichetta — e non ti dirà mai qual è il tuo animale guida.',
+    lead: 'Nominane sei che ti appartengono. Poi nomina quello che ti repelle. Quel settimo è il più importante di tutti, perché porta ciò che gli altri sei non possono portare, e il tuo disgusto è l’indizio. Non si indietreggia davanti a ciò che è estraneo. Si indietreggia davanti a ciò che è stato rinnegato.',
+    lead2: 'Ogni animale viene letto per il suo dono, la sua ombra e la via che li unisce. Symponia legge l’insieme come un campo. Nulla ti viene assegnato: questo è un metodo proiettivo, non un tipo di personalità. Una lente, mai un’etichetta, e non ti dirà mai qual è il tuo animale guida.',
   },
   attune: {
     k: 'Prima degli animali',
@@ -144,7 +144,7 @@ export const it: Dict = {
   founder: {
     k: 'Dove tutto è cominciato',
     h2: 'Nata da un osteopata e dalla donna che ha dato a Symponia una forma che puoi tenere in mano.',
-    lead: 'Symponia comincia con il Dr. Alessandro Biletta, osteopata, che ha passato la carriera a lavorare là dove il corpo e la mente si incontrano in silenzio. Dopo anni trascorsi ad ascoltare le persone per mestiere, si è convinto di una cosa sola. Sotto ogni storia, le persone cercano un modo per riconoscersi. La risposta l’ha trovata nella psicologia del profondo — in Jung, in Hillman, nell’antica lingua degli archetipi.',
+    lead: 'Symponia comincia con il Dr. Alessandro Biletta, osteopata, che ha passato la carriera a lavorare là dove il corpo e la mente si incontrano in silenzio. Dopo anni trascorsi ad ascoltare le persone per mestiere, si è convinto di una cosa sola. Sotto ogni storia, le persone cercano un modo per riconoscersi. La risposta l’ha trovata nella psicologia del profondo, in Jung, in Hillman, nell’antica lingua degli archetipi.',
     quote: 'E se potessi incontrare te stesso attraverso le cose in cui già ti riconosci?',
     lead2: 'Yekta Dastranj c’era, in quelle conversazioni. Ha capito l’idea nell’istante in cui l’ha sentita, e l’ha sentita molto prima di pensare a come costruirla. È diventata co-fondatrice, e ha trasformato la visione in qualcosa che puoi aprire un martedì sera e a cui puoi tornare.',
     cta: 'Leggi la nostra storia',
@@ -166,7 +166,7 @@ export const it: Dict = {
   },
 
   about: {
-    metaTitle: 'Chi siamo — Le persone dietro Symponia',
+    metaTitle: 'Chi siamo: Le persone dietro Symponia',
     metaDesc: 'Symponia è nata da Dr. Alessandro Biletta e Yekta Dastranj: un filosofo della vita interiore, e chi ha dato alla visione una forma che puoi tenere in mano.',
     k: 'Le persone dietro Symponia',
     h1a: 'Torna a sentire',

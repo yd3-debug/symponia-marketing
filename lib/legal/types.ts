@@ -44,7 +44,7 @@ export type LegalDoc = {
 /**
  * The EULA is Apple's Licensed Application End User License Agreement. It is a
  * verbatim legal instrument authored by Apple, so we reproduce it in Apple's
- * English and translate only the page chrome around it — inventing a Symponia
+ * English and translate only the page chrome around it, inventing a Symponia
  * translation of Apple's contract would be both wrong and unenforceable.
  */
 export type EulaDoc = {

@@ -47,15 +47,15 @@ export const pt: Dict = {
   mech: {
     k: 'Porque continua a acontecer',
     h2: 'O que não suporta nos outros é o que enterrou em si.',
-    lead: 'Jung chamou-lhe a sombra: tudo aquilo que aprendeu, cedo e sem consentir, ser inaceitável em si. Não desaparece. Desce para o subsolo e manda a partir de lá — que ambições se permite, em que salas se encolhe, quem não consegue perdoar. A psicologia chama projeção a esse mecanismo. Não é um defeito de carácter, mas uma velha estratégia de sobrevivência que sobreviveu à sua utilidade.',
-    stat: 'A sombra não é o seu trauma, nem é o pior de si. É a parte que recusou. A tese de Jung era que ela guarda tanta força não vivida quanto vergonha não vivida — e é por isso que deixá-la enterrada lhe custa duas vezes.',
+    lead: 'Jung chamou-lhe a sombra: tudo aquilo que aprendeu, cedo e sem consentir, ser inaceitável em si. Não desaparece. Desce para o subsolo e manda a partir de lá, que ambições se permite, em que salas se encolhe, quem não consegue perdoar. A psicologia chama projeção a esse mecanismo. Não é um defeito de carácter, mas uma velha estratégia de sobrevivência que sobreviveu à sua utilidade.',
+    stat: 'A sombra não é o seu trauma, nem é o pior de si. É a parte que recusou. A tese de Jung era que ela guarda tanta força não vivida quanto vergonha não vivida, e é por isso que deixá-la enterrada lhe custa duas vezes.',
     note: 'A Symponia só ouve um lado. O seu. Que é justamente o único que pode mudar.',
   },
   seven: {
     k: 'O sétimo animal',
     h2: 'Seis animais que se parecem consigo. Um que lhe arrepia a pele.',
-    lead: 'Nomeie seis que lhe pertençam. Depois nomeie aquele que o repele. Esse sétimo é o mais importante de todos, porque carrega o que os outros seis não conseguem — e a sua repulsa é a pista. Não se recua perante o que nos é estranho. Recua-se perante o que foi renegado.',
-    lead2: 'Cada animal é lido pelo seu dom, pela sua sombra e pelo caminho entre ambos. A Symponia lê o conjunto como um campo. Nada lhe é atribuído: isto é um método projetivo, não um tipo de personalidade. Uma lente, nunca um rótulo — e nunca lhe dirá qual é o seu animal de poder.',
+    lead: 'Nomeie seis que lhe pertençam. Depois nomeie aquele que o repele. Esse sétimo é o mais importante de todos, porque carrega o que os outros seis não conseguem, e a sua repulsa é a pista. Não se recua perante o que nos é estranho. Recua-se perante o que foi renegado.',
+    lead2: 'Cada animal é lido pelo seu dom, pela sua sombra e pelo caminho entre ambos. A Symponia lê o conjunto como um campo. Nada lhe é atribuído: isto é um método projetivo, não um tipo de personalidade. Uma lente, nunca um rótulo, e nunca lhe dirá qual é o seu animal de poder.',
   },
   attune: {
     k: 'Antes dos animais',
@@ -90,7 +90,7 @@ export const pt: Dict = {
   mem: {
     k: 'Memória',
     h2: 'Symponia lembra-se. Só se tu deixares.',
-    lead: 'Não devias ter de te apresentar de novo todas as terças-feiras. Mas aquilo que mais precisas de dizer é, muitas vezes, o que menos queres guardado. As duas coisas são verdade — por isso, as duas ficam nas tuas mãos.',
+    lead: 'Não devias ter de te apresentar de novo todas as terças-feiras. Mas aquilo que mais precisas de dizer é, muitas vezes, o que menos queres guardado. As duas coisas são verdade, por isso, as duas ficam nas tuas mãos.',
     items: [
       { t: 'Desligada à partida', d: 'A memória está desligada até seres tu a ligá-la. Com ela desligada, não fica nada guardado nos nossos servidores.' },
       { t: 'Desliga quando quiseres', d: 'Podes desligá-la a qualquer momento, mesmo a meio de uma conversa.' },
@@ -120,13 +120,13 @@ export const pt: Dict = {
   compare: {
     k: 'A Symponia e os diários de perguntas',
     h2: 'Uma pergunta é só uma pergunta. Não sabe ouvir a resposta.',
-    lead: 'Todas as apps de shadow work dão-lhe a mesma lista de perguntas e uma caixa vazia. Isso é um diário com melhor marketing. O trabalho não começa quando lhe fazem uma pergunta — começa quando algo lhe responde.',
+    lead: 'Todas as apps de shadow work dão-lhe a mesma lista de perguntas e uma caixa vazia. Isso é um diário com melhor marketing. O trabalho não começa quando lhe fazem uma pergunta, começa quando algo lhe responde.',
     them: {
       t: 'Diários de perguntas',
       items: [
         'As mesmas perguntas para todos os que descarregam',
         'Já tem de saber qual é a sua sombra',
-        'Não escreve nada de volta — fica sozinho com a página',
+        'Não escreve nada de volta, fica sozinho com a página',
         'Esquece-se de si entre sessões',
         'Um tipo de personalidade, entregue como rótulo',
       ],
@@ -146,7 +146,7 @@ export const pt: Dict = {
   founder: {
     k: 'Onde tudo começou',
     h2: 'Feita por um osteopata e pela mulher que lhe deu uma forma que se segura na mão.',
-    lead: 'Symponia começou com o Dr. Alessandro Biletta, osteopata que passou a carreira a trabalhar no lugar onde o corpo e a mente se encontram em silêncio. Depois de anos a ouvir pessoas para viver, ficou certo de uma coisa: por baixo de cada história, as pessoas procuram uma forma de se reconhecerem. Encontrou a resposta na psicologia profunda — em Jung, em Hillman, na velha linguagem dos arquétipos.',
+    lead: 'Symponia começou com o Dr. Alessandro Biletta, osteopata que passou a carreira a trabalhar no lugar onde o corpo e a mente se encontram em silêncio. Depois de anos a ouvir pessoas para viver, ficou certo de uma coisa: por baixo de cada história, as pessoas procuram uma forma de se reconhecerem. Encontrou a resposta na psicologia profunda, em Jung, em Hillman, na velha linguagem dos arquétipos.',
     quote: 'E se pudesses encontrar-te através daquilo que já se parece contigo?',
     lead2: 'Yekta Dastranj esteve presente nessas conversas. Percebeu a ideia assim que a ouviu, e sentiu-a muito antes de pensar em como a construir. Tornou-se cofundadora e transformou a visão em algo que se abre numa terça-feira à noite e a que se volta.',
     cta: 'Ler a nossa história',
@@ -168,8 +168,8 @@ export const pt: Dict = {
   },
 
   about: {
-    metaTitle: 'Sobre — As pessoas por detrás de Symponia',
-    metaDesc: 'Symponia foi criada pelo Dr. Alessandro Biletta e por Yekta Dastranj — um filósofo da vida interior e a pessoa que deu à visão uma forma que se segura na mão.',
+    metaTitle: 'Sobre, As pessoas por detrás de Symponia',
+    metaDesc: 'Symponia foi criada pelo Dr. Alessandro Biletta e por Yekta Dastranj, um filósofo da vida interior e a pessoa que deu à visão uma forma que se segura na mão.',
     k: 'As pessoas por detrás de Symponia',
     h1a: 'Volta a ouvir',
     h1b: 'a tua voz.',

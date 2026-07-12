@@ -1,6 +1,6 @@
 import type { LegalDict } from './types';
 
-// Español (peninsular). Traducción de ./en.ts — el texto inglés sigue siendo la
+// Español (peninsular). Traducción de ./en.ts: el texto inglés sigue siendo la
 // versión jurídicamente vinculante, tal como advierte shell.legalNote en la
 // cabecera de cada página legal. La ley aplicable es la de Inglaterra y Gales,
 // de modo que todas las referencias británicas (Consumer Rights Act 2015, ICO,

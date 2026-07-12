@@ -4,7 +4,7 @@ import type { LegalDict } from './types';
 // foi. Le lecteur est vouvoyé d’un bout à l’autre : le ton tutoyé de la copie
 // marketing n’a pas sa place dans un contrat. Les références de droit anglais
 // (Consumer Rights Act 2015, ICO, Samaritans, 999) sont conservées telles
-// quelles — le droit applicable est bien celui de l’Angleterre et du pays de
+// quelles: le droit applicable est bien celui de l’Angleterre et du pays de
 // Galles, et y substituer un équivalent français serait un contresens.
 
 export const fr: LegalDict = {
@@ -409,7 +409,7 @@ export const fr: LegalDict = {
       bullets: [
         '350 séances réparties entre les modes Archétype, Ma journée et Conversation',
         'Réflexions quotidiennes gratuites (elles ne sont pas décomptées de vos séances)',
-        'Une nouvelle dotation chaque mois — les séances ne sont pas reportées',
+        'Une nouvelle dotation chaque mois, les séances ne sont pas reportées',
         'Résiliation à tout moment depuis les réglages de votre Apple ID',
       ],
       cta: 'Disponible dans l’application',

@@ -6,7 +6,7 @@ import { APPLE_STANDARD_EULA } from './appleEula';
 
 // The page chrome is localised; the agreement itself is not, and deliberately.
 //
-// This is Apple's Licensed Application End User License Agreement — a contract
+// This is Apple's Licensed Application End User License Agreement: a contract
 // Apple authored and requires us to surface verbatim. Apple publishes it in
 // English; a translation we produced ourselves would not be the agreement the
 // user is actually bound by, and presenting one as if it were would be worse

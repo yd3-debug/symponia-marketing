@@ -29,7 +29,7 @@ export const da: Dict = {
     eyebrow: 'Skyggearbejde, med en metode.',
     l1: 'Det dyr, du ikke kan udstå,',
     l2: 'er det, der styrer dit liv.',
-    lead: 'Nævn seks dyr, der føles som dig. Nævn så det ene, der får det til at krible ubehageligt. Det syvende er din skygge — den del af dig, du forviste så tidligt, at du ikke længere husker det. Siden har den truffet dine beslutninger. Symponia er en AI-ledsager til skyggearbejde, og den begynder med at sætte navn på den.',
+    lead: 'Nævn seks dyr, der føles som dig. Nævn så det ene, der får det til at krible ubehageligt. Det syvende er din skygge: den del af dig, du forviste så tidligt, at du ikke længere husker det. Siden har den truffet dine beslutninger. Symponia er en AI-ledsager til skyggearbejde, og den begynder med at sætte navn på den.',
     cta: 'Mød dit syvende dyr',
     proof: 'Dybdepsykologi, ikke terapi. Bygget på Jung, Hillman og arketypernes gamle sprog.',
   },
@@ -48,15 +48,15 @@ export const da: Dict = {
   mech: {
     k: 'Hvorfor det bliver ved',
     h2: 'Det, du ikke kan udstå hos andre, er det, du begravede i dig selv.',
-    lead: 'Jung kaldte det skyggen: alt det, du tidligt og uden at samtykke lærte var uacceptabelt ved dig. Det forsvinder ikke. Det går under jorden og regerer derfra — hvilke ambitioner du tillader dig, i hvilke rum du bliver mindre, hvem du ikke kan tilgive. Psykologien kalder mekanismen projektion. Det er ikke en karakterbrist, men en gammel overlevelsesstrategi, der har overlevet sin nytte.',
-    stat: 'Skyggen er ikke dit traume, og den er ikke det værste ved dig. Den er den del, du afviste. Jungs pointe var, at den rummer lige så meget ulevet styrke som ulevet skam — og derfor koster det dig dobbelt at lade den ligge begravet.',
+    lead: 'Jung kaldte det skyggen: alt det, du tidligt og uden at samtykke lærte var uacceptabelt ved dig. Det forsvinder ikke. Det går under jorden og regerer derfra, hvilke ambitioner du tillader dig, i hvilke rum du bliver mindre, hvem du ikke kan tilgive. Psykologien kalder mekanismen projektion. Det er ikke en karakterbrist, men en gammel overlevelsesstrategi, der har overlevet sin nytte.',
+    stat: 'Skyggen er ikke dit traume, og den er ikke det værste ved dig. Den er den del, du afviste. Jungs pointe var, at den rummer lige så meget ulevet styrke som ulevet skam, og derfor koster det dig dobbelt at lade den ligge begravet.',
     note: 'Symponia hører altid kun én side. Din. Som tilfældigvis er den eneste, du kan ændre.',
   },
   seven: {
     k: 'Det syvende dyr',
     h2: 'Seks dyr, der føles som dig. Ét, der får det til at krible.',
-    lead: 'Nævn seks, der tilhører dig. Nævn så det ene, der frastøder dig. Det syvende er det vigtigste af dem alle, for det bærer det, de seks andre ikke kan bære — og din væmmelse er sporet. Man viger ikke for det fremmede. Man viger for det fornægtede.',
-    lead2: 'Hvert dyr læses for sin gave, sin skygge og vejen derimellem. Symponia læser hele feltet samlet. Intet bliver tildelt dig: dette er en projektiv metode, ikke en personlighedstype. En linse, aldrig et mærkat — og den vil aldrig fortælle dig dit kraftdyr.',
+    lead: 'Nævn seks, der tilhører dig. Nævn så det ene, der frastøder dig. Det syvende er det vigtigste af dem alle, for det bærer det, de seks andre ikke kan bære, og din væmmelse er sporet. Man viger ikke for det fremmede. Man viger for det fornægtede.',
+    lead2: 'Hvert dyr læses for sin gave, sin skygge og vejen derimellem. Symponia læser hele feltet samlet. Intet bliver tildelt dig: dette er en projektiv metode, ikke en personlighedstype. En linse, aldrig et mærkat, og den vil aldrig fortælle dig dit kraftdyr.',
   },
   attune: {
     k: 'Før dyrene',
@@ -83,7 +83,7 @@ export const da: Dict = {
     chat: [
       { who: 's', t: 'det træk, der irriterer dig mest hos andre, er som regel det, du har forvist i dig selv. hvilket er det?' },
       { who: 'u', t: 'folk der har brug for andre. jeg får lyst til at løbe.' },
-      { who: 's', t: 'og hvis det var tilladt dig at have brug for nogen — hvad ville det så bede om?' },
+      { who: 's', t: 'og hvis det var tilladt dig at have brug for nogen, hvad ville det så bede om?' },
       { who: 'u', t: 'at blive taget hånd om, går jeg ud fra. jeg har aldrig ladet nogen gøre det.' },
       { who: 's', t: 'så er det, du flygter fra hos dem, præcis det, du aldrig har tilladt dig selv. du har stået ved bredden af dit eget vand i årevis og ventet på at blive budt indenfor.' },
     ],
@@ -103,7 +103,7 @@ export const da: Dict = {
   limits: {
     k: 'Ærlige grænser',
     h2: 'Hvad Symponia ikke vil lade som om, den er.',
-    lead: 'Ikke terapi, og ingen erstatning for det. Den hører kun din side og kan ikke se dit liv udefra. Ikke enhver følelse er et sår, og ikke alt, du ikke kan lide ved et andet menneske, er din skygge — nogle gange er folk bare hensynsløse. Er du i krise, så kontakt en kvalificeret fagperson eller alarmcentralen.',
+    lead: 'Ikke terapi, og ingen erstatning for det. Den hører kun din side og kan ikke se dit liv udefra. Ikke enhver følelse er et sår, og ikke alt, du ikke kan lide ved et andet menneske, er din skygge, nogle gange er folk bare hensynsløse. Er du i krise, så kontakt en kvalificeret fagperson eller alarmcentralen.',
   },
   close: {
     k: 'Begynd',
@@ -111,7 +111,7 @@ export const da: Dict = {
     lead: 'Du aner allerede, at mønsteret er dit. Det, du mangler, er en måde at se det arbejde på: det træk, du undgår, grunden til at du tager det samme sving hver gang, øjeblikket hvor det tager rattet. Det er præcis det, Symponia gør.',
     gets: [
       'Sæt navn på din skygge på cirka fire minutter, gennem de syv dyr',
-      'Gå dybere end et spørgsmål — hvert svar er skrevet til det, du faktisk sagde',
+      'Gå dybere end et spørgsmål, hvert svar er skrevet til det, du faktisk sagde',
       'Skriv på dit eget sprog, og bliv forstået på det',
       'En ledsager, der stadig husker, hvad du fortalte for en måned siden',
     ],
@@ -121,13 +121,13 @@ export const da: Dict = {
   compare: {
     k: 'Symponia over for prompt-dagbøgerne',
     h2: 'En prompt stiller spørgsmålet. Den kan ikke høre svaret.',
-    lead: 'Alle shadow work-apps på markedet giver dig den samme liste med spørgsmål og et tomt felt. Det er en dagbog med bedre markedsføring. Arbejdet begynder ikke, når du får stillet et spørgsmål — det begynder, når noget svarer dig.',
+    lead: 'Alle shadow work-apps på markedet giver dig den samme liste med spørgsmål og et tomt felt. Det er en dagbog med bedre markedsføring. Arbejdet begynder ikke, når du får stillet et spørgsmål: det begynder, når noget svarer dig.',
     them: {
       t: 'Prompt-dagbøger',
       items: [
         'De samme spørgsmål til alle, der henter den',
         'Du skal allerede vide, hvad din skygge er',
-        'Skriver intet tilbage — du er alene med siden',
+        'Skriver intet tilbage, du er alene med siden',
         'Glemmer dig mellem sessionerne',
         'En personlighedstype, rakt til dig som et mærkat',
       ],
@@ -147,7 +147,7 @@ export const da: Dict = {
   founder: {
     k: 'Hvor det begyndte',
     h2: 'Skabt af en osteopat og af kvinden, der gav idéen en form, du kan holde i hånden.',
-    lead: 'Symponia begyndte med Dr. Alessandro Biletta, en osteopat, der har brugt sit arbejdsliv dér, hvor kroppen og sindet stille mødes. Efter mange år med at lytte til mennesker som levevej blev han sikker på én ting. Under enhver historie leder mennesker efter en måde at genkende sig selv på. Sit svar fandt han i dybdepsykologien — hos Jung, hos Hillman, i arketypernes gamle sprog.',
+    lead: 'Symponia begyndte med Dr. Alessandro Biletta, en osteopat, der har brugt sit arbejdsliv dér, hvor kroppen og sindet stille mødes. Efter mange år med at lytte til mennesker som levevej blev han sikker på én ting. Under enhver historie leder mennesker efter en måde at genkende sig selv på. Sit svar fandt han i dybdepsykologien, hos Jung, hos Hillman, i arketypernes gamle sprog.',
     quote: 'Hvad nu hvis du kunne møde dig selv gennem det, der allerede føles som dig?',
     lead2: 'Yekta Dastranj var med i de samtaler. Hun forstod idéen i samme øjeblik, hun hørte den, og hun mærkede den længe før, hun begyndte at tænke på, hvordan den skulle bygges. Hun blev medstifter og gjorde visionen til noget, du kan åbne en tirsdag aften og vende tilbage til.',
     cta: 'Læs vores historie',
@@ -157,20 +157,20 @@ export const da: Dict = {
     k: 'Spørgsmål',
     h2: 'Ofte stillede spørgsmål',
     items: [
-      { q: 'Hvad er skyggearbejde, sagt enkelt?', a: 'Skyggearbejde er at se på de dele af dig selv, du lærte at skjule — som regel tidligt, og for at være i sikkerhed. Carl Jung kaldte det skyggen. Den forsvinder ikke, når du begraver den; den begynder at træffe dine beslutninger nedefra. Skyggearbejde er praksissen med at få den frem i lyset igen.' },
-      { q: 'Hvordan finder jeg ud af, hvad min skygge er?', a: 'Genvejen er din egen væmmelse. Det træk, du finder uudholdeligt hos andre, er meget ofte det, du har forvist i dig selv. Symponia bruger det direkte: du vælger seks dyr, der føles som dig, og et syvende, der frastøder dig — og i det syvende gemmer din skygge sig.' },
+      { q: 'Hvad er skyggearbejde, sagt enkelt?', a: 'Skyggearbejde er at se på de dele af dig selv, du lærte at skjule, som regel tidligt, og for at være i sikkerhed. Carl Jung kaldte det skyggen. Den forsvinder ikke, når du begraver den; den begynder at træffe dine beslutninger nedefra. Skyggearbejde er praksissen med at få den frem i lyset igen.' },
+      { q: 'Hvordan finder jeg ud af, hvad min skygge er?', a: 'Genvejen er din egen væmmelse. Det træk, du finder uudholdeligt hos andre, er meget ofte det, du har forvist i dig selv. Symponia bruger det direkte: du vælger seks dyr, der føles som dig, og et syvende, der frastøder dig, og i det syvende gemmer din skygge sig.' },
       { q: 'Hvordan adskiller det sig fra en skyggedagbog eller en prompt-app?', a: 'Et færdigt spørgsmål spørger og efterlader dig med en blank side. Symponia svarer. Den læser det, du faktisk skrev, ikke hvad en gennemsnitsbruger ville have skrevet, og hvert svar sigter mod den ene ting, der fører dig et lag dybere.' },
-      { q: 'Er dyrene bare en personlighedstest?', a: 'Nej. Intet bliver tildelt dig, og der er ingen type til sidst. Du vælger syv, heriblandt ét der frastøder dig, og Symponia læser dem samlet som et felt. Det er en projektiv metode — nærmere en blækklat end en quiz — og den vil aldrig fortælle dig dit kraftdyr.' },
+      { q: 'Er dyrene bare en personlighedstest?', a: 'Nej. Intet bliver tildelt dig, og der er ingen type til sidst. Du vælger syv, heriblandt ét der frastøder dig, og Symponia læser dem samlet som et felt. Det er en projektiv metode, nærmere en blækklat end en quiz, og den vil aldrig fortælle dig dit kraftdyr.' },
       { q: 'Hvad er projektion?', a: 'At reagere på mennesket foran dig ud fra en ældre historie. Lærredet er dem. Filmen er din. Symponia hjælper dig med at se forskellen.' },
       { q: 'Er det terapi?', a: 'Nej. Symponia er et refleksionsværktøj, ikke terapi og ingen erstatning for det. Den hører kun din side. Er du i krise eller har brug for klinisk hjælp, så tal med en kvalificeret fagperson.' },
       { q: 'Husker den, hvad jeg fortæller den?', a: 'Kun hvis du slår hukommelsen til. Den er slået fra som standard, og så længe den er det, gemmes intet på vores servere. Du kan slette det, den rummer, og intet af det, du skriver, træner nogen model.' },
-      { q: 'Kan jeg gøre det på mit eget sprog?', a: 'Ja. Skriv på dansk, engelsk, italiensk, russisk, portugisisk, fransk, tysk eller spansk — Symponia forstår dig og svarer på det sprog, du skrev på.' },
+      { q: 'Kan jeg gøre det på mit eget sprog?', a: 'Ja. Skriv på dansk, engelsk, italiensk, russisk, portugisisk, fransk, tysk eller spansk, Symponia forstår dig og svarer på det sprog, du skrev på.' },
     ],
   },
 
   about: {
-    metaTitle: 'Om os — Menneskene bag Symponia',
-    metaDesc: 'Symponia er skabt af Dr. Alessandro Biletta og Yekta Dastranj — en filosof for det indre liv, og hende, der gav visionen en form, du kan holde i hånden.',
+    metaTitle: 'Om os, Menneskene bag Symponia',
+    metaDesc: 'Symponia er skabt af Dr. Alessandro Biletta og Yekta Dastranj, en filosof for det indre liv, og hende, der gav visionen en form, du kan holde i hånden.',
     k: 'Menneskene bag Symponia',
     h1a: 'Hør dig selv',
     h1b: 'igen.',

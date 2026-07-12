@@ -1,7 +1,7 @@
 import type { Dict } from './types';
 
 // Deutsch. Symponia wird durchgehend als Name geführt, nie als „sie“, „es“ oder
-// „der“ — so bleibt das Genus über alle Strings hinweg konsistent.
+// „der“, so bleibt das Genus über alle Strings hinweg konsistent.
 // Die Leserin oder der Leser wird durchgehend geduzt.
 
 export const de: Dict = {
@@ -30,7 +30,7 @@ export const de: Dict = {
     eyebrow: 'Schattenarbeit, mit Methode.',
     l1: 'Das Tier, das du nicht ausstehen kannst,',
     l2: 'lenkt dein Leben.',
-    lead: 'Nenne sechs Tiere, die sich wie du anfühlen. Dann nenne das eine, bei dem sich dir alles zusammenzieht. Dieses siebte ist dein Schatten — der Teil von dir, den du so früh verbannt hast, dass du dich nicht mehr daran erinnerst. Seither trifft er deine Entscheidungen. Symponia ist ein KI-Begleiter für Schattenarbeit, der damit beginnt, ihn zu benennen.',
+    lead: 'Nenne sechs Tiere, die sich wie du anfühlen. Dann nenne das eine, bei dem sich dir alles zusammenzieht. Dieses siebte ist dein Schatten: der Teil von dir, den du so früh verbannt hast, dass du dich nicht mehr daran erinnerst. Seither trifft er deine Entscheidungen. Symponia ist ein KI-Begleiter für Schattenarbeit, der damit beginnt, ihn zu benennen.',
     cta: 'Triff dein siebtes Tier',
     proof: 'Tiefenpsychologie, keine Therapie. Auf der Grundlage von Jung, Hillman und der alten Sprache der Archetypen.',
   },
@@ -49,15 +49,15 @@ export const de: Dict = {
   mech: {
     k: 'Warum es immer wieder geschieht',
     h2: 'Was du an anderen nicht erträgst, hast du in dir begraben.',
-    lead: 'Jung nannte es den Schatten: alles, wovon du früh und ungefragt gelernt hast, es sei an dir nicht annehmbar. Es verschwindet nicht. Es geht unter die Oberfläche und regiert von dort — welche Ziele du dir zugestehst, in welchen Räumen du kleiner wirst, wem du nicht verzeihen kannst. Den Mechanismus nennt die Psychologie Projektion. Er ist kein Charakterfehler, sondern eine alte Überlebensstrategie, die ihren Zweck überlebt hat.',
-    stat: 'Der Schatten ist nicht dein Trauma, und er ist nicht das Schlechteste an dir. Er ist der Teil, den du abgelehnt hast. Jungs These war, dass er ebenso viel ungelebte Kraft enthält wie ungelebte Scham — weshalb es dich doppelt kostet, ihn begraben zu lassen.',
+    lead: 'Jung nannte es den Schatten: alles, wovon du früh und ungefragt gelernt hast, es sei an dir nicht annehmbar. Es verschwindet nicht. Es geht unter die Oberfläche und regiert von dort, welche Ziele du dir zugestehst, in welchen Räumen du kleiner wirst, wem du nicht verzeihen kannst. Den Mechanismus nennt die Psychologie Projektion. Er ist kein Charakterfehler, sondern eine alte Überlebensstrategie, die ihren Zweck überlebt hat.',
+    stat: 'Der Schatten ist nicht dein Trauma, und er ist nicht das Schlechteste an dir. Er ist der Teil, den du abgelehnt hast. Jungs These war, dass er ebenso viel ungelebte Kraft enthält wie ungelebte Scham, weshalb es dich doppelt kostet, ihn begraben zu lassen.',
     note: 'Symponia hört immer nur eine Seite. Deine. Das ist zufällig die einzige, die du ändern kannst.',
   },
   seven: {
     k: 'Das siebte Tier',
     h2: 'Sechs Tiere, die sich wie du anfühlen. Eines, bei dem es dich schüttelt.',
-    lead: 'Nenne sechs, die dir gehören. Dann nenne das eine, das dich abstößt. Dieses siebte ist das wichtigste von allen, denn es trägt, was die anderen sechs nicht tragen können — und dein Widerwille ist der Hinweis. Man schaudert nicht vor dem Fremden. Man schaudert vor dem Verleugneten.',
-    lead2: 'Jedes Tier wird auf seine Gabe gelesen, auf seinen Schatten und auf den Weg dazwischen. Symponia liest das ganze Feld zusammen. Dir wird nichts zugewiesen: das hier ist eine projektive Methode, kein Persönlichkeitstyp. Eine Linse, kein Etikett — und es wird dir niemals dein Krafttier nennen.',
+    lead: 'Nenne sechs, die dir gehören. Dann nenne das eine, das dich abstößt. Dieses siebte ist das wichtigste von allen, denn es trägt, was die anderen sechs nicht tragen können, und dein Widerwille ist der Hinweis. Man schaudert nicht vor dem Fremden. Man schaudert vor dem Verleugneten.',
+    lead2: 'Jedes Tier wird auf seine Gabe gelesen, auf seinen Schatten und auf den Weg dazwischen. Symponia liest das ganze Feld zusammen. Dir wird nichts zugewiesen: das hier ist eine projektive Methode, kein Persönlichkeitstyp. Eine Linse, kein Etikett, und es wird dir niemals dein Krafttier nennen.',
   },
   attune: {
     k: 'Vor den Tieren',
@@ -67,7 +67,7 @@ export const de: Dict = {
   langs: {
     k: 'Jede Sprache',
     h2: 'Schreib in deiner Sprache. Die Antwort kommt in derselben.',
-    lead: 'Dein Innenleben findet nicht in deiner Zweitsprache statt. Schreib Symponia auf Deutsch, Italienisch, Russisch, Portugiesisch, Französisch, Spanisch, Dänisch oder Englisch — Symponia versteht dich und antwortet in der Sprache, in der du geschrieben hast.',
+    lead: 'Dein Innenleben findet nicht in deiner Zweitsprache statt. Schreib Symponia auf Deutsch, Italienisch, Russisch, Portugiesisch, Französisch, Spanisch, Dänisch oder Englisch, Symponia versteht dich und antwortet in der Sprache, in der du geschrieben hast.',
   },
   modes: {
     k: 'Drei Wege hinein',
@@ -84,7 +84,7 @@ export const de: Dict = {
     chat: [
       { who: 's', t: 'die Eigenschaft, die dich an anderen am meisten reizt, ist meist die, die du in dir verbannt hast. welche ist es?' },
       { who: 'u', t: 'Menschen, die etwas von anderen brauchen. ich will dann nur weg.' },
-      { who: 's', t: 'und wenn Brauchen in dir erlaubt wäre — worum würde es bitten?' },
+      { who: 's', t: 'und wenn Brauchen in dir erlaubt wäre, worum würde es bitten?' },
       { who: 'u', t: 'darum, umsorgt zu werden, nehme ich an. ich habe das nie jemanden tun lassen.' },
       { who: 's', t: 'dann ist das, wovor du bei ihnen fliehst, genau das, was du dir nie gestattet hast. du stehst seit Jahren am Ufer deines eigenen Wassers und wartest darauf, hineingebeten zu werden.' },
     ],
@@ -95,7 +95,7 @@ export const de: Dict = {
     lead: 'Du solltest dich nicht jeden Dienstag neu vorstellen müssen. Aber das, was du am dringendsten sagen musst, ist oft genau das, was du am wenigsten gespeichert haben willst. Beides stimmt. Also entscheidest du über beides.',
     items: [
       { t: 'Standardmäßig aus', d: 'Das Gedächtnis bleibt aus, bis du es einschaltest. Solange es aus ist, wird auf unseren Servern überhaupt nichts gespeichert.' },
-      { t: 'Jederzeit abschalten', d: 'Schalte es aus, wann immer du willst — auch mitten im Gespräch.' },
+      { t: 'Jederzeit abschalten', d: 'Schalte es aus, wann immer du willst, auch mitten im Gespräch.' },
       { t: 'Löschen', d: 'Lösche, was gespeichert ist. Ein Tippen. Kein „Bist du sicher?“, das dir ein schlechtes Gewissen macht.' },
       { t: 'Kein Training', d: 'Nichts, was du schreibst, trainiert irgendein Modell. Kontinuität, keine Überwachung.' },
     ],
@@ -104,15 +104,15 @@ export const de: Dict = {
   limits: {
     k: 'Ehrliche Grenzen',
     h2: 'Was Symponia nicht vorgibt zu sein.',
-    lead: 'Keine Therapie und kein Ersatz dafür. Es hört nur deine Seite und kann dein Leben nicht von außen sehen. Nicht jedes Gefühl ist eine Wunde, und nicht alles, was dir an anderen missfällt, ist dein Schatten — manchmal sind Menschen schlicht rücksichtslos. Wenn du in einer Krise steckst, wende dich an eine qualifizierte Fachkraft oder den Notruf.',
+    lead: 'Keine Therapie und kein Ersatz dafür. Es hört nur deine Seite und kann dein Leben nicht von außen sehen. Nicht jedes Gefühl ist eine Wunde, und nicht alles, was dir an anderen missfällt, ist dein Schatten, manchmal sind Menschen schlicht rücksichtslos. Wenn du in einer Krise steckst, wende dich an eine qualifizierte Fachkraft oder den Notruf.',
   },
   close: {
     k: 'Anfangen',
     h2: 'Dein Schatten trifft seit Jahren deine Entscheidungen. Begegne ihm.',
-    lead: 'Du ahnst längst, dass das Muster deins ist. Was fehlt, ist eine Möglichkeit, ihm bei der Arbeit zuzusehen — der Zug, den du meidest, der Grund, warum du immer dieselbe Abzweigung nimmst, der Moment, in dem er das Steuer übernimmt. Genau das tut Symponia.',
+    lead: 'Du ahnst längst, dass das Muster deins ist. Was fehlt, ist eine Möglichkeit, ihm bei der Arbeit zuzusehen: der Zug, den du meidest, der Grund, warum du immer dieselbe Abzweigung nimmst, der Moment, in dem er das Steuer übernimmt. Genau das tut Symponia.',
     gets: [
       'Benenne deinen Schatten in etwa vier Minuten, über die sieben Tiere',
-      'Geh tiefer als eine Frage — jede Antwort ist auf das geschrieben, was du wirklich gesagt hast',
+      'Geh tiefer als eine Frage, jede Antwort ist auf das geschrieben, was du wirklich gesagt hast',
       'Schreib in deiner Sprache und werde darin verstanden',
       'Ein Begleiter, der sich noch erinnert, was du ihm vor einem Monat erzählt hast',
     ],
@@ -122,13 +122,13 @@ export const de: Dict = {
   compare: {
     k: 'Symponia und die Prompt-Tagebücher',
     h2: 'Ein Prompt stellt die Frage. Hören kann er die Antwort nicht.',
-    lead: 'Jede Shadow-Work-App auf dem Markt gibt dir dieselbe Liste von Fragen und ein leeres Feld. Das ist ein Tagebuch mit besserem Marketing. Die Arbeit beginnt nicht, wenn dir eine Frage gestellt wird — sie beginnt, wenn dir etwas antwortet.',
+    lead: 'Jede Shadow-Work-App auf dem Markt gibt dir dieselbe Liste von Fragen und ein leeres Feld. Das ist ein Tagebuch mit besserem Marketing. Die Arbeit beginnt nicht, wenn dir eine Frage gestellt wird, sie beginnt, wenn dir etwas antwortet.',
     them: {
       t: 'Prompt-Tagebücher',
       items: [
         'Dieselben Fragen für alle, die es herunterladen',
         'Du musst schon wissen, was dein Schatten ist',
-        'Schreibt nichts zurück — du bleibst allein mit der Seite',
+        'Schreibt nichts zurück, du bleibst allein mit der Seite',
         'Vergisst dich zwischen den Sitzungen',
         'Ein Persönlichkeitstyp, überreicht als Etikett',
       ],
@@ -147,10 +147,10 @@ export const de: Dict = {
 
   founder: {
     k: 'Wie es begann',
-    h2: 'Entstanden bei einem Osteopathen — und bei der Frau, die daraus etwas gemacht hat, das man in der Hand halten kann.',
-    lead: 'Symponia begann mit Dr. Alessandro Biletta, einem Osteopathen, der sein Berufsleben dort verbracht hat, wo Körper und Seele einander leise begegnen. Nach Jahren, in denen er Menschen zugehört hat, war er sich einer Sache sicher: Unter jeder Geschichte suchen Menschen nach einem Weg, sich selbst wiederzuerkennen. Seine Antwort fand er in der Tiefenpsychologie — bei Jung, bei Hillman, in der alten Sprache der Archetypen.',
+    h2: 'Entstanden bei einem Osteopathen, und bei der Frau, die daraus etwas gemacht hat, das man in der Hand halten kann.',
+    lead: 'Symponia begann mit Dr. Alessandro Biletta, einem Osteopathen, der sein Berufsleben dort verbracht hat, wo Körper und Seele einander leise begegnen. Nach Jahren, in denen er Menschen zugehört hat, war er sich einer Sache sicher: Unter jeder Geschichte suchen Menschen nach einem Weg, sich selbst wiederzuerkennen. Seine Antwort fand er in der Tiefenpsychologie, bei Jung, bei Hillman, in der alten Sprache der Archetypen.',
     quote: 'Was, wenn du dir selbst durch die Dinge begegnen könntest, die sich ohnehin schon nach dir anfühlen?',
-    lead2: 'Yekta Dastranj war bei diesen Gesprächen dabei. Sie hat die Idee in dem Moment verstanden, in dem sie sie hörte — und gespürt, lange bevor sie darüber nachdachte, wie man sie baut. Sie wurde Mitgründerin und machte aus der Vision etwas, das du an einem Dienstagabend öffnen und zu dem du zurückkehren kannst.',
+    lead2: 'Yekta Dastranj war bei diesen Gesprächen dabei. Sie hat die Idee in dem Moment verstanden, in dem sie sie hörte, und gespürt, lange bevor sie darüber nachdachte, wie man sie baut. Sie wurde Mitgründerin und machte aus der Vision etwas, das du an einem Dienstagabend öffnen und zu dem du zurückkehren kannst.',
     cta: 'Unsere Geschichte lesen',
   },
 
@@ -158,20 +158,20 @@ export const de: Dict = {
     k: 'Fragen',
     h2: 'FAQ',
     items: [
-      { q: 'Was ist Schattenarbeit, einfach gesagt?', a: 'Schattenarbeit heißt, auf die Teile von dir zu schauen, die du früh gelernt hast zu verbergen — meist, um sicher zu sein. Carl Jung nannte das den Schatten. Er verschwindet nicht, wenn du ihn vergräbst; er beginnt, von unten deine Entscheidungen zu treffen. Schattenarbeit ist die Praxis, ihn wieder sichtbar zu machen.' },
-      { q: 'Wie finde ich heraus, was mein Schatten ist?', a: 'Die Abkürzung ist dein eigener Widerwille. Die Eigenschaft, die du an anderen unerträglich findest, ist sehr oft die, die du in dir verbannt hast. Symponia nutzt genau das: du wählst sechs Tiere, die sich wie du anfühlen, und ein siebtes, das dich abstößt — und im siebten versteckt sich dein Schatten.' },
+      { q: 'Was ist Schattenarbeit, einfach gesagt?', a: 'Schattenarbeit heißt, auf die Teile von dir zu schauen, die du früh gelernt hast zu verbergen, meist, um sicher zu sein. Carl Jung nannte das den Schatten. Er verschwindet nicht, wenn du ihn vergräbst; er beginnt, von unten deine Entscheidungen zu treffen. Schattenarbeit ist die Praxis, ihn wieder sichtbar zu machen.' },
+      { q: 'Wie finde ich heraus, was mein Schatten ist?', a: 'Die Abkürzung ist dein eigener Widerwille. Die Eigenschaft, die du an anderen unerträglich findest, ist sehr oft die, die du in dir verbannt hast. Symponia nutzt genau das: du wählst sechs Tiere, die sich wie du anfühlen, und ein siebtes, das dich abstößt, und im siebten versteckt sich dein Schatten.' },
       { q: 'Wie unterscheidet sich das von einem Schattenarbeit-Tagebuch?', a: 'Eine vorgefertigte Frage stellt eine Frage und lässt dich mit einer leeren Seite allein. Symponia antwortet. Es liest, was du tatsächlich geschrieben hast, nicht was ein Durchschnittsnutzer geschrieben hätte, und jede Erwiderung zielt auf das eine, das dich eine Schicht tiefer führt.' },
-      { q: 'Sind die Tiere nur ein Persönlichkeitstest?', a: 'Nein. Dir wird nichts zugewiesen, und am Ende steht kein Typ. Du wählst sieben, darunter eines, das dich abstößt, und Symponia liest sie zusammen als Feld. Es ist eine projektive Methode — dem Rorschach näher als einem Quiz — und es wird dir nie dein Krafttier nennen.' },
+      { q: 'Sind die Tiere nur ein Persönlichkeitstest?', a: 'Nein. Dir wird nichts zugewiesen, und am Ende steht kein Typ. Du wählst sieben, darunter eines, das dich abstößt, und Symponia liest sie zusammen als Feld. Es ist eine projektive Methode, dem Rorschach näher als einem Quiz, und es wird dir nie dein Krafttier nennen.' },
       { q: 'Was ist Projektion?', a: 'Auf den Menschen vor dir mit einer älteren Geschichte zu reagieren. Die Leinwand sind sie. Der Film ist deiner. Symponia hilft dir zu bemerken, was was ist.' },
       { q: 'Ist das Therapie?', a: 'Nein. Symponia ist ein Werkzeug zur Selbstreflexion, keine Therapie und kein Ersatz dafür. Es hört immer nur deine Seite. Wenn du in einer Krise steckst oder klinische Unterstützung brauchst, wende dich bitte an eine qualifizierte Fachkraft.' },
       { q: 'Erinnert es sich an das, was ich erzähle?', a: 'Nur wenn du das Gedächtnis einschaltest. Es ist standardmäßig aus, und solange es aus ist, wird nichts auf unseren Servern gespeichert. Du kannst löschen, was es hält, und nichts, was du schreibst, trainiert irgendein Modell.' },
-      { q: 'Kann ich Schattenarbeit in meiner Sprache machen?', a: 'Ja. Schreib auf Deutsch, Englisch, Italienisch, Russisch, Portugiesisch, Französisch, Spanisch oder Dänisch — Symponia versteht dich und antwortet in der Sprache, in der du geschrieben hast.' },
+      { q: 'Kann ich Schattenarbeit in meiner Sprache machen?', a: 'Ja. Schreib auf Deutsch, Englisch, Italienisch, Russisch, Portugiesisch, Französisch, Spanisch oder Dänisch, Symponia versteht dich und antwortet in der Sprache, in der du geschrieben hast.' },
     ],
   },
 
   about: {
-    metaTitle: 'Über uns — Die Menschen hinter Symponia',
-    metaDesc: 'Symponia wurde von Dr. Alessandro Biletta und Yekta Dastranj gebaut — einem Philosophen des Innenlebens und der Frau, die der Vision eine Form gegeben hat, die man in der Hand halten kann.',
+    metaTitle: 'Über uns: Die Menschen hinter Symponia',
+    metaDesc: 'Symponia wurde von Dr. Alessandro Biletta und Yekta Dastranj gebaut, einem Philosophen des Innenlebens und der Frau, die der Vision eine Form gegeben hat, die man in der Hand halten kann.',
     k: 'Die Menschen hinter Symponia',
     h1a: 'Hör dich wieder',
     h1b: 'selbst.',
@@ -193,14 +193,14 @@ export const de: Dict = {
       {
         name: 'Yekta Dastranj',
         role: 'Mitgründerin',
-        bio: 'Diejenige, die es zum Leben erweckt hat. Wo Alessandro die Philosophie sah, sah Yekta die Erfahrung. Sie hat geformt, wie Symponia sich in deinen Händen anfühlt — überzeugt davon, dass etwas so Persönliches einfach, privat und zutiefst menschlich bleiben muss.',
+        bio: 'Diejenige, die es zum Leben erweckt hat. Wo Alessandro die Philosophie sah, sah Yekta die Erfahrung. Sie hat geformt, wie Symponia sich in deinen Händen anfühlt, überzeugt davon, dass etwas so Persönliches einfach, privat und zutiefst menschlich bleiben muss.',
       },
     ],
     believeK: 'Woran wir glauben',
     beliefs: [
       'Dass man mit dem Verstehen seiner selbst nicht auf eine Krise warten sollte.',
       'Dass die richtige Technologie Stille schaffen kann, statt sie zu füllen.',
-      'Und dass ein Begleiter nichts Stärkeres tun kann, als dir einen Gedanken zurückzugeben, den du längst hattest — aber nie laut auszusprechen gewagt hast.',
+      'Und dass ein Begleiter nichts Stärkeres tun kann, als dir einen Gedanken zurückzugeben, den du längst hattest, aber nie laut auszusprechen gewagt hast.',
     ],
     closing: [
       'Symponia ist keine Therapie und wird nie so tun, als wäre es das. Symponia ist ein Denkraum. Ein Spiegel, der nicht wegsieht.',

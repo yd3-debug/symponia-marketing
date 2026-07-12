@@ -1,6 +1,6 @@
 import type { LegalDict } from './types';
 
-// Deutsch. Übersetzung von ./en.ts — der englische Text ist und bleibt die
+// Deutsch. Übersetzung von ./en.ts: der englische Text ist und bleibt die
 // rechtlich verbindliche Fassung; darauf weist shell.legalNote auf jeder Seite
 // hin. Anwendbares Recht ist das Recht von England und Wales, deshalb bleiben
 // alle britischen Bezüge (Consumer Rights Act 2015, ICO, 999, Samaritans)
@@ -265,7 +265,7 @@ export const de: LegalDict = {
       {
         h: '8. Wie wir Ihre Daten schützen',
         blocks: [
-          { t: 'p', x: 'Wir setzen technische und organisatorische Maßnahmen zum Schutz Ihrer Daten ein, darunter Verschlüsselung bei der Übertragung, Zugriffskontrollen und renommierte Infrastrukturanbieter. Keine Übertragungs- oder Speichermethode ist vollständig sicher, aber wir arbeiten daran, Ihre Informationen zu schützen und schnell zu reagieren, wenn etwas schiefgeht — einschließlich einer Benachrichtigung an Sie und an die zuständige Aufsichtsbehörde, wo das Gesetz dies verlangt.' },
+          { t: 'p', x: 'Wir setzen technische und organisatorische Maßnahmen zum Schutz Ihrer Daten ein, darunter Verschlüsselung bei der Übertragung, Zugriffskontrollen und renommierte Infrastrukturanbieter. Keine Übertragungs- oder Speichermethode ist vollständig sicher, aber wir arbeiten daran, Ihre Informationen zu schützen und schnell zu reagieren, wenn etwas schiefgeht, einschließlich einer Benachrichtigung an Sie und an die zuständige Aufsichtsbehörde, wo das Gesetz dies verlangt.' },
         ],
       },
       {
@@ -385,7 +385,7 @@ export const de: LegalDict = {
     titleL1: 'Licensed Application',
     titleL2: 'End User License Agreement',
     sub: 'Apple Standard EULA',
-    note: 'Der nachstehende Vertrag ist Apples Standard-Lizenzvereinbarung für lizenzierte Anwendungen und wird deshalb im englischen Originalwortlaut von Apple wiedergegeben — es handelt sich um Apples eigenen Vertrag, nicht um unseren. Verbindlich ist allein dieser englische Text.',
+    note: 'Der nachstehende Vertrag ist Apples Standard-Lizenzvereinbarung für lizenzierte Anwendungen und wird deshalb im englischen Originalwortlaut von Apple wiedergegeben, es handelt sich um Apples eigenen Vertrag, nicht um unseren. Verbindlich ist allein dieser englische Text.',
   },
 
   credits: {
@@ -408,7 +408,7 @@ export const de: LegalDict = {
       bullets: [
         '350 Gespräche über die Modi Archetyp, Mein Tag und Gespräch hinweg',
         'Kostenlose tägliche Reflexionen (sie werden nicht angerechnet)',
-        'Jeden Monat ein neues Guthaben — Gespräche werden nicht übertragen',
+        'Jeden Monat ein neues Guthaben, Gespräche werden nicht übertragen',
         'Jederzeit über die Apple-ID-Einstellungen kündbar',
       ],
       cta: 'In der App verfügbar',

@@ -59,7 +59,7 @@ export default function About({ locale }: { locale: Locale }) {
 
         <Divider />
 
-        {/* Where it began — the quote sits after the second paragraph */}
+        {/* Where it began: the quote sits after the second paragraph */}
         <div style={{ marginBottom: 72 }}>
           <Label>{t.beganK}</Label>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>

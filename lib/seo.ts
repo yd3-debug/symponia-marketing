@@ -44,3 +44,6 @@ export function pageMetadata({
     robots: { index: true, follow: true },
   };
 }
+
+/** Open Graph wants a full locale code (da_DK), not a bare language tag (da). */
+export const OG_LOCALE: Record<string, string> = {'en': 'en_GB', 'it': 'it_IT', 'ru': 'ru_RU', 'pt': 'pt_PT', 'fr': 'fr_FR', 'de': 'de_DE', 'es': 'es_ES', 'da': 'da_DK'};

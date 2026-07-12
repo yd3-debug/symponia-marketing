@@ -55,7 +55,7 @@ export const es: Dict = {
   seven: {
     k: 'El séptimo animal',
     h2: 'Seis animales que se parecen a ti. Uno que te pone la piel de gallina.',
-    lead: 'Nombra seis que te pertenezcan. Luego nombra el que te repele. Ese séptimo es el más importante de todos, porque carga lo que los otros seis no pueden — y tu rechazo es la pista. Uno no retrocede ante lo ajeno. Retrocede ante lo negado.',
+    lead: 'Nombra seis que te pertenezcan. Luego nombra el que te repele. Ese séptimo es el más importante de todos, porque carga lo que los otros seis no pueden, y tu rechazo es la pista. Uno no retrocede ante lo ajeno. Retrocede ante lo negado.',
     lead2: 'Cada animal se lee por su don, su sombra y el camino entre ambos. Symponia lee el conjunto como un campo. No se te asigna nada: esto es un método proyectivo, no un tipo de personalidad. Una lente, nunca una etiqueta, y jamás te dirá cuál es tu animal de poder.',
   },
   attune: {
@@ -169,7 +169,7 @@ export const es: Dict = {
   },
 
   about: {
-    metaTitle: 'Quiénes somos — Las personas detrás de Symponia',
+    metaTitle: 'Quiénes somos, Las personas detrás de Symponia',
     metaDesc: 'Symponia nació de la mano del Dr. Alessandro Biletta y de Yekta Dastranj: un filósofo de la vida interior y la persona que dio a esa visión una forma que puedes sostener.',
     k: 'Las personas detrás de Symponia',
     h1a: 'Vuelve a escuchar',

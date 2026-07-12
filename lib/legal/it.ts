@@ -1,6 +1,6 @@
 import type { LegalDict } from './types';
 
-// Italiano. Traduzione di ./en.ts — il testo inglese resta la versione
+// Italiano. Traduzione di ./en.ts: il testo inglese resta la versione
 // giuridicamente vincolante, come indicato da shell.legalNote in cima a ogni
 // pagina legale. La legge applicabile è quella di Inghilterra e Galles: tutti i
 // riferimenti britannici (Consumer Rights Act 2015, ICO, 999, Samaritans)
@@ -408,7 +408,7 @@ export const it: LegalDict = {
       bullets: [
         '350 sessioni tra le modalità Archetipo, La mia giornata e Conversazione',
         'Riflessioni quotidiane gratuite (non vengono scalate dalle sessioni)',
-        'Nuovo credito ogni mese — le sessioni non si riportano al mese successivo',
+        'Nuovo credito ogni mese: le sessioni non si riportano al mese successivo',
         'Disdetta in qualsiasi momento dalle impostazioni dell’Apple ID',
       ],
       cta: 'Disponibile nell’app',

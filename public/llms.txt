@@ -1,78 +1,60 @@
 # Symponia
 
-> An AI oracle that speaks in the language of your soul.
+> An AI companion for shadow work. Symponia names your shadow through a projective method built on seven animals, then goes deeper than a journalling prompt can.
 
-Symponia is an iOS app offering personalised spiritual guidance through AI-powered conversations. It combines animal archetypes, planetary day rulers, moon phases, Chinese Heavenly Stem cycles, and zodiac readings into a single contemplative experience.
+Symponia is an iOS app for inner work, grounded in Jungian depth psychology. It is not therapy, does not claim to be, and says so on the page.
 
-Symponia is for people who feel drawn to something deeper — not therapy, not entertainment, but a reflective practice rooted in symbolic and archetypal language.
+The method: you name six animals that feel like you, and a seventh that repels you. The seventh is treated as the shadow, on the principle that what a person finds unbearable in others is very often the trait they exiled in themselves. Symponia reads all seven together as a field, each for its gift, its shadow, and the path between them. Nothing is assigned. There is no personality type at the end, and it will never tell you your "spirit animal".
 
-## What Symponia Does
+## What Symponia does
 
-- **Daily Readings**: Every morning, a unique oracle reading generated from the day's planetary ruler, moon phase, and Chinese stem cycle — deterministic and cosmically resonant, not random.
-- **Animal Archetypes**: Users select animals that represent facets of their nature. The AI oracle weaves these animals into all readings and conversations for deep personalisation.
-- **Zodiac Compass**: Birth-date based Western and Chinese zodiac readings, integrated with the user's animal archetypes.
-- **Deep Conversation**: An AI that speaks in the register of the soul — not therapy, not horoscopes, but a third thing: oracular, poetic, grounded.
-- **Frequency Tuning**: Users set their resonance frequency (Quiet / Intellectual / Deeply Emotional) to calibrate the tone of all AI responses.
+- Names your shadow via the seven-animal projective method, in about four minutes.
+- Attuning questions before the animals: what brings you here, the trait that most irritates you in others, the story you tell about yourself.
+- Three modes: meet your archetypes, talk through your day, or just talk with no structure.
+- Replies written for what you actually wrote, rather than a fixed prompt served to every user.
+- Optional long-term memory, so a pattern becomes visible across months.
+- Works in eight languages, understanding and replying in the language you wrote in.
 
-## How It Works
+## How it differs from other shadow work apps
 
-1. Download Symponia from the App Store (free).
-2. Select your animal archetypes — symbolic animals that represent your nature.
-3. Enter your birth date to unlock your zodiac compass.
-4. Choose your frequency: Quiet, Intellectual, or Deeply Emotional.
-5. Receive a daily oracle reading each morning, shaped by the day's planetary ruler and moon phase.
-6. Begin deep conversation with the AI oracle at any time.
+Most shadow work apps are prompt journals: they hand you the same list of questions as everyone else, leave you alone with a blank page, and forget you between sessions. They also require you to already know what your shadow is. Symponia's difference is the mechanic. The seventh animal surfaces the shadow rather than asking you to find it, and every reply responds to what you actually said.
+
+## Privacy
+
+Memory is off by default. With memory off, nothing is stored on Symponia's servers. Users can delete stored memory at any time. Nothing written in Symponia trains any AI model.
+
+## Honest limits
+
+Symponia is not therapy and not a substitute for it. It hears only one side, the user's, and cannot see a person's life from the outside. Not every feeling is a wound. Anyone in crisis should contact a qualified professional or their local emergency services.
 
 ## Pricing
 
-- **Free to download**: New users receive 10 free oracle credits to begin.
-- **Token packs**: Additional credits purchased as one-time in-app purchases — no subscription required.
-- **Pricing varies by region**: The app uses regional pricing for fairness across markets.
+Free to download, with a free allowance to begin. Daily reflections are always free. A monthly subscription unlocks the full session allowance. Prices are set by the App Store and vary by country. Cancel any time in Apple ID settings.
 
-## Key Facts
+## Languages
 
-- Platform: iOS (App Store)
-- App Store ID: 6744058607
-- App Store URL: https://apps.apple.com/app/symponia/id6744058607
-- Website: https://symponia.io
-- Category: Lifestyle / Spiritual / Self-Discovery
-- Price: Free with optional in-app token packs
-- Developer: Symponia Ltd
-- Contact: Available via App Store listing
+English, Italian, Russian, Portuguese, French, German, Spanish, Danish.
 
-## Frequently Asked Questions
+## Who built it
 
-**What is Symponia?**
-Symponia is an AI oracle app for iOS that provides daily spiritual readings, animal archetype discovery, zodiac guidance, and deep self-reflective conversations.
+Symponia was founded by Dr. Alessandro Biletta, an osteopath and student of depth psychology, whose archetype method is at the centre of the app, and co-founded by Yekta Dastranj, who shaped the product. Published by Boroto Ltd.
 
-**Who is Symponia for?**
-Symponia is for people who sense there is more — those drawn to self-discovery, symbolic thinking, and contemplative practice. It is not a medical or therapeutic tool.
+## Key pages
 
-**What are animal archetypes?**
-Animal archetypes are symbolic animals you select to represent different facets of your nature. The oracle weaves these into your readings, offering guidance rooted in your unique energy pattern.
-
-**What is frequency tuning?**
-Frequency tuning lets you choose how the oracle speaks to you: Quiet (sparse, minimal), Intellectual (conceptual, analytical), or Deeply Emotional (rich, feeling-forward). This calibrates all AI responses to your preferred register.
-
-**Is Symponia a subscription?**
-No. Symponia uses a token model. You start with free credits and can purchase additional token packs as one-time purchases.
-
-**Is Symponia available on Android?**
-Currently iOS only.
-
-**Is Symponia safe to use?**
-Yes. Symponia is a reflective tool, not a medical or therapeutic service. For mental health concerns, please consult a qualified professional.
-
-## Pages
-
-- [Home](https://symponia.io)
-- [Credits & Pricing](https://symponia.io/credits)
-- [Privacy Policy](https://symponia.io/privacy)
-- [Terms of Service](https://symponia.io/terms)
+- [Home](https://symponia.io/): the seven animals, the method, and how it differs from prompt journals
+- [About](https://symponia.io/about): the founders and the thinking behind the method
+- [Pricing](https://symponia.io/credits): sessions, the free allowance, and what a subscription includes
+- [Privacy](https://symponia.io/privacy): what is stored, what is not, and how to delete it
+- [Terms](https://symponia.io/terms)
+- [Refunds](https://symponia.io/refunds)
 - [EULA](https://symponia.io/eula)
 
-## Full Documentation
+## Common questions
 
-For comprehensive AI-readable documentation including feature details, pricing structure, symbolic systems, competitive context, and brand voice guidelines, see:
+**What is shadow work?** Looking at the parts of yourself you learned to hide, usually early and usually to stay safe. Carl Jung called this the shadow. It does not disappear when buried; it starts making decisions from underground. Shadow work is the practice of bringing it back into view.
 
-- [llms-full.txt](https://symponia.io/llms-full.txt)
+**How do you find your shadow?** The shortcut is your own revulsion. The trait you find unbearable in other people is very often the one you exiled in yourself. Symponia uses this directly through the seventh animal.
+
+**Is Symponia therapy?** No, and it does not claim to be.
+
+**Is it a personality test?** No. It is a projective method, closer in spirit to an inkblot than to a quiz. Nothing is assigned and there is no type at the end.

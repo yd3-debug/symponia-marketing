@@ -1,6 +1,6 @@
 import type { LegalDict } from './types';
 
-// Dansk. Oversættelse af ./en.ts — den engelske tekst er og bliver den juridisk
+// Dansk. Oversættelse af ./en.ts: den engelske tekst er og bliver den juridisk
 // bindende version; det står på hver enkelt side via shell.legalNote. Gældende
 // ret er retten i England og Wales, og derfor står alle britiske henvisninger
 // (Consumer Rights Act 2015, ICO, 999, Samaritans) uændret. Læseren tiltales
@@ -385,7 +385,7 @@ export const da: LegalDict = {
     titleL1: 'Licensed Application',
     titleL2: 'End User License Agreement',
     sub: 'Apple Standard EULA',
-    note: 'Aftalen nedenfor er Apples standardlicensaftale for licenserede applikationer og gengives derfor på Apples originale engelsk — det er Apples egen kontrakt, ikke vores. Det er alene den engelske tekst, der er bindende.',
+    note: 'Aftalen nedenfor er Apples standardlicensaftale for licenserede applikationer og gengives derfor på Apples originale engelsk: det er Apples egen kontrakt, ikke vores. Det er alene den engelske tekst, der er bindende.',
   },
 
   credits: {
@@ -408,7 +408,7 @@ export const da: LegalDict = {
       bullets: [
         '350 samtaler på tværs af tilstandene Arketype, Min dag og Samtale',
         'Gratis daglige refleksioner (de tæller ikke med i dine samtaler)',
-        'Ny mængde hver måned — samtaler overføres ikke',
+        'Ny mængde hver måned, samtaler overføres ikke',
         'Opsig når som helst i dine Apple ID-indstillinger',
       ],
       cta: 'Tilgængelig i appen',

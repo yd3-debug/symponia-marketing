@@ -1,5 +1,6 @@
 import { getDict, LOCALES, LOCALE_NAMES, DEFAULT_LOCALE, type Locale } from '@/lib/i18n';
 import { LangSync } from '@/components/LangSync';
+import { LocaleSchema } from '@/components/LocaleSchema';
 import { LangMenu } from '@/components/LangMenu';
 import { Flag } from '@/components/Flag';
 
@@ -27,6 +28,7 @@ export default function Landing({ locale }: { locale: Locale }) {
   return (
     <main className="sy">
       <LangSync locale={locale} />
+      <LocaleSchema locale={locale} />
       <style>{CSS}</style>
 
       <nav className="nav">
@@ -188,7 +190,7 @@ export default function Landing({ locale }: { locale: Locale }) {
         </div>
       </section>
 
-      {/* US vs THEM — no names. The category is prompt journals; the point is
+      {/* US vs THEM, no names. The category is prompt journals; the point is
           that a prompt cannot hear the answer. */}
       <section className="sec" id="compare">
         <div className="w narrow">
@@ -208,7 +210,7 @@ export default function Landing({ locale }: { locale: Locale }) {
         </div>
       </section>
 
-      {/* CLOSE — the outcome, not the number. Apple owns the price; this page
+      {/* CLOSE: the outcome, not the number. Apple owns the price; this page
           owns the reason to care. */}
       <section className="sec ink center" id="start">
         <div className="w narrow">
@@ -316,7 +318,7 @@ const CSS = `
 .sy .logo img{border-radius:7px;object-fit:cover;display:block}
 .sy .logo span{font:700 1.15rem/1 Arial,'Helvetica Neue',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#fff}
 .sy .nav-links{display:flex;gap:20px}
-/* Was 12px uppercase with .06em tracking — legible on paper, a squint on screen.
+/* Was 12px uppercase with .06em tracking, legible on paper, a squint on screen.
    Sentence case at 13.5px reads without effort; colour lifted too. */
 .sy .nav-links a{font:700 12px/1 Arial,'Helvetica Neue',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#EDEAF5;text-decoration:none}
 .sy .nav-links a:hover{color:#fff}
@@ -446,7 +448,7 @@ const CSS = `
 .sy summary:before{content:"+";color:var(--vio);font-weight:800;margin-right:11px}
 .sy details p{color:var(--dim);font-size:.97rem;margin-top:11px;max-width:64ch}
 
-/* footer — was a single flat row of legal links at 13px/#8C84A6. Now a real
+/* footer, was a single flat row of legal links at 13px/#8C84A6. Now a real
    sitemap: brand column, quick links, legal, contact. Type is larger and
    lighter (#B9B2CE, ~7.6:1) because the old grey was technically AA but far
    too small and dim to read comfortably. */

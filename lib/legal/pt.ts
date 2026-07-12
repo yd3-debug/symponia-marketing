@@ -1,6 +1,6 @@
 import type { LegalDict } from './types';
 
-// Português europeu. Tradução de ./en.ts — o texto inglês continua a ser a
+// Português europeu. Tradução de ./en.ts: o texto inglês continua a ser a
 // versão juridicamente vinculativa, tal como avisa shell.legalNote no topo de
 // cada página legal. A lei aplicável é a de Inglaterra e do País de Gales, pelo
 // que todas as referências britânicas (Consumer Rights Act 2015, ICO, 999,
@@ -409,7 +409,7 @@ export const pt: LegalDict = {
       bullets: [
         '350 sessões entre os modos Arquétipo, O Meu Dia e Conversa',
         'Reflexões diárias gratuitas (não são descontadas das sessões)',
-        'Saldo novo todos os meses — as sessões não transitam',
+        'Saldo novo todos os meses, as sessões não transitam',
         'Cancele quando quiser nas definições do seu Apple ID',
       ],
       cta: 'Disponível na aplicação',

@@ -1,150 +1,18 @@
 import type { Metadata } from 'next';
-import { PageShell } from '@/components/PageShell';
+import { LegalPage } from '@/components/legal/LegalPage';
+import { getLegal } from '@/lib/legal';
+import { pageMetadata } from '@/lib/seo';
+import { DEFAULT_LOCALE } from '@/lib/i18n';
 
-export const metadata: Metadata = {
-  title: 'Terms of Service',
-  description: 'The terms that govern your use of the Symponia app and website, operated by Boroto Ltd.',
-  alternates: { canonical: 'https://symponia.io/terms' },
-  robots: { index: true, follow: true },
-};
+const doc = getLegal(DEFAULT_LOCALE).terms;
 
-const C = {
-  fg: '#0F0C0A', sub: '#2E2840', dim: '#6A6078', cyan: '#0891B2',
-  border: 'rgba(0,0,0,0.08)',
-  heading: "var(--font-cormorant), 'Georgia', serif",
-  body: "var(--font-inter), 'Helvetica Neue', sans-serif",
-};
+export const metadata: Metadata = pageMetadata({
+  locale: DEFAULT_LOCALE,
+  path: '/terms',
+  title: doc.metaTitle,
+  description: doc.metaDesc,
+});
 
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <div style={{ marginBottom: 44 }}>
-      <h2 style={{ fontFamily: C.heading, fontSize: '1.55rem', fontWeight: 500, color: C.fg, marginBottom: 14 }}>{title}</h2>
-      <div style={{ fontFamily: C.body, fontSize: '0.9rem', fontWeight: 300, lineHeight: 1.9, color: C.sub }}>
-        {children}
-      </div>
-    </div>
-  );
-}
-
-const strong = { color: C.fg, fontWeight: 500 as const };
-const link = { color: C.cyan, textDecoration: 'none' as const };
-const ul = { marginTop: 10, paddingLeft: 20, lineHeight: 2 };
-
-export default function TermsPage() {
-  return (
-    <PageShell>
-      <div style={{ maxWidth: 760, margin: '0 auto', padding: '80px 28px 120px' }}>
-        <p style={{ fontFamily: C.body, fontSize: '0.7rem', letterSpacing: '0.22em', color: C.cyan, textTransform: 'uppercase', marginBottom: 16 }}>Legal</p>
-        <h1 style={{ fontFamily: C.heading, fontWeight: 500, fontSize: 'clamp(2.4rem, 5vw, 3.6rem)', color: C.fg, marginBottom: 12, lineHeight: 1.1 }}>Terms of Service</h1>
-        <p style={{ fontFamily: C.body, fontSize: '0.82rem', fontWeight: 300, color: C.dim, marginBottom: 40 }}>Last updated: July 2026</p>
-
-        <p style={{ fontFamily: C.body, fontSize: '0.9rem', fontWeight: 300, lineHeight: 1.9, color: C.sub, marginBottom: 48 }}>
-          These Terms of Service (the &ldquo;Terms&rdquo;) govern your access to and use of the Symponia mobile application and this website (together, the &ldquo;Service&rdquo;). The Service is operated by Boroto Ltd, a company registered in England and Wales (&ldquo;Boroto&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo; or &ldquo;our&rdquo;). Please read these Terms carefully. By downloading, accessing or using the Service, you agree to be bound by them. If you do not agree, do not use the Service.
-        </p>
-
-        <Section title="1. Who we are and how to contact us">
-          <p>The Service is provided by Boroto Ltd, registered in England and Wales. You can contact us at any time at <a href="mailto:hello@symponia.io" style={link}>hello@symponia.io</a>. Our company registration number and registered office address are set out in our published company filings and are available on request.</p>
-        </Section>
-
-        <Section title="2. Eligibility and age">
-          <p>You must be at least <strong style={strong}>18 years old</strong> to create an account and use Symponia. By using the Service you confirm that you are 18 or over and that you have the legal capacity to enter into these Terms. Symponia is intended for adults and is not designed for or directed at children.</p>
-        </Section>
-
-        <Section title="3. Your account">
-          <p>To use certain features you must create an account and sign in. You agree to provide accurate information, to keep your login credentials secure, and to be responsible for all activity that takes place under your account. Tell us promptly at <a href="mailto:hello@symponia.io" style={link}>hello@symponia.io</a> if you believe your account has been accessed without your permission. You may delete your account at any time from within the app (Profile tab, Account section, &ldquo;delete account&rdquo;).</p>
-        </Section>
-
-        <Section title="4. What Symponia is">
-          <p>Symponia is an AI-assisted tool for personal reflection and self-exploration. Its features include:</p>
-          <ul style={ul}>
-            <li>Three modes: Archetype, My Day and Conversation;</li>
-            <li>An animal archetype exercise and a synthesis of your results;</li>
-            <li>Personalised daily reflections;</li>
-            <li>Session-based access to conversations with the app.</li>
-          </ul>
-          <p style={{ marginTop: 12 }}>We may add, change or remove features from time to time to improve the Service.</p>
-        </Section>
-
-        <Section title="5. Symponia is not a medical or crisis service">
-          <p>Symponia is <strong style={strong}>not a medical, therapeutic, psychiatric, psychological, or counselling service</strong>, and it is not a substitute for professional care. Nothing in the app, and nothing generated by Symponia, is professional advice, diagnosis, or treatment, and it should not be relied on as such.</p>
-          <p style={{ marginTop: 12 }}>Symponia cannot help in an emergency and does not offer crisis support. <strong style={strong}>If you are in crisis, or think you may harm yourself or someone else, contact your local emergency services or a qualified professional immediately.</strong> In the UK you can call 999, or contact the Samaritans free on 116 123.</p>
-        </Section>
-
-        <Section title="6. AI-generated content">
-          <p>Symponia&rsquo;s responses are generated by artificial intelligence. AI can be wrong, incomplete, or misleading, and its responses may not suit your situation. You are responsible for how you interpret and act on anything Symponia produces, and you should use your own judgement and seek qualified professional advice where appropriate. We do not warrant that any output is accurate, reliable, or fit for any particular purpose.</p>
-        </Section>
-
-        <Section title="7. Subscriptions, pricing and auto-renewal">
-          <div id="tokens" />
-          <p><strong style={strong}>Free allowance.</strong> New users receive a limited free allowance so they can try Symponia before subscribing.</p>
-          <p style={{ marginTop: 14 }}><strong style={strong}>Symponia Monthly (£12.99 per month).</strong> A subscription provides 350 reflection sessions per calendar month. A fresh allowance of 350 sessions is granted at each renewal; unused sessions do not carry over. Daily reflections are free and do not count against your sessions.</p>
-          <p style={{ marginTop: 14 }}><strong style={strong}>Billing and renewal.</strong> Subscriptions are sold and processed by Apple through In-App Purchase and are billed to your Apple ID. Your subscription renews automatically at the then-current price at the end of each billing period unless you cancel at least 24 hours before the period ends. You can manage or cancel your subscription at any time in your Apple ID settings (Settings, your name, Subscriptions). Deleting the app does not cancel your subscription.</p>
-          <p style={{ marginTop: 14 }}><strong style={strong}>Payment.</strong> Payment is taken by Apple. We never see or store your payment card details. Prices are shown in the app and may change; we will give notice of price changes as required, and any change will not affect a billing period already paid for.</p>
-        </Section>
-
-        <Section title="8. Cancellation and refunds">
-          <p>You can cancel your subscription at any time as described above, and you will keep access until the end of the period you have paid for. Purchases are made through Apple, and refunds are handled by Apple under its policies. For full details, including your statutory rights as a consumer, see our <a href="/refunds" style={link}>Refund Policy</a>. Nothing in these Terms affects your legal rights under the Consumer Rights Act 2015 or other applicable consumer law.</p>
-        </Section>
-
-        <Section title="9. Acceptable use">
-          <p>You agree not to:</p>
-          <ul style={ul}>
-            <li>use the Service for any unlawful, harmful, or fraudulent purpose;</li>
-            <li>reverse engineer, decompile, scrape, or attempt to extract the source code, prompts, or models behind the Service, except to the extent this restriction is prohibited by law;</li>
-            <li>use the Service to harass, abuse, threaten, or harm yourself or others;</li>
-            <li>misrepresent your identity or age, or use another person&rsquo;s account without permission;</li>
-            <li>use bots, scripts, or other automated means to access the Service or generate sessions;</li>
-            <li>interfere with, disrupt, or attempt to gain unauthorised access to the Service or its systems.</li>
-          </ul>
-          <p style={{ marginTop: 12 }}>We may suspend or terminate access if you breach these Terms or use the Service in a way that risks harm to you, to others, or to us.</p>
-        </Section>
-
-        <Section title="10. Intellectual property">
-          <p>The Service, including Symponia&rsquo;s software, the animal archetype framework, prompts, text, design, and branding, is owned by Boroto Ltd or its licensors and is protected by intellectual property laws. We grant you a limited, personal, non-exclusive, non-transferable, revocable licence to use the Service for your own personal, non-commercial use in accordance with these Terms. You may not copy, distribute, or create derivative works from the Service without our written permission.</p>
-          <p style={{ marginTop: 12 }}>The reflections and conversations you create are yours. We do not claim ownership of your personal content. You grant us a limited licence to process that content only as needed to operate and provide the Service to you, as described in our <a href="/privacy" style={link}>Privacy Policy</a>.</p>
-        </Section>
-
-        <Section title="11. Third-party services">
-          <p>The Service relies on third parties, including Apple (distribution, sign-in, and payments), Anthropic (the Claude AI that generates responses), and Supabase (secure hosting). Your use of the app is also subject to Apple&rsquo;s <a href="/eula" style={link}>Licensed Application End User License Agreement</a>. We are not responsible for third-party services, and their own terms and privacy policies apply to their parts of the experience.</p>
-        </Section>
-
-        <Section title="12. Availability and changes to the Service">
-          <p>We aim to keep Symponia available but we do not guarantee that it will be uninterrupted, secure, or error-free. The Service may be unavailable during maintenance or for reasons outside our control, and we may modify, suspend, or discontinue all or part of it. Where we discontinue a paid feature, we will act fairly and in line with your consumer rights.</p>
-        </Section>
-
-        <Section title="13. Suspension and termination">
-          <p>You may stop using the Service and delete your account at any time. We may suspend or end your access if you breach these Terms, if required by law, or if continuing to provide the Service to you is not reasonably possible. Sections that by their nature should survive termination (including intellectual property, disclaimers, limitation of liability, and governing law) will continue to apply.</p>
-        </Section>
-
-        <Section title="14. Disclaimers">
-          <p>Except for the responsibilities we expressly accept in these Terms and any rights you have under consumer law that cannot be excluded, the Service is provided &ldquo;as is&rdquo; and &ldquo;as available&rdquo;, and we make no warranties of any kind, whether express or implied, about the Service, its content, or any AI-generated output.</p>
-        </Section>
-
-        <Section title="15. Our liability to you">
-          <p>Nothing in these Terms limits or excludes our liability where it would be unlawful to do so. This includes liability for death or personal injury caused by our negligence, for fraud or fraudulent misrepresentation, and for any other liability that cannot be limited or excluded under applicable law, including your statutory rights as a consumer.</p>
-          <p style={{ marginTop: 12 }}>Subject to the paragraph above, and to the fullest extent permitted by law: we are not liable for loss or damage that was not foreseeable, for loss that arises from your reliance on AI-generated content, or for indirect or consequential loss; and our total liability to you for all claims arising from or connected with the Service in any 12-month period will not exceed the greater of (a) the total amount you paid us or Apple for the Service in that period, or (b) £100. We provide the Service for personal use only and are not liable for business losses.</p>
-        </Section>
-
-        <Section title="16. Indemnity">
-          <p>You agree to be responsible for, and to reimburse us for, reasonable losses and costs we suffer that arise from your misuse of the Service or your breach of these Terms, to the extent caused by you. This does not limit your consumer rights.</p>
-        </Section>
-
-        <Section title="17. Changes to these Terms">
-          <p>We may update these Terms from time to time, for example to reflect changes to the Service or the law. We will change the &ldquo;Last updated&rdquo; date above and, where changes are material, take reasonable steps to bring them to your attention. If you continue to use the Service after the changes take effect, you accept the updated Terms. If you do not agree, you should stop using the Service and may cancel and delete your account.</p>
-        </Section>
-
-        <Section title="18. Governing law and jurisdiction">
-          <p>These Terms and any dispute arising out of or in connection with them are governed by the laws of England and Wales. Disputes will be subject to the exclusive jurisdiction of the courts of England and Wales, except that if you live in another part of the UK you may bring proceedings in your home nation, and consumers keep the protection of the mandatory laws of their country of residence.</p>
-        </Section>
-
-        <Section title="19. General">
-          <p>If any part of these Terms is found to be unenforceable, the rest will remain in effect. Our failure to enforce a provision is not a waiver of it. You may not transfer your rights under these Terms without our consent; we may transfer ours where your rights are not adversely affected. These Terms, together with our <a href="/privacy" style={link}>Privacy Policy</a>, <a href="/refunds" style={link}>Refund Policy</a>, and the <a href="/eula" style={link}>EULA</a>, are the entire agreement between you and us regarding the Service.</p>
-        </Section>
-
-        <Section title="20. Contact">
-          <p>Questions about these Terms? Email us at <a href="mailto:hello@symponia.io" style={link}>hello@symponia.io</a>.</p>
-        </Section>
-      </div>
-    </PageShell>
-  );
+export default function Page() {
+  return <LegalPage doc={doc} locale={DEFAULT_LOCALE} />;
 }

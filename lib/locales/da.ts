@@ -118,6 +118,32 @@ export const da: Dict = {
     reassure: 'Det er gratis at begynde, og de daglige refleksioner forbliver gratis. Opsig når som helst i dine Apple ID-indstillinger.',
   },
 
+  compare: {
+    k: 'Symponia over for prompt-dagbøgerne',
+    h2: 'En prompt stiller spørgsmålet. Den kan ikke høre svaret.',
+    lead: 'Alle shadow work-apps på markedet giver dig den samme liste med spørgsmål og et tomt felt. Det er en dagbog med bedre markedsføring. Arbejdet begynder ikke, når du får stillet et spørgsmål — det begynder, når noget svarer dig.',
+    them: {
+      t: 'Prompt-dagbøger',
+      items: [
+        'De samme spørgsmål til alle, der henter den',
+        'Du skal allerede vide, hvad din skygge er',
+        'Skriver intet tilbage — du er alene med siden',
+        'Glemmer dig mellem sessionerne',
+        'En personlighedstype, rakt til dig som et mærkat',
+      ],
+    },
+    us: {
+      t: 'Symponia',
+      items: [
+        'En projektiv metode, der får frem, hvad du ikke kan sige direkte',
+        'Det syvende dyr sætter navn på din skygge, på minutter',
+        'Svarer dig: hvert svar er skrevet til det, du faktisk skrev',
+        'Husker på tværs af måneder, så et mønster bliver synligt',
+        'En linse at se igennem, aldrig et mærkat sat på dig',
+      ],
+    },
+  },
+
   founder: {
     k: 'Hvor det begyndte',
     h2: 'Skabt af en osteopat og af kvinden, der gav idéen en form, du kan holde i hånden.',

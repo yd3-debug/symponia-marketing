@@ -119,6 +119,32 @@ export const de: Dict = {
     reassure: 'Der Einstieg ist kostenlos, und die täglichen Reflexionen bleiben es. Jederzeit kündbar in den Einstellungen deiner Apple-ID.',
   },
 
+  compare: {
+    k: 'Symponia und die Prompt-Tagebücher',
+    h2: 'Ein Prompt stellt die Frage. Hören kann er die Antwort nicht.',
+    lead: 'Jede Shadow-Work-App auf dem Markt gibt dir dieselbe Liste von Fragen und ein leeres Feld. Das ist ein Tagebuch mit besserem Marketing. Die Arbeit beginnt nicht, wenn dir eine Frage gestellt wird — sie beginnt, wenn dir etwas antwortet.',
+    them: {
+      t: 'Prompt-Tagebücher',
+      items: [
+        'Dieselben Fragen für alle, die es herunterladen',
+        'Du musst schon wissen, was dein Schatten ist',
+        'Schreibt nichts zurück — du bleibst allein mit der Seite',
+        'Vergisst dich zwischen den Sitzungen',
+        'Ein Persönlichkeitstyp, überreicht als Etikett',
+      ],
+    },
+    us: {
+      t: 'Symponia',
+      items: [
+        'Eine projektive Methode, die zutage fördert, was du nicht direkt sagen kannst',
+        'Das siebte Tier benennt deinen Schatten, in Minuten',
+        'Antwortet dir: jede Erwiderung ist auf das geschrieben, was du wirklich geschrieben hast',
+        'Erinnert sich über Monate, sodass ein Muster sichtbar wird',
+        'Eine Linse zum Hindurchsehen, nie ein Etikett auf dir',
+      ],
+    },
+  },
+
   founder: {
     k: 'Wie es begann',
     h2: 'Entstanden bei einem Osteopathen — und bei der Frau, die daraus etwas gemacht hat, das man in der Hand halten kann.',

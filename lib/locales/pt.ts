@@ -117,6 +117,32 @@ export const pt: Dict = {
     reassure: 'Começar é gratuito e as reflexões diárias continuam gratuitas. Cancele quando quiser nas definições do seu ID Apple.',
   },
 
+  compare: {
+    k: 'A Symponia e os diários de perguntas',
+    h2: 'Uma pergunta é só uma pergunta. Não sabe ouvir a resposta.',
+    lead: 'Todas as apps de shadow work dão-lhe a mesma lista de perguntas e uma caixa vazia. Isso é um diário com melhor marketing. O trabalho não começa quando lhe fazem uma pergunta — começa quando algo lhe responde.',
+    them: {
+      t: 'Diários de perguntas',
+      items: [
+        'As mesmas perguntas para todos os que descarregam',
+        'Já tem de saber qual é a sua sombra',
+        'Não escreve nada de volta — fica sozinho com a página',
+        'Esquece-se de si entre sessões',
+        'Um tipo de personalidade, entregue como rótulo',
+      ],
+    },
+    us: {
+      t: 'Symponia',
+      items: [
+        'Um método projetivo que faz emergir o que não consegue dizer diretamente',
+        'O sétimo animal dá nome à sua sombra, em minutos',
+        'Responde-lhe: cada resposta é escrita sobre o que escreveu de facto',
+        'Lembra-se durante meses, para que um padrão se torne visível',
+        'Uma lente por onde olhar, nunca um rótulo colado a si',
+      ],
+    },
+  },
+
   founder: {
     k: 'Onde tudo começou',
     h2: 'Feita por um osteopata e pela mulher que lhe deu uma forma que se segura na mão.',

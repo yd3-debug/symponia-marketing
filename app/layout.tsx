@@ -64,6 +64,15 @@ export const metadata: Metadata = {
   },
   description: DESCRIPTION,
   keywords: [
+    'shadow work app',
+    'shadow work',
+    'how to find your shadow self',
+    'shadow self test',
+    'jungian shadow work',
+    'carl jung shadow',
+    'shadow work journal app',
+    'shadow work prompts',
+    'projective test app',
     'AI journaling app',
     'AI companion app',
     'self reflection app',
@@ -202,7 +211,7 @@ const jsonLd = [
       'AI-powered deep conversations',
       'Personalised companion identity',
     ],
-    keywords: 'self-discovery app, AI companion, animal archetypes, daily reflections, inner work, iOS wellness app',
+    keywords: 'shadow work app, shadow work, jungian shadow work, shadow self, animal archetypes, projective method, depth psychology app, inner work, AI companion, iOS wellness app',
     inLanguage: 'en',
     publisher: {
       '@type': 'Organization',
@@ -235,6 +244,26 @@ const jsonLd = [
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is shadow work?',
+        acceptedAnswer: { '@type': 'Answer', text: 'Shadow work means looking at the parts of yourself you learned to hide, usually early and usually to stay safe. Carl Jung called this the shadow. It does not disappear when you bury it; it starts making your decisions from underground. Shadow work is the practice of bringing it back into view.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I find out what my shadow is?',
+        acceptedAnswer: { '@type': 'Answer', text: 'The shortcut is your own revulsion. The trait you find unbearable in other people is very often the one you exiled in yourself. Symponia uses this directly: you choose six animals that feel like you and a seventh that repels you, and the seventh is where your shadow is hiding.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'How is Symponia different from a shadow work journal or prompt app?',
+        acceptedAnswer: { '@type': 'Answer', text: 'A prompt asks a question and leaves you alone with a blank page. Symponia answers. It reads what you actually wrote, not what an average user might have written, and each reply is aimed at the one thing that takes you a layer deeper. It also remembers across months, so a pattern becomes visible.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'Are the animal archetypes just a personality quiz?',
+        acceptedAnswer: { '@type': 'Answer', text: 'No. Nothing is assigned to you and there is no type at the end. You choose seven animals, including one that repels you, and Symponia reads them together as a field. It is a projective method, closer in spirit to an inkblot than to a quiz, and it will never tell you your spirit animal.' },
+      },
       {
         '@type': 'Question',
         name: 'What is Symponia?',

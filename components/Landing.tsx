@@ -188,6 +188,26 @@ export default function Landing({ locale }: { locale: Locale }) {
         </div>
       </section>
 
+      {/* US vs THEM — no names. The category is prompt journals; the point is
+          that a prompt cannot hear the answer. */}
+      <section className="sec" id="compare">
+        <div className="w narrow">
+          <p className="k">{t.compare.k}</p>
+          <h2>{t.compare.h2}</h2>
+          <p className="lead">{t.compare.lead}</p>
+          <div className="vs">
+            <div className="vs-col vs-them">
+              <h3>{t.compare.them.t}</h3>
+              <ul>{t.compare.them.items.map((i: string) => <li key={i}>{i}</li>)}</ul>
+            </div>
+            <div className="vs-col vs-us">
+              <h3>{t.compare.us.t}</h3>
+              <ul>{t.compare.us.items.map((i: string) => <li key={i}>{i}</li>)}</ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CLOSE — the outcome, not the number. Apple owns the price; this page
           owns the reason to care. */}
       <section className="sec ink center" id="start">
@@ -387,6 +407,25 @@ const CSS = `
 
 .sy .pill{display:inline-block;margin-top:26px;background:linear-gradient(92deg,var(--teal),var(--vio));color:#0D0B14;
   border-radius:99px;padding:14px 22px;font:700 13.5px/1.35 ui-sans-serif}
+
+/* us vs them */
+.sy .vs{display:grid;grid-template-columns:1fr;gap:16px;margin-top:34px;text-align:left}
+.sy .vs-col{border-radius:16px;padding:26px 24px}
+.sy .vs-col h3{font-size:1rem;font-weight:600;margin:0 0 16px;letter-spacing:0}
+.sy .vs-col ul{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.sy .vs-col li{position:relative;padding-left:26px;font:400 14.5px/1.6 ui-sans-serif}
+.sy .vs-them{background:rgba(13,11,20,.04);border:1px solid rgba(13,11,20,.09)}
+.sy .vs-them h3{color:#6A6078}
+.sy .vs-them li{color:#6A6078}
+.sy .vs-them li::before{content:'';position:absolute;left:2px;top:8px;width:11px;height:1.5px;background:#A8A0B8}
+.sy .vs-us{background:var(--paper);border:1px solid rgba(18,168,184,.35);box-shadow:0 10px 30px rgba(13,11,20,.06)}
+.sy .vs-us h3{color:var(--ink)}
+.sy .vs-us li{color:var(--ink);font-weight:500}
+.sy .vs-us li::before{content:'';position:absolute;left:2px;top:5px;width:6px;height:10px;
+  border:solid var(--teal);border-width:0 2px 2px 0;transform:rotate(42deg)}
+@media(min-width:760px){
+  .sy .vs{grid-template-columns:1fr 1fr;gap:20px}
+}
 
 /* close section */
 .sy .gets{list-style:none;padding:0;margin:30px auto 34px;max-width:520px;text-align:left;display:grid;gap:12px}

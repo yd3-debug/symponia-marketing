@@ -115,6 +115,32 @@ export const it: Dict = {
     reassure: 'Iniziare è gratuito e le riflessioni quotidiane restano gratuite. Disdici quando vuoi dalle impostazioni del tuo ID Apple.',
   },
 
+  compare: {
+    k: 'Symponia e i diari a prompt',
+    h2: 'Un prompt fa la domanda. Non sa ascoltare la risposta.',
+    lead: 'Ogni app di shadow work sul mercato ti dà lo stesso elenco di domande e una casella vuota. È un diario con un marketing migliore. Il lavoro non comincia quando ti fanno una domanda: comincia quando qualcosa ti risponde.',
+    them: {
+      t: 'Diari a prompt',
+      items: [
+        'Le stesse domande per chiunque lo scarichi',
+        'Devi già sapere qual è la tua ombra',
+        'Non scrive nulla in risposta: resti solo davanti alla pagina',
+        'Ti dimentica tra una sessione e l’altra',
+        'Un tipo di personalità, consegnato come etichetta',
+      ],
+    },
+    us: {
+      t: 'Symponia',
+      items: [
+        'Un metodo proiettivo che fa emergere ciò che non sai dire direttamente',
+        'Il settimo animale nomina la tua ombra, in pochi minuti',
+        'Ti risponde: ogni replica è scritta su ciò che hai scritto davvero',
+        'Ricorda per mesi, così uno schema diventa visibile',
+        'Una lente attraverso cui guardare, mai un’etichetta addosso',
+      ],
+    },
+  },
+
   founder: {
     k: 'Dove tutto è cominciato',
     h2: 'Nata da un osteopata e dalla donna che ha dato a Symponia una forma che puoi tenere in mano.',

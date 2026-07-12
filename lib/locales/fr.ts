@@ -115,6 +115,32 @@ export const fr: Dict = {
     reassure: 'Débuter est gratuit, et les réflexions quotidiennes le restent. Résiliez quand vous voulez dans les réglages de votre identifiant Apple.',
   },
 
+  compare: {
+    k: 'Symponia face aux journaux à questions',
+    h2: 'Une question reste une question. Elle n’entend pas la réponse.',
+    lead: 'Toutes les applis de shadow work vous donnent la même liste de questions et une case vide. C’est un journal intime mieux vendu. Le travail ne commence pas quand on vous pose une question — il commence quand quelque chose vous répond.',
+    them: {
+      t: 'Journaux à questions',
+      items: [
+        'Les mêmes questions pour tous ceux qui téléchargent',
+        'Il faut déjà savoir quelle est votre ombre',
+        'N’écrit rien en retour — vous restez seul face à la page',
+        'Vous oublie d’une séance à l’autre',
+        'Un type de personnalité, servi comme une étiquette',
+      ],
+    },
+    us: {
+      t: 'Symponia',
+      items: [
+        'Une méthode projective qui fait surgir ce que vous ne pouvez pas dire directement',
+        'Le septième animal nomme votre ombre, en quelques minutes',
+        'Vous répond : chaque réponse est écrite pour ce que vous avez réellement écrit',
+        'Se souvient sur des mois, si bien qu’un schéma devient visible',
+        'Une lentille pour regarder, jamais une étiquette posée sur vous',
+      ],
+    },
+  },
+
   founder: {
     k: 'Là où tout a commencé',
     h2: 'Né d’un ostéopathe, et de la femme qui lui a donné une forme que l’on peut tenir dans la main.',

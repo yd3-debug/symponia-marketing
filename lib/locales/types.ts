@@ -47,6 +47,19 @@ export type Dict = {
   answer: { k: string; h2: string; lead: string; chat: { who: 's' | 'u'; t: string }[] };
   mem: { k: string; h2: string; lead: string; items: { t: string; d: string }[]; pill: string };
   limits: { k: string; h2: string; lead: string };
+
+  /**
+   * Us-versus-them, without naming anyone. Every shadow-work app on the market
+   * is a prompt journal; the differentiator is that Symponia has a mechanic
+   * that names the shadow instead of asking you to find it yourself.
+   */
+  compare: {
+    k: string;
+    h2: string;
+    lead: string;
+    them: { t: string; items: string[] };
+    us: { t: string; items: string[] };
+  };
   /**
    * The closing section. Deliberately carries no price: Apple owns the number,
    * it varies by storefront, and a stale figure on a page that leads to a paid

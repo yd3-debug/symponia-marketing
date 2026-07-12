@@ -297,7 +297,8 @@ const CSS = `
 .sy p{margin:0}
 .sy .w{max-width:1160px;margin:0 auto;padding:0 22px}
 .sy .w.narrow{max-width:780px}
-.sy .k{font:700 11px/1 ui-sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--teal)}
+.sy .k{font:700 13px/1.4 Arial,'Helvetica Neue',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#0B6675}
+.sy .ink .k,.sy .dark .k,.sy .hero .k{color:#5CE8D0}
 .sy .k.mt{margin-top:56px}
 .sy .lead{font-size:clamp(1.02rem,2vw,1.24rem);color:var(--dim);max-width:60ch;line-height:1.7;margin-top:16px}
 .sy .sec{padding:clamp(58px,8vw,110px) 0}
@@ -313,16 +314,16 @@ const CSS = `
 .sy .nav-in{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
 .sy .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
 .sy .logo img{border-radius:7px;object-fit:cover;display:block}
-.sy .logo span{font-size:1.2rem;font-weight:600;letter-spacing:.01em;color:#fff}
+.sy .logo span{font:700 1.15rem/1 Arial,'Helvetica Neue',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#fff}
 .sy .nav-links{display:flex;gap:20px}
 /* Was 12px uppercase with .06em tracking — legible on paper, a squint on screen.
    Sentence case at 13.5px reads without effort; colour lifted too. */
-.sy .nav-links a{font:500 13.5px/1 ui-sans-serif;color:#E4E0F0;text-decoration:none}
+.sy .nav-links a{font:700 12px/1 Arial,'Helvetica Neue',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#EDEAF5;text-decoration:none}
 .sy .nav-links a:hover{color:#fff}
 .sy .nav-right{display:flex;align-items:center;gap:12px}
 .sy .lang{position:relative}
 .sy .lang-btn{display:flex;align-items:center;gap:7px;background:none;border:1px solid rgba(255,255,255,.28);color:#E4E0F0;
-  border-radius:9px;padding:8px 11px;font:500 13px/1 ui-sans-serif;cursor:pointer}
+  border-radius:9px;padding:8px 11px;font:700 12px/1 Arial,'Helvetica Neue',sans-serif;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
 .sy .lang-btn:hover{border-color:rgba(255,255,255,.45);background:rgba(255,255,255,.05)}
 .sy .lang-btn .caret{font-size:10px;opacity:.7}
 /* Menu is flush against the button (top:100%) and reserves its visual offset as
@@ -450,14 +451,14 @@ const CSS = `
    lighter (#B9B2CE, ~7.6:1) because the old grey was technically AA but far
    too small and dim to read comfortably. */
 .sy .foot{background:var(--ink);color:#E8E4F2;padding:64px 0 32px;
-  font-family:var(--font-poppins),Arial,'Helvetica Neue',sans-serif;font-size:14px;line-height:1.7;font-weight:400}
+  font-family:Arial,'Helvetica Neue',sans-serif;font-size:14px;line-height:1.7;font-weight:400}
 .sy .foot a,.sy .foot h3,.sy .foot p,.sy .foot span{
-  font-family:var(--font-poppins),Arial,'Helvetica Neue',sans-serif}
+  font-family:Arial,'Helvetica Neue',sans-serif}
 .sy .foot-grid{display:grid;grid-template-columns:1fr;gap:40px}
 .sy .foot-brand{max-width:320px}
 .sy .foot-logo{display:inline-flex;align-items:center;gap:10px;text-decoration:none;margin-bottom:14px}
 .sy .foot-logo img{border-radius:7px;object-fit:cover;display:block}
-.sy .foot-logo span{font:600 1.15rem/1 var(--font-poppins),Arial,sans-serif;letter-spacing:.01em;color:#fff}
+.sy .foot-logo span{font:600 1.15rem/1 Arial,'Helvetica Neue',sans-serif;letter-spacing:.01em;color:#fff}
 .sy .foot-brand p{margin:0 0 20px;color:#C5BFD6;font-size:14px;line-height:1.7}
 .sy .foot-col{display:flex;flex-direction:column;gap:13px}
 .sy .foot-col h3{margin:0 0 6px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#9E96B8}

@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter, JetBrains_Mono, Syne, DM_Sans, Poppins } from 'next/font/google';
+import { Inter, JetBrains_Mono, Syne, DM_Sans } from 'next/font/google';
 import './globals.css';
 
 // Cal Sans replaced by Syne (similar geometric semi-bold, Google Fonts)
@@ -9,15 +9,6 @@ const inter = Inter({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600'],
   variable: '--font-inter',
-  display: 'swap',
-});
-
-// Footer + nav chrome. Cyrillic subset included so the Russian locale does not
-// fall back to a different face mid-page.
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '500', '600'],
-  variable: '--font-poppins',
   display: 'swap',
 });
 
@@ -325,7 +316,7 @@ const jsonLd = [
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${poppins.variable} ${jetbrainsMono.variable} ${syne.variable} ${dmSans.variable}`}>
+    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} ${syne.variable} ${dmSans.variable}`}>
       <head>
         {/* LLM/AI crawler discovery */}
         <link rel="alternate" type="text/plain" title="LLMs.txt" href="/llms.txt" />

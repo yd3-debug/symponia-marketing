@@ -266,7 +266,7 @@ const CSS = `
   background:var(--cream);color:var(--ink);
   font:400 17px/1.7 var(--font-inter),'Inter',ui-sans-serif,-apple-system,system-ui;-webkit-font-smoothing:antialiased}
 .sy *{box-sizing:border-box}
-.sy h1,.sy h2,.sy h3{font-family:var(--font-cormorant),'Cormorant Garamond',Georgia,serif;font-weight:600;letter-spacing:-.015em;line-height:1.08;margin:0}
+.sy h1,.sy h2,.sy h3{font-family:var(--font-inter),'Helvetica Neue',sans-serif;font-weight:600;letter-spacing:-.022em;line-height:1.08;margin:0}
 .sy h1{font-size:clamp(2.35rem,6.2vw,4.7rem)}
 .sy h2{font-size:clamp(1.95rem,4.4vw,3.2rem);margin:14px 0 18px}
 .sy h3{font-size:1.45rem;margin-bottom:8px}
@@ -347,7 +347,7 @@ const CSS = `
 .sy .memcard p{font-size:.94rem;color:#B8B1CC}
 
 /* mechanism */
-.sy .stat{margin-top:26px;font-family:var(--font-cormorant),Georgia,serif;font-size:clamp(1.35rem,3vw,2.05rem);line-height:1.4;
+.sy .stat{margin-top:26px;font-family:var(--font-inter),'Helvetica Neue',sans-serif;font-size:clamp(1.35rem,3vw,2.05rem);line-height:1.4;
   color:#fff;max-width:30ch;border-left:3px solid var(--teal);padding-left:20px}
 .sy .note b{color:#fff}
 
@@ -355,7 +355,7 @@ const CSS = `
 .sy .founder{background:#F3EFE2}
 .sy .founder .lead{max-width:68ch}
 .sy .fquote{margin:34px 0;padding-left:22px;border-left:3px solid var(--teal);
-  font-family:var(--font-cormorant),Georgia,serif;font-style:italic;
+  font-family:var(--font-inter),'Helvetica Neue',sans-serif;font-style:italic;
   font-size:clamp(1.3rem,2.8vw,1.85rem);line-height:1.45;color:var(--ink);max-width:34ch}
 .sy .fcta{margin-top:30px}
 .sy .fcta a{font:600 .95rem/1 ui-sans-serif;color:var(--teal);text-decoration:none;
@@ -392,7 +392,7 @@ const CSS = `
 .sy .gets li::after{content:'';position:absolute;left:5px;top:11px;width:5px;height:8px;border:solid #0D0B14;
   border-width:0 1.8px 1.8px 0;transform:rotate(42deg)}
 .sy .reassure{margin-top:20px;font:500 13.5px/1.7 ui-sans-serif;color:#A79FC0}
-.sy .big{font-family:var(--font-cormorant),Georgia,serif;font-size:clamp(3rem,8vw,5.2rem);font-weight:600;margin:10px 0 2px;
+.sy .big{font-family:var(--font-inter),'Helvetica Neue',sans-serif;font-size:clamp(3rem,8vw,5.2rem);font-weight:600;margin:10px 0 2px;
   background:linear-gradient(92deg,var(--teal),var(--vio));-webkit-background-clip:text;background-clip:text;color:transparent}
 
 /* faq */

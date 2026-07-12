@@ -23,7 +23,7 @@ const APP_STORE_URL = 'https://apps.apple.com/us/app/symponia/id6760951504';
 const C = {
   bg: '#F5F2E8', fg: '#0F0C0A', sub: '#2E2840', dim: '#6A6078',
   cyan: '#0891B2', border: 'rgba(0,0,0,0.08)',
-  heading: "var(--font-cormorant), 'Georgia', serif",
+  heading: "var(--font-inter), 'Helvetica Neue', sans-serif",
   body: "var(--font-inter), 'Helvetica Neue', sans-serif",
 };
 

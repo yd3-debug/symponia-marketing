@@ -11,7 +11,7 @@ import type { LegalDoc } from '@/lib/legal';
 const C = {
   fg: '#0F0C0A', sub: '#2E2840', dim: '#6A6078', cyan: '#0891B2',
   border: 'rgba(0,0,0,0.08)',
-  heading: "var(--font-cormorant), 'Georgia', serif",
+  heading: "var(--font-inter), 'Helvetica Neue', sans-serif",
   body: "var(--font-inter), 'Helvetica Neue', sans-serif",
 };
 

@@ -103,7 +103,7 @@ export const en: Dict = {
   limits: {
     k: 'Honest limits',
     h2: 'What Symponia will not pretend to be.',
-    lead: 'Not therapy. Not couples counselling. It hears only your side and cannot see the relationship you are in. Not every feeling is a wound, and sometimes your partner is simply being inconsiderate. If you are in crisis, contact a qualified professional or your local emergency services.',
+    lead: 'Not therapy, and not a substitute for it. It hears only your side and cannot see your life from the outside. Not every feeling is a wound, and not everything you dislike in someone else is your shadow — sometimes people are simply being inconsiderate. If you are in crisis, contact a qualified professional or your local emergency services.',
   },
   close: {
     k: 'Begin',

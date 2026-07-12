@@ -300,7 +300,7 @@ export default function Landing({ locale }: { locale: Locale }) {
 const CSS = `
 .sy{--ink:#0D0B14;--ink2:#151223;--cream:#F5F2E8;--paper:#FFFDF7;--teal:#12A8B8;--vio:#7E5BE0;--dim:#5E5773;
   background:var(--cream);color:var(--ink);
-  font:400 17px/1.7 var(--font-inter),'Inter',ui-sans-serif,-apple-system,system-ui;-webkit-font-smoothing:antialiased}
+  font:400 17px/1.7 var(--font-inter),'Inter',var(--font-inter),'Helvetica Neue',sans-serif;-webkit-font-smoothing:antialiased}
 .sy *{box-sizing:border-box}
 .sy h1,.sy h2,.sy h3{font-family:var(--font-inter),'Helvetica Neue',sans-serif;font-weight:600;letter-spacing:-.022em;line-height:1.08;margin:0;
   text-wrap:balance;overflow-wrap:break-word}
@@ -350,15 +350,15 @@ const CSS = `
 .sy .lang-menu li:first-child{padding-top:6px}
 .sy .lang-menu li:last-child{padding-bottom:6px}
 .sy .lang-menu a{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:8px;color:#2A2440;
-  text-decoration:none;font:500 14px/1 ui-sans-serif}
+  text-decoration:none;font:500 14px/1 var(--font-inter),'Helvetica Neue',sans-serif}
 .sy .lang-menu a:hover{background:#F1EEF9}
 .sy .lang-menu a[aria-current]{background:#F1EEF9;font-weight:600}
 
 /* badge */
 .sy .badge{display:inline-flex;align-items:center;gap:9px;background:#fff;color:#0D0B14;border-radius:12px;padding:9px 15px;text-decoration:none;flex-shrink:0}
 .sy .badge svg path{fill:#0D0B14}
-.sy .badge small{display:block;font:500 9px/1.2 ui-sans-serif;opacity:.7}
-.sy .badge b{display:block;font:700 15px/1.15 ui-sans-serif}
+.sy .badge small{display:block;font:500 9px/1.2 var(--font-inter),'Helvetica Neue',sans-serif;opacity:.7}
+.sy .badge b{display:block;font:700 15px/1.15 var(--font-inter),'Helvetica Neue',sans-serif}
 
 /* hero */
 .sy .hero{background:radial-gradient(900px 520px at 10% -5%,rgba(126,91,224,.30),transparent 62%),radial-gradient(740px 460px at 96% 22%,rgba(18,168,184,.20),transparent 62%),var(--ink);color:#fff;padding:clamp(52px,7vw,96px) 0}
@@ -370,8 +370,8 @@ const CSS = `
 .sy .hero-shot img{width:100%;max-width:300px;height:auto;filter:drop-shadow(0 40px 60px rgba(10,6,30,.55))}
 .sy .cta{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:28px}
 .sy .center-cta{justify-content:center}
-.sy .ghost{font:600 14px/1 ui-sans-serif;text-decoration:none;border:1px solid rgba(255,255,255,.26);color:#fff;padding:14px 20px;border-radius:12px}
-.sy .strip{margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);font:500 13px/1.65 ui-sans-serif;color:#B6AECD;max-width:62ch}
+.sy .ghost{font:600 14px/1 var(--font-inter),'Helvetica Neue',sans-serif;text-decoration:none;border:1px solid rgba(255,255,255,.26);color:#fff;padding:14px 20px;border-radius:12px}
+.sy .strip{margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);font:500 13px/1.65 var(--font-inter),'Helvetica Neue',sans-serif;color:#B6AECD;max-width:62ch}
 .sy .strip b{color:#fff}
 
 /* grids */
@@ -381,7 +381,7 @@ const CSS = `
 .sy .mcard{background:var(--paper);border-radius:16px;padding:26px;box-shadow:0 2px 18px rgba(30,20,70,.07)}
 .sy .mcard p{color:var(--dim);font-size:.97rem}
 .sy .memcard{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.11);border-radius:16px;padding:22px}
-.sy .memcard h4{font:800 11px/1 ui-sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin:0 0 10px}
+.sy .memcard h4{font:800 11px/1 var(--font-inter),'Helvetica Neue',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin:0 0 10px}
 .sy .memcard p{font-size:.94rem;color:#B8B1CC}
 
 /* mechanism */
@@ -396,7 +396,7 @@ const CSS = `
   font-family:var(--font-inter),'Helvetica Neue',sans-serif;font-style:italic;
   font-size:clamp(1.3rem,2.8vw,1.85rem);line-height:1.45;color:var(--ink);max-width:34ch}
 .sy .fcta{margin-top:30px}
-.sy .fcta a{font:600 .95rem/1 ui-sans-serif;color:var(--teal);text-decoration:none;
+.sy .fcta a{font:600 .95rem/1 var(--font-inter),'Helvetica Neue',sans-serif;color:var(--teal);text-decoration:none;
   border-bottom:1px solid transparent;padding-bottom:2px;transition:border-color .2s}
 .sy .fcta a:hover{border-bottom-color:var(--teal)}
 
@@ -414,13 +414,13 @@ const CSS = `
 /* chips */
 .sy .chips{display:flex;flex-wrap:wrap;gap:9px;list-style:none;padding:0;margin:28px 0 0}
 .sy .chips a{display:inline-flex;align-items:center;gap:9px;background:var(--paper);border:1px solid rgba(0,0,0,.08);
-  border-radius:99px;padding:9px 16px 9px 11px;font:600 13px/1 ui-sans-serif;color:var(--ink);text-decoration:none;
+  border-radius:99px;padding:9px 16px 9px 11px;font:600 13px/1 var(--font-inter),'Helvetica Neue',sans-serif;color:var(--ink);text-decoration:none;
   transition:border-color .15s,transform .15s}
 .sy .chips a:hover{border-color:rgba(0,0,0,.28);transform:translateY(-1px)}
 .sy .chips a[aria-current]{border-color:var(--teal);box-shadow:inset 0 0 0 1px var(--teal)}
 
 .sy .pill{display:inline-block;margin-top:26px;background:linear-gradient(92deg,var(--teal),var(--vio));color:#0D0B14;
-  border-radius:99px;padding:14px 22px;font:700 13.5px/1.35 ui-sans-serif}
+  border-radius:99px;padding:14px 22px;font:700 13.5px/1.35 var(--font-inter),'Helvetica Neue',sans-serif}
 
 /* us vs them: a paired grid, so each claim sits directly opposite the one it
    answers. Type is larger and looser than the old 14.5px lists, which is what
@@ -454,12 +454,12 @@ const CSS = `
 
 /* close section */
 .sy .gets{list-style:none;padding:0;margin:30px auto 34px;max-width:520px;text-align:left;display:grid;gap:12px}
-.sy .gets li{position:relative;padding-left:30px;font:500 15px/1.55 ui-sans-serif;color:#D9D4E6}
+.sy .gets li{position:relative;padding-left:30px;font:500 15px/1.55 var(--font-inter),'Helvetica Neue',sans-serif;color:#D9D4E6}
 .sy .gets li::before{content:'';position:absolute;left:0;top:7px;width:16px;height:16px;border-radius:50%;
   background:linear-gradient(92deg,var(--teal),var(--vio))}
 .sy .gets li::after{content:'';position:absolute;left:5px;top:11px;width:5px;height:8px;border:solid #0D0B14;
   border-width:0 1.8px 1.8px 0;transform:rotate(42deg)}
-.sy .reassure{margin-top:20px;font:500 13.5px/1.7 ui-sans-serif;color:#A79FC0}
+.sy .reassure{margin-top:20px;font:500 13.5px/1.7 var(--font-inter),'Helvetica Neue',sans-serif;color:#A79FC0}
 .sy .big{font-family:var(--font-inter),'Helvetica Neue',sans-serif;font-size:clamp(3rem,8vw,5.2rem);font-weight:600;margin:10px 0 2px;
   background:linear-gradient(92deg,var(--teal),var(--vio));-webkit-background-clip:text;background-clip:text;color:transparent}
 

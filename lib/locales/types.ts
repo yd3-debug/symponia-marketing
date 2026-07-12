@@ -22,6 +22,10 @@ export type Dict = {
       contact: string;
       rights: string;
       built: string;
+      /** Column headings + one-line brand blurb for the rebuilt footer sitemap. */
+      explore: string;
+      legal: string;
+      blurb: string;
     };
     /**
      * Shown at the top of translated legal pages. English is the binding text,
@@ -41,7 +45,13 @@ export type Dict = {
   answer: { k: string; h2: string; lead: string; chat: { who: 's' | 'u'; t: string }[] };
   mem: { k: string; h2: string; lead: string; items: { t: string; d: string }[]; pill: string };
   limits: { k: string; h2: string; lead: string };
-  price: { k: string; lead: string };
+  /**
+   * The closing section. Deliberately carries no price: Apple owns the number,
+   * it varies by storefront, and a stale figure on a page that leads to a paid
+   * subscription is a real problem rather than a cosmetic one. We sell the
+   * outcome and let the App Store state the price.
+   */
+  close: { k: string; h2: string; lead: string; gets: string[]; reassure: string };
 
   /** Short founder story on the landing page, linking through to /about. */
   founder: {

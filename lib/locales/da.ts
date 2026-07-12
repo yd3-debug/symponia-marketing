@@ -16,6 +16,9 @@ export const da: Dict = {
       contact: 'Kontakt',
       rights: 'Symponia af Boroto Ltd',
       built: 'Bygget af YD',
+      explore: 'Udforsk',
+      legal: 'Juridisk',
+      blurb: 'En AI-ledsager til indre arbejde. Dybdepsykologi, på dit eget sprog.',
     },
     legalNote: 'Denne oversættelse stilles kun til rådighed for læsevenlighedens skyld; det er alene den engelske version, der er juridisk bindende.',
   },
@@ -101,9 +104,17 @@ export const da: Dict = {
     h2: 'Hvad Symponia ikke foregiver at være.',
     lead: 'Ikke terapi. Ikke parterapi. Symponia hører kun din side og kan ikke se det forhold, du står i. Ikke enhver følelse er et sår, og nogle gange er din partner bare ubetænksom. Er du i krise, så kontakt en kvalificeret fagperson eller alarmcentralen.',
   },
-  price: {
-    k: 'Pris',
-    lead: '350 refleksionssamtaler om måneden. De daglige refleksioner er altid gratis. Begynd med en håndfuld gratis samtaler, og sig op når som helst i dine Apple ID-indstillinger. Intet er skjult, og intet er bygget for at gøre det svært at gå.',
+  close: {
+    k: 'Begynd',
+    h2: 'Du kan lade være med at tage den her skænderi for tredje gang.',
+    lead: 'Du aner allerede, at mønsteret er dit. Det, du mangler, er en måde at se det arbejde på: det træk, du undgår, grunden til at du bliver ved med at vælge det samme ansigt, øjeblikket hvor det tager over. Det er præcis det, Symponia gør.',
+    gets: [
+      'Sæt navn på det mønster, der vælger dine relationer',
+      'Mød det syvende dyr — den del af dig, du undgår',
+      'Skriv på dit eget sprog, og bliv forstået på det',
+      'En ledsager, der stadig husker, hvad du fortalte for en måned siden',
+    ],
+    reassure: 'Det er gratis at begynde, og de daglige refleksioner forbliver gratis. Opsig når som helst i dine Apple ID-indstillinger.',
   },
 
   founder: {

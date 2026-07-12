@@ -16,6 +16,9 @@ export const es: Dict = {
       contact: 'Contacto',
       rights: 'Symponia de Boroto Ltd',
       built: 'Creado por YD',
+      explore: 'Explorar',
+      legal: 'Aviso legal',
+      blurb: 'Un compañero de IA para el trabajo interior. Psicología profunda, en tu idioma.',
     },
     legalNote: 'Esta traducción se ofrece únicamente para facilitar la lectura: solo la versión en inglés tiene carácter jurídicamente vinculante y es la que prevalece.',
   },
@@ -101,9 +104,17 @@ export const es: Dict = {
     h2: 'Lo que Symponia nunca fingirá ser.',
     lead: 'No es terapia. No es terapia de pareja. Symponia solo escucha tu parte y no puede ver la relación en la que estás. No todo sentimiento es una herida, y a veces la otra persona simplemente está siendo desconsiderada. Si estás pasando por una crisis, acude a un profesional cualificado o a los servicios de emergencia de tu zona.',
   },
-  price: {
-    k: 'Precio',
-    lead: '350 sesiones de reflexión al mes. Las reflexiones diarias son siempre gratuitas. Empiezas con unas cuantas sesiones gratis y cancelas cuando quieras desde los ajustes de tu ID de Apple. Nada oculto, y nada pensado para complicarte la salida.',
+  close: {
+    k: 'Empezar',
+    h2: 'Puedes dejar de tener esta discusión por tercera vez.',
+    lead: 'Ya sospechas que el patrón es tuyo. Lo que te falta es una manera de verlo funcionar: el rasgo que evitas, la razón por la que eliges siempre la misma cara, el instante en que toma el mando. Eso es exactamente lo que hace Symponia.',
+    gets: [
+      'Ponle nombre al patrón que elige tus relaciones',
+      'Conoce al séptimo animal — la parte de ti que evitas',
+      'Escribe en tu idioma y que te entiendan en él',
+      'Un compañero que todavía recuerda lo que le contaste hace un mes',
+    ],
+    reassure: 'Empezar es gratis y las reflexiones diarias siguen siéndolo. Cancela cuando quieras en los ajustes de tu ID de Apple.',
   },
 
   founder: {

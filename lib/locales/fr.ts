@@ -13,6 +13,9 @@ export const fr: Dict = {
       contact: 'Contact',
       rights: 'Symponia par Boroto Ltd',
       built: 'Conçu par YD',
+      explore: 'Explorer',
+      legal: 'Mentions légales',
+      blurb: 'Un compagnon IA pour le travail intérieur. Psychologie des profondeurs, dans votre langue.',
     },
     legalNote: 'Cette traduction est fournie à titre de commodité ; seule la version anglaise a valeur juridique et fait foi.',
   },
@@ -98,9 +101,17 @@ export const fr: Dict = {
     h2: 'Ce que Symponia ne prétendra jamais être.',
     lead: 'Ni une thérapie, ni une thérapie de couple. Symponia n’entend que ton côté et ne voit rien de la relation dans laquelle tu es. Tout sentiment n’est pas une blessure, et parfois la personne en face de toi manque simplement d’égards. Si tu traverses une crise, adresse-toi à un professionnel qualifié ou aux services d’urgence de ta région.',
   },
-  price: {
-    k: 'Tarif',
-    lead: '350 séances de réflexion par mois. Les réflexions quotidiennes restent toujours gratuites. Commence par quelques séances offertes, et résilie quand tu veux depuis les réglages de ton identifiant Apple. Rien de caché, et rien qui soit fait pour te rendre le départ difficile.',
+  close: {
+    k: 'Commencer',
+    h2: 'Vous pouvez cesser d’avoir cette dispute pour la troisième fois.',
+    lead: 'Vous soupçonnez déjà que le schéma vient de vous. Ce qui vous manque, c’est un moyen de le voir à l’œuvre : le trait que vous fuyez, la raison pour laquelle vous choisissez toujours le même visage, l’instant où il prend les commandes. C’est tout ce que fait Symponia.',
+    gets: [
+      'Nommez le schéma qui choisit vos relations',
+      'Rencontrez le septième animal — la part de vous que vous évitez',
+      'Écrivez dans votre langue et soyez compris dans cette langue',
+      'Un compagnon qui se souvient encore de ce que vous lui avez dit le mois dernier',
+    ],
+    reassure: 'Débuter est gratuit, et les réflexions quotidiennes le restent. Résiliez quand vous voulez dans les réglages de votre identifiant Apple.',
   },
 
   founder: {

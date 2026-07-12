@@ -17,6 +17,9 @@ export const de: Dict = {
       contact: 'Kontakt',
       rights: 'Symponia von Boroto Ltd',
       built: 'Gebaut von YD',
+      explore: 'Entdecken',
+      legal: 'Rechtliches',
+      blurb: 'Ein KI-Begleiter für die innere Arbeit. Tiefenpsychologie, in deiner Sprache.',
     },
     legalNote: 'Diese Übersetzung wird ausschließlich zur besseren Verständlichkeit bereitgestellt; rechtlich verbindlich ist allein die englische Fassung.',
   },
@@ -102,9 +105,17 @@ export const de: Dict = {
     h2: 'Was Symponia nicht vorgibt zu sein.',
     lead: 'Keine Therapie. Keine Paarberatung. Symponia hört nur deine Seite und kann die Beziehung, in der du lebst, nicht sehen. Nicht jedes Gefühl ist eine Wunde, und manchmal ist dein Gegenüber einfach rücksichtslos. Wenn du in einer Krise steckst, wende dich an eine qualifizierte Fachperson oder an den Notruf.',
   },
-  price: {
-    k: 'Preis',
-    lead: '350 Reflexionsgespräche im Monat. Die tägliche Reflexion ist immer kostenlos. Fang mit ein paar freien Gesprächen an und kündige jederzeit in deinen Apple-ID-Einstellungen. Nichts ist versteckt, und nichts ist darauf ausgelegt, dir das Gehen schwer zu machen.',
+  close: {
+    k: 'Anfangen',
+    h2: 'Du kannst diesen Streit kein drittes Mal führen.',
+    lead: 'Du ahnst längst, dass das Muster deins ist. Was fehlt, ist eine Möglichkeit, ihm bei der Arbeit zuzusehen: der Zug, den du meidest, der Grund, warum du immer dasselbe Gesicht wählst, der Moment, in dem er das Steuer übernimmt. Genau das tut Symponia.',
+    gets: [
+      'Benenne das Muster, das deine Beziehungen auswählt',
+      'Begegne dem siebten Tier — dem Teil von dir, dem du ausweichst',
+      'Schreib in deiner Sprache und werde darin verstanden',
+      'Ein Begleiter, der sich noch erinnert, was du ihm vor einem Monat erzählt hast',
+    ],
+    reassure: 'Der Einstieg ist kostenlos, und die täglichen Reflexionen bleiben es. Jederzeit kündbar in den Einstellungen deiner Apple-ID.',
   },
 
   founder: {

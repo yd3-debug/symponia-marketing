@@ -1,5 +1,7 @@
 import { getDict, LOCALES, LOCALE_NAMES, DEFAULT_LOCALE, type Locale } from '@/lib/i18n';
 import { LangSync } from '@/components/LangSync';
+import { LangMenu } from '@/components/LangMenu';
+import { Flag } from '@/components/Flag';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/symponia/id6760951504';
 
@@ -29,7 +31,10 @@ export default function Landing({ locale }: { locale: Locale }) {
 
       <nav className="nav">
         <div className="w nav-in">
-          <a className="logo" href={hrefFor(locale)}>Symponia</a>
+          <a className="logo" href={hrefFor(locale)}>
+            <img src="/logo.jpg" alt="" width={30} height={30} />
+            <span>Symponia</span>
+          </a>
           <div className="nav-links">
             <a href={`${base}#rel`}>{t.nav.rel}</a>
             <a href={`${base}#how`}>{t.nav.method}</a>
@@ -38,14 +43,7 @@ export default function Landing({ locale }: { locale: Locale }) {
             <a href={`${base}#faq`}>{t.nav.faq}</a>
           </div>
           <div className="nav-right">
-            <div className="lang">
-              <button className="lang-btn" aria-haspopup="true">{LOCALE_NAMES[locale]} <span aria-hidden="true">▾</span></button>
-              <ul className="lang-menu">
-                {LOCALES.map(l => (
-                  <li key={l}><a href={hrefFor(l)} hrefLang={l} aria-current={l === locale ? 'true' : undefined}>{LOCALE_NAMES[l]}</a></li>
-                ))}
-              </ul>
-            </div>
+            <LangMenu locale={locale} />
             <Badge top={t.shell.badge.top} bottom={t.shell.badge.bottom} />
           </div>
         </div>
@@ -140,7 +138,14 @@ export default function Landing({ locale }: { locale: Locale }) {
           <h2>{t.langs.h2}</h2>
           <p className="lead">{t.langs.lead}</p>
           <ul className="chips">
-            {LOCALES.map(l => <li key={l}><a href={hrefFor(l)} hrefLang={l}>{LOCALE_NAMES[l]}</a></li>)}
+            {LOCALES.map(l => (
+              <li key={l}>
+                <a href={hrefFor(l)} hrefLang={l} aria-current={l === locale ? 'true' : undefined}>
+                  <Flag locale={l} size={20} />
+                  <span>{LOCALE_NAMES[l]}</span>
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </section>
@@ -183,13 +188,18 @@ export default function Landing({ locale }: { locale: Locale }) {
         </div>
       </section>
 
-      {/* PRICING */}
-      <section className="sec ink center">
-        <div className="w">
-          <p className="k">{t.price.k}</p>
-          <div className="big">£12.99</div>
-          <p className="lead">{t.price.lead}</p>
+      {/* CLOSE — the outcome, not the number. Apple owns the price; this page
+          owns the reason to care. */}
+      <section className="sec ink center" id="start">
+        <div className="w narrow">
+          <p className="k">{t.close.k}</p>
+          <h2>{t.close.h2}</h2>
+          <p className="lead">{t.close.lead}</p>
+          <ul className="gets">
+            {t.close.gets.map((g: string) => <li key={g}>{g}</li>)}
+          </ul>
           <div className="cta center-cta"><Badge top={t.shell.badge.top} bottom={t.shell.badge.bottom} /></div>
+          <p className="reassure">{t.close.reassure}</p>
         </div>
       </section>
 
@@ -206,16 +216,43 @@ export default function Landing({ locale }: { locale: Locale }) {
 
       <footer className="foot">
         <div className="w">
-          <span>© {new Date().getFullYear()} {t.shell.footer.rights}</span>
-          <span className="foot-links">
-            <a href={`${base}/about`}>{t.nav.about}</a>
-            <a href={`${base}/credits`}>{t.shell.footer.credits}</a>
-            <a href={`${base}/privacy`}>{t.shell.footer.privacy}</a>
-            <a href={`${base}/terms`}>{t.shell.footer.terms}</a>
-            <a href={`${base}/refunds`}>{t.shell.footer.refunds}</a>
-            <a href={`${base}/eula`}>{t.shell.footer.eula}</a>
-            <a href="mailto:hello@symponia.io">hello@symponia.io</a>
-          </span>
+          <div className="foot-grid">
+            <div className="foot-brand">
+              <a className="foot-logo" href={hrefFor(locale)}>
+                <img src="/logo.jpg" alt="" width={32} height={32} />
+                <span>Symponia</span>
+              </a>
+              <p>{t.shell.footer.blurb}</p>
+              <Badge top={t.shell.badge.top} bottom={t.shell.badge.bottom} />
+            </div>
+
+            <nav className="foot-col" aria-label={t.shell.footer.explore}>
+              <h3>{t.shell.footer.explore}</h3>
+              <a href={`${base}#rel`}>{t.nav.rel}</a>
+              <a href={`${base}#how`}>{t.nav.method}</a>
+              <a href={`${base}#mem`}>{t.nav.memory}</a>
+              <a href={`${base}#faq`}>{t.nav.faq}</a>
+              <a href={`${base}/about`}>{t.nav.about}</a>
+            </nav>
+
+            <nav className="foot-col" aria-label={t.shell.footer.legal}>
+              <h3>{t.shell.footer.legal}</h3>
+              <a href={`${base}/privacy`}>{t.shell.footer.privacy}</a>
+              <a href={`${base}/terms`}>{t.shell.footer.terms}</a>
+              <a href={`${base}/refunds`}>{t.shell.footer.refunds}</a>
+              <a href={`${base}/eula`}>{t.shell.footer.eula}</a>
+              <a href={`${base}/credits`}>{t.shell.footer.credits}</a>
+            </nav>
+
+            <nav className="foot-col" aria-label={t.shell.footer.contact}>
+              <h3>{t.shell.footer.contact}</h3>
+              <a href="mailto:hello@symponia.io">hello@symponia.io</a>
+            </nav>
+          </div>
+
+          <div className="foot-base">
+            <span>© {new Date().getFullYear()} {t.shell.footer.rights}</span>
+          </div>
         </div>
       </footer>
 
@@ -250,17 +287,34 @@ const CSS = `
 /* nav */
 .sy .nav{position:sticky;top:0;z-index:60;background:rgba(13,11,20,.94);backdrop-filter:blur(18px)}
 .sy .nav-in{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
-.sy .logo{font-family:var(--font-cormorant),Georgia,serif;font-size:1.4rem;font-weight:600;letter-spacing:.06em;color:#fff;text-decoration:none}
-.sy .nav-links{display:flex;gap:22px}
-.sy .nav-links a{font:600 12px/1 ui-sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#B6AECD;text-decoration:none}
+.sy .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.sy .logo img{border-radius:7px;object-fit:cover;display:block}
+.sy .logo span{font-size:1.2rem;font-weight:600;letter-spacing:.01em;color:#fff}
+.sy .nav-links{display:flex;gap:20px}
+/* Was 12px uppercase with .06em tracking — legible on paper, a squint on screen.
+   Sentence case at 13.5px reads without effort; colour lifted too. */
+.sy .nav-links a{font:500 13.5px/1 ui-sans-serif;color:#E4E0F0;text-decoration:none}
+.sy .nav-links a:hover{color:#fff}
 .sy .nav-right{display:flex;align-items:center;gap:12px}
 .sy .lang{position:relative}
-.sy .lang-btn{background:none;border:1px solid rgba(255,255,255,.22);color:#D9D3E8;border-radius:9px;padding:8px 11px;font:600 12px/1 ui-sans-serif;cursor:pointer}
-.sy .lang-menu{position:absolute;right:0;top:calc(100% + 8px);background:#fff;border-radius:12px;padding:6px;list-style:none;margin:0;
-  box-shadow:0 18px 40px rgba(10,6,30,.35);display:none;min-width:150px;z-index:70}
-.sy .lang:hover .lang-menu,.sy .lang:focus-within .lang-menu{display:block}
-.sy .lang-menu a{display:block;padding:9px 12px;border-radius:8px;color:#2A2440;text-decoration:none;font:500 14px/1 ui-sans-serif}
+.sy .lang-btn{display:flex;align-items:center;gap:7px;background:none;border:1px solid rgba(255,255,255,.28);color:#E4E0F0;
+  border-radius:9px;padding:8px 11px;font:500 13px/1 ui-sans-serif;cursor:pointer}
+.sy .lang-btn:hover{border-color:rgba(255,255,255,.45);background:rgba(255,255,255,.05)}
+.sy .lang-btn .caret{font-size:10px;opacity:.7}
+/* Menu is flush against the button (top:100%) and reserves its visual offset as
+   transparent padding instead of a gap, so the cursor never crosses dead space
+   on the way down. The old 8px calc() gap is what ate the clicks. */
+.sy .lang-menu{position:absolute;right:0;top:100%;padding-top:8px;background:transparent;list-style:none;margin:0;
+  min-width:190px;z-index:70}
+.sy .lang-menu::before{content:'';position:absolute;inset:8px 0 0 0;background:#fff;border-radius:12px;
+  box-shadow:0 18px 40px rgba(10,6,30,.35);z-index:-1}
+.sy .lang-menu li{padding:0 6px}
+.sy .lang-menu li:first-child{padding-top:6px}
+.sy .lang-menu li:last-child{padding-bottom:6px}
+.sy .lang-menu a{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:8px;color:#2A2440;
+  text-decoration:none;font:500 14px/1 ui-sans-serif}
 .sy .lang-menu a:hover{background:#F1EEF9}
+.sy .lang-menu a[aria-current]{background:#F1EEF9;font-weight:600}
 
 /* badge */
 .sy .badge{display:inline-flex;align-items:center;gap:9px;background:#fff;color:#0D0B14;border-radius:12px;padding:9px 15px;text-decoration:none;flex-shrink:0}
@@ -321,11 +375,23 @@ const CSS = `
 
 /* chips */
 .sy .chips{display:flex;flex-wrap:wrap;gap:9px;list-style:none;padding:0;margin:28px 0 0}
-.sy .chips a{display:inline-block;background:var(--paper);border:1px solid rgba(0,0,0,.08);border-radius:99px;padding:9px 16px;
-  font:600 13px/1 ui-sans-serif;color:var(--ink);text-decoration:none}
+.sy .chips a{display:inline-flex;align-items:center;gap:9px;background:var(--paper);border:1px solid rgba(0,0,0,.08);
+  border-radius:99px;padding:9px 16px 9px 11px;font:600 13px/1 ui-sans-serif;color:var(--ink);text-decoration:none;
+  transition:border-color .15s,transform .15s}
+.sy .chips a:hover{border-color:rgba(0,0,0,.28);transform:translateY(-1px)}
+.sy .chips a[aria-current]{border-color:var(--teal);box-shadow:inset 0 0 0 1px var(--teal)}
 
 .sy .pill{display:inline-block;margin-top:26px;background:linear-gradient(92deg,var(--teal),var(--vio));color:#0D0B14;
   border-radius:99px;padding:14px 22px;font:700 13.5px/1.35 ui-sans-serif}
+
+/* close section */
+.sy .gets{list-style:none;padding:0;margin:30px auto 34px;max-width:520px;text-align:left;display:grid;gap:12px}
+.sy .gets li{position:relative;padding-left:30px;font:500 15px/1.55 ui-sans-serif;color:#D9D4E6}
+.sy .gets li::before{content:'';position:absolute;left:0;top:7px;width:16px;height:16px;border-radius:50%;
+  background:linear-gradient(92deg,var(--teal),var(--vio))}
+.sy .gets li::after{content:'';position:absolute;left:5px;top:11px;width:5px;height:8px;border:solid #0D0B14;
+  border-width:0 1.8px 1.8px 0;transform:rotate(42deg)}
+.sy .reassure{margin-top:20px;font:500 13.5px/1.7 ui-sans-serif;color:#A79FC0}
 .sy .big{font-family:var(--font-cormorant),Georgia,serif;font-size:clamp(3rem,8vw,5.2rem);font-weight:600;margin:10px 0 2px;
   background:linear-gradient(92deg,var(--teal),var(--vio));-webkit-background-clip:text;background-clip:text;color:transparent}
 
@@ -336,10 +402,26 @@ const CSS = `
 .sy summary:before{content:"+";color:var(--vio);font-weight:800;margin-right:11px}
 .sy details p{color:var(--dim);font-size:.97rem;margin-top:11px;max-width:64ch}
 
-/* footer */
-.sy .foot{background:var(--ink);color:#8C84A6;padding:44px 0;font:500 13px/1.9 ui-sans-serif}
-.sy .foot .w{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
-.sy .foot-links a{color:#8C84A6;text-decoration:none;margin-left:16px}
+/* footer — was a single flat row of legal links at 13px/#8C84A6. Now a real
+   sitemap: brand column, quick links, legal, contact. Type is larger and
+   lighter (#B9B2CE, ~7.6:1) because the old grey was technically AA but far
+   too small and dim to read comfortably. */
+.sy .foot{background:var(--ink);color:#B9B2CE;padding:64px 0 32px;font:400 14px/1.7 ui-sans-serif}
+.sy .foot-grid{display:grid;grid-template-columns:1fr;gap:40px}
+.sy .foot-brand{max-width:320px}
+.sy .foot-logo{display:inline-flex;align-items:center;gap:10px;text-decoration:none;margin-bottom:14px}
+.sy .foot-logo img{border-radius:7px;object-fit:cover;display:block}
+.sy .foot-logo span{font:600 1.15rem/1 ui-sans-serif;letter-spacing:.01em;color:#fff}
+.sy .foot-brand p{margin:0 0 20px;color:#9A93B0;font-size:14px;line-height:1.7}
+.sy .foot-col{display:flex;flex-direction:column;gap:11px}
+.sy .foot-col h3{margin:0 0 4px;font:600 12px/1 ui-sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#7E7796}
+.sy .foot-col a{color:#B9B2CE;text-decoration:none;font-size:14px}
+.sy .foot-col a:hover{color:#fff}
+.sy .foot-base{margin-top:48px;padding-top:24px;border-top:1px solid rgba(255,255,255,.09);
+  display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;color:#7E7796;font-size:13px}
+@media(min-width:760px){
+  .sy .foot-grid{grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px}
+}
 
 /* sticky mobile cta */
 .sy .sticky{display:none}

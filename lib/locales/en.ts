@@ -16,6 +16,9 @@ export const en: Dict = {
       contact: 'Contact',
       rights: 'Symponia by Boroto Ltd',
       built: 'Built by YD',
+      explore: 'Explore',
+      legal: 'Legal',
+      blurb: 'An AI companion for inner work. Depth psychology, in your own language.',
     },
     legalNote: '',
   },
@@ -101,9 +104,17 @@ export const en: Dict = {
     h2: 'What Symponia will not pretend to be.',
     lead: 'Not therapy. Not couples counselling. It hears only your side and cannot see the relationship you are in. Not every feeling is a wound, and sometimes your partner is simply being inconsiderate. If you are in crisis, contact a qualified professional or your local emergency services.',
   },
-  price: {
-    k: 'Pricing',
-    lead: '350 reflection sessions a month. Daily reflections are always free. Start with a handful of free sessions, and cancel any time in your Apple ID settings. Nothing hidden, and nothing designed to make leaving hard.',
+  close: {
+    k: 'Begin',
+    h2: 'You can stop having this fight for the third time.',
+    lead: 'You already suspect the pattern is yours. What you do not have is a way to watch it work — the trait you avoid, the reason you keep choosing the same face, the moment it takes the wheel. That is the whole of what Symponia does.',
+    gets: [
+      'Name the pattern that keeps picking your relationships',
+      'Meet the seventh animal — the part of you that you avoid',
+      'Write in your own language and be understood in it',
+      'A companion that still remembers what you told it last month',
+    ],
+    reassure: 'Free to start, and daily reflections stay free. Cancel any time in your Apple ID settings.',
   },
 
   founder: {

@@ -453,13 +453,14 @@ const CSS = `
 }
 
 /* close section */
-.sy .gets{list-style:none;padding:0;margin:30px auto 34px;max-width:520px;text-align:left;display:grid;gap:12px}
-.sy .gets li{position:relative;padding-left:30px;font:500 15px/1.55 var(--font-inter),'Helvetica Neue',sans-serif;color:#D9D4E6}
-.sy .gets li::before{content:'';position:absolute;left:0;top:7px;width:16px;height:16px;border-radius:50%;
+.sy .gets{list-style:none;padding:0;margin:34px auto 36px;width:fit-content;max-width:min(520px,100%);
+  text-align:left;display:grid;gap:14px;justify-items:start}
+.sy .gets li{position:relative;padding-left:32px;font:500 16px/1.6 var(--font-inter),'Helvetica Neue',sans-serif;color:#D9D4E6}
+.sy .gets li::before{content:'';position:absolute;left:0;top:5px;width:16px;height:16px;border-radius:50%;
   background:linear-gradient(92deg,var(--teal),var(--vio))}
-.sy .gets li::after{content:'';position:absolute;left:5px;top:11px;width:5px;height:8px;border:solid #0D0B14;
+.sy .gets li::after{content:'';position:absolute;left:5px;top:9px;width:5px;height:8px;border:solid #0D0B14;
   border-width:0 1.8px 1.8px 0;transform:rotate(42deg)}
-.sy .reassure{margin-top:20px;font:500 13.5px/1.7 var(--font-inter),'Helvetica Neue',sans-serif;color:#A79FC0}
+.sy .reassure{margin:22px auto 0;max-width:44ch;font:400 14px/1.7 var(--font-inter),'Helvetica Neue',sans-serif;color:#B4ACC9}
 .sy .big{font-family:var(--font-inter),'Helvetica Neue',sans-serif;font-size:clamp(3rem,8vw,5.2rem);font-weight:600;margin:10px 0 2px;
   background:linear-gradient(92deg,var(--teal),var(--vio));-webkit-background-clip:text;background-clip:text;color:transparent}
 

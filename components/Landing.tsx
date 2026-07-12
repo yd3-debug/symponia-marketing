@@ -252,6 +252,10 @@ export default function Landing({ locale }: { locale: Locale }) {
 
           <div className="foot-base">
             <span>© {new Date().getFullYear()} {t.shell.footer.rights}</span>
+            <span>
+              {t.shell.footer.designedBy}{' '}
+              <a href="https://yektad.com" target="_blank" rel="noopener noreferrer">YD</a>
+            </span>
           </div>
         </div>
       </footer>
@@ -406,21 +410,31 @@ const CSS = `
    sitemap: brand column, quick links, legal, contact. Type is larger and
    lighter (#B9B2CE, ~7.6:1) because the old grey was technically AA but far
    too small and dim to read comfortably. */
-.sy .foot{background:var(--ink);color:#B9B2CE;padding:64px 0 32px;font:400 14px/1.7 ui-sans-serif}
+.sy .foot{background:var(--ink);color:#E8E4F2;padding:64px 0 32px;
+  font-family:var(--font-poppins),Arial,'Helvetica Neue',sans-serif;font-size:14px;line-height:1.7;font-weight:400}
+.sy .foot a,.sy .foot h3,.sy .foot p,.sy .foot span{
+  font-family:var(--font-poppins),Arial,'Helvetica Neue',sans-serif}
 .sy .foot-grid{display:grid;grid-template-columns:1fr;gap:40px}
 .sy .foot-brand{max-width:320px}
 .sy .foot-logo{display:inline-flex;align-items:center;gap:10px;text-decoration:none;margin-bottom:14px}
 .sy .foot-logo img{border-radius:7px;object-fit:cover;display:block}
-.sy .foot-logo span{font:600 1.15rem/1 ui-sans-serif;letter-spacing:.01em;color:#fff}
-.sy .foot-brand p{margin:0 0 20px;color:#9A93B0;font-size:14px;line-height:1.7}
-.sy .foot-col{display:flex;flex-direction:column;gap:11px}
-.sy .foot-col h3{margin:0 0 4px;font:600 12px/1 ui-sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#7E7796}
-.sy .foot-col a{color:#B9B2CE;text-decoration:none;font-size:14px}
-.sy .foot-col a:hover{color:#fff}
-.sy .foot-base{margin-top:48px;padding-top:24px;border-top:1px solid rgba(255,255,255,.09);
-  display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;color:#7E7796;font-size:13px}
+.sy .foot-logo span{font:600 1.15rem/1 var(--font-poppins),Arial,sans-serif;letter-spacing:.01em;color:#fff}
+.sy .foot-brand p{margin:0 0 20px;color:#C5BFD6;font-size:14px;line-height:1.7}
+.sy .foot-col{display:flex;flex-direction:column;gap:13px}
+.sy .foot-col h3{margin:0 0 6px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#9E96B8}
+/* Uppercase, as asked. Capitals lose word-shape cues, so they get more weight,
+   more tracking and near-white colour to stay easy to scan. */
+.sy .foot-col a{color:#F2EFF8;text-decoration:none;font-size:13px;font-weight:500;
+  letter-spacing:.09em;text-transform:uppercase}
+.sy .foot-col a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+.sy .foot-base{margin-top:48px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);
+  display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;
+  color:#B4ACC9;font-size:13px}
+.sy .foot-base a{color:#E8E4F2;text-decoration:none;font-weight:500}
+.sy .foot-base a:hover{color:#fff;text-decoration:underline;text-underline-offset:3px}
 @media(min-width:760px){
   .sy .foot-grid{grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px}
+}
 }
 
 /* sticky mobile cta */

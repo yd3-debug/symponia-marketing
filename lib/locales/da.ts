@@ -19,6 +19,7 @@ export const da: Dict = {
       explore: 'Udforsk',
       legal: 'Juridisk',
       blurb: 'En AI-ledsager til indre arbejde. Dybdepsykologi, på dit eget sprog.',
+      designedBy: 'Design af',
     },
     legalNote: 'Denne oversættelse stilles kun til rådighed for læsevenlighedens skyld; det er alene den engelske version, der er juridisk bindende.',
   },

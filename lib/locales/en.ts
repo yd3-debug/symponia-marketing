@@ -19,6 +19,7 @@ export const en: Dict = {
       explore: 'Explore',
       legal: 'Legal',
       blurb: 'An AI companion for inner work. Depth psychology, in your own language.',
+      designedBy: 'Designed by',
     },
     legalNote: '',
   },

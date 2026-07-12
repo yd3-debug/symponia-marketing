@@ -26,6 +26,8 @@ export type Dict = {
       explore: string;
       legal: string;
       blurb: string;
+      /** Studio credit in the footer base, links to yektad.com. */
+      designedBy: string;
     };
     /**
      * Shown at the top of translated legal pages. English is the binding text,

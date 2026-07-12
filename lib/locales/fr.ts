@@ -16,6 +16,7 @@ export const fr: Dict = {
       explore: 'Explorer',
       legal: 'Mentions légales',
       blurb: 'Un compagnon IA pour le travail intérieur. Psychologie des profondeurs, dans votre langue.',
+      designedBy: 'Design par',
     },
     legalNote: 'Cette traduction est fournie à titre de commodité ; seule la version anglaise a valeur juridique et fait foi.',
   },

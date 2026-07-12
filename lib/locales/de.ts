@@ -20,6 +20,7 @@ export const de: Dict = {
       explore: 'Entdecken',
       legal: 'Rechtliches',
       blurb: 'Ein KI-Begleiter für die innere Arbeit. Tiefenpsychologie, in deiner Sprache.',
+      designedBy: 'Gestaltet von',
     },
     legalNote: 'Diese Übersetzung wird ausschließlich zur besseren Verständlichkeit bereitgestellt; rechtlich verbindlich ist allein die englische Fassung.',
   },

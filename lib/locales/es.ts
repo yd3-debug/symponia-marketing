@@ -19,6 +19,7 @@ export const es: Dict = {
       explore: 'Explorar',
       legal: 'Aviso legal',
       blurb: 'Un compañero de IA para el trabajo interior. Psicología profunda, en tu idioma.',
+      designedBy: 'Diseño de',
     },
     legalNote: 'Esta traducción se ofrece únicamente para facilitar la lectura: solo la versión en inglés tiene carácter jurídicamente vinculante y es la que prevalece.',
   },

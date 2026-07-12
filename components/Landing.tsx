@@ -1,3 +1,4 @@
+import React from 'react';
 import { getDict, LOCALES, LOCALE_NAMES, DEFAULT_LOCALE, type Locale } from '@/lib/i18n';
 import { LangSync } from '@/components/LangSync';
 import { LocaleSchema } from '@/components/LocaleSchema';
@@ -199,14 +200,21 @@ export default function Landing({ locale }: { locale: Locale }) {
           <h2>{t.compare.h2}</h2>
           <p className="lead">{t.compare.lead}</p>
           <div className="vs">
-            <div className="vs-col vs-them">
-              <h3>{t.compare.them.t}</h3>
-              <ul>{t.compare.them.items.map((i: string) => <li key={i}>{i}</li>)}</ul>
-            </div>
-            <div className="vs-col vs-us">
-              <h3>{t.compare.us.t}</h3>
-              <ul>{t.compare.us.items.map((i: string) => <li key={i}>{i}</li>)}</ul>
-            </div>
+            <div className="vs-head vs-head-them">{t.compare.them.t}</div>
+            <div className="vs-head vs-head-us">{t.compare.us.t}</div>
+
+            {t.compare.them.items.map((them: string, i: number) => (
+              <React.Fragment key={them}>
+                <div className="vs-cell vs-them">
+                  <span className="vs-label">{t.compare.them.t}</span>
+                  <p>{them}</p>
+                </div>
+                <div className="vs-cell vs-us">
+                  <span className="vs-label">{t.compare.us.t}</span>
+                  <p>{t.compare.us.items[i]}</p>
+                </div>
+              </React.Fragment>
+            ))}
           </div>
         </div>
       </section>
@@ -294,7 +302,8 @@ const CSS = `
   background:var(--cream);color:var(--ink);
   font:400 17px/1.7 var(--font-inter),'Inter',ui-sans-serif,-apple-system,system-ui;-webkit-font-smoothing:antialiased}
 .sy *{box-sizing:border-box}
-.sy h1,.sy h2,.sy h3{font-family:var(--font-inter),'Helvetica Neue',sans-serif;font-weight:600;letter-spacing:-.022em;line-height:1.08;margin:0}
+.sy h1,.sy h2,.sy h3{font-family:var(--font-inter),'Helvetica Neue',sans-serif;font-weight:600;letter-spacing:-.022em;line-height:1.08;margin:0;
+  text-wrap:balance;overflow-wrap:break-word}
 .sy h1{font-size:clamp(2.35rem,6.2vw,4.7rem)}
 .sy h2{font-size:clamp(1.95rem,4.4vw,3.2rem);margin:14px 0 18px}
 .sy h3{font-size:1.45rem;margin-bottom:8px}
@@ -413,23 +422,34 @@ const CSS = `
 .sy .pill{display:inline-block;margin-top:26px;background:linear-gradient(92deg,var(--teal),var(--vio));color:#0D0B14;
   border-radius:99px;padding:14px 22px;font:700 13.5px/1.35 ui-sans-serif}
 
-/* us vs them */
-.sy .vs{display:grid;grid-template-columns:1fr;gap:16px;margin-top:34px;text-align:left}
-.sy .vs-col{border-radius:16px;padding:26px 24px}
-.sy .vs-col h3{font-size:1rem;font-weight:600;margin:0 0 16px;letter-spacing:0}
-.sy .vs-col ul{list-style:none;padding:0;margin:0;display:grid;gap:12px}
-.sy .vs-col li{position:relative;padding-left:26px;font:400 14.5px/1.6 ui-sans-serif}
-.sy .vs-them{background:rgba(13,11,20,.04);border:1px solid rgba(13,11,20,.09)}
-.sy .vs-them h3{color:#6A6078}
-.sy .vs-them li{color:#6A6078}
-.sy .vs-them li::before{content:'';position:absolute;left:2px;top:8px;width:11px;height:1.5px;background:#A8A0B8}
-.sy .vs-us{background:var(--paper);border:1px solid rgba(18,168,184,.35);box-shadow:0 10px 30px rgba(13,11,20,.06)}
-.sy .vs-us h3{color:var(--ink)}
-.sy .vs-us li{color:var(--ink);font-weight:500}
-.sy .vs-us li::before{content:'';position:absolute;left:2px;top:5px;width:6px;height:10px;
-  border:solid var(--teal);border-width:0 2px 2px 0;transform:rotate(42deg)}
-@media(min-width:760px){
-  .sy .vs{grid-template-columns:1fr 1fr;gap:20px}
+/* us vs them: a paired grid, so each claim sits directly opposite the one it
+   answers. Type is larger and looser than the old 14.5px lists, which is what
+   makes a comparison table feel considered rather than cramped. */
+.sy .vs{display:grid;grid-template-columns:1fr;gap:10px;margin-top:40px;text-align:left}
+.sy .vs-head{display:none;font:700 11px/1 Arial,'Helvetica Neue',sans-serif;letter-spacing:.14em;
+  text-transform:uppercase;padding:0 0 4px}
+.sy .vs-head-them{color:#8A8199}
+.sy .vs-head-us{color:#0B6675}
+
+.sy .vs-cell{display:flex;flex-direction:column;gap:7px;padding:20px 22px;border-radius:14px}
+.sy .vs-label{font:700 10px/1 Arial,'Helvetica Neue',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.sy .vs-cell p{margin:0;font-size:16px;line-height:1.6;letter-spacing:-.005em}
+
+.sy .vs-them{background:rgba(13,11,20,.035);border:1px solid rgba(13,11,20,.08)}
+.sy .vs-them .vs-label{color:#8A8199}
+.sy .vs-them p{color:#6A6078}
+
+.sy .vs-us{background:var(--paper);border:1px solid rgba(18,168,184,.4);
+  box-shadow:0 8px 26px rgba(13,11,20,.06)}
+.sy .vs-us .vs-label{color:#0B6675}
+.sy .vs-us p{color:var(--ink);font-weight:500}
+
+@media(min-width:820px){
+  .sy .vs{grid-template-columns:1fr 1fr;gap:12px 16px;align-items:stretch}
+  .sy .vs-head{display:block}
+  .sy .vs-label{display:none}
+  .sy .vs-cell{padding:22px 24px;justify-content:center}
+  .sy .vs-cell p{font-size:16.5px}
 }
 
 /* close section */

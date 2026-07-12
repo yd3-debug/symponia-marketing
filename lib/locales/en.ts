@@ -107,7 +107,7 @@ export const en: Dict = {
   },
   close: {
     k: 'Begin',
-    h2: 'Your shadow has been making your decisions for years. Meet it.',
+    h2: 'Your shadow has been making your decisions for years. Meet it.',
     lead: 'You already suspect the pattern is yours. What you do not have is a way to watch it work: the trait you avoid, the reason you keep making the same turn, the moment it takes the wheel. That is the whole of what Symponia does.',
     gets: [
       'Name your shadow in about four minutes, through the seven animals',

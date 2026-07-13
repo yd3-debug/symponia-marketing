@@ -74,6 +74,8 @@ export type CreditsDoc = {
   monthly: {
     badge: string;
     k: string;
+    /** No longer a number. Apple owns the price; this points at the App Store. */
+    price: string;
     /** "per month · 350 reflection sessions" */
     sub: string;
     bullets: string[];

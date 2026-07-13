@@ -19,8 +19,10 @@ const C = {
   body: "var(--font-inter), 'Helvetica Neue', sans-serif",
 };
 
-// The price is a real Apple price point, not copy, so it is not in the dict.
-const PRICE = '£12.99';
+// Deliberately no hardcoded price. Apple sets a different figure for every
+// storefront and changes them over time, so any single number here is wrong for
+// most visitors and goes stale for the rest. The App Store shows the correct
+// local price at the point of purchase, which is the only place it can be right.
 
 // Icons pair with how.items by index. Kept in code because they are not language.
 const HOW_ICONS = ['◎', '🔄', '📱', '🔒'];
@@ -112,7 +114,7 @@ export function CreditsPage({ locale }: { locale: Locale }) {
               <div style={{ marginBottom: 20 }}>
                 <p style={{ fontFamily: C.body, fontSize: '0.68rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: C.violet, marginBottom: 8 }}>{t.monthly.k}</p>
                 <div style={{ display: 'flex', alignItems: 'baseline', gap: 8, marginBottom: 6 }}>
-                  <span style={{ fontFamily: C.heading, fontSize: '3rem', fontWeight: 300, color: C.fg, lineHeight: 1 }}>{PRICE}</span>
+                  <span style={{ fontFamily: C.heading, fontSize: '3rem', fontWeight: 300, color: C.fg, lineHeight: 1 }}>{t.monthly.price}</span>
                 </div>
                 <p style={{ fontFamily: C.body, fontSize: '0.78rem', fontWeight: 300, color: C.dim }}>{t.monthly.sub}</p>
               </div>

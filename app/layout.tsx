@@ -164,9 +164,10 @@ const jsonLd = [
       {
         '@type': 'Offer',
         name: 'Symponia Monthly',
-        price: '12.99',
-        priceCurrency: 'GBP',
-        description: '350 reflection sessions per month. Daily reflections are always free.',
+        category: 'subscription',
+        description:
+          '350 reflection sessions per month. Daily reflections are free and do not count against them. Apple sets the price for each country; see the App Store for the current price in your region.',
+        url: 'https://apps.apple.com/app/symponia/id6760951504',
       },
     ],
     installUrl: 'https://apps.apple.com/app/symponia/id6760951504',

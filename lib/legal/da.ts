@@ -68,7 +68,7 @@ export const da: LegalDict = {
         id: 'tokens',
         blocks: [
           { t: 'p', x: '**Gratis startmængde.** Nye brugere får en begrænset gratis mængde, så de kan prøve Symponia, før de tegner abonnement.' },
-          { t: 'p', x: '**Symponia Månedlig (£12.99 om måneden).** Et abonnement giver 350 refleksionssamtaler pr. kalendermåned. Ved hver fornyelse tildeles en ny mængde på 350 samtaler; ubrugte samtaler overføres ikke. De daglige refleksioner er gratis og tæller ikke med i dine samtaler.' },
+          { t: 'p', x: '**Symponia Månedlig.** Et abonnement giver 350 refleksionssamtaler pr. kalendermåned. Prisen er den, der vises i App Store på købstidspunktet; Apple fastsætter priserne for hvert land og kan ændre dem. Ved hver fornyelse tildeles en ny mængde på 350 samtaler; ubrugte samtaler overføres ikke. De daglige refleksioner er gratis, tæller ikke med i dine samtaler og er begrænset til 10 inden for 24 timer.' },
           { t: 'p', x: '**Betaling og fornyelse.** Abonnementer sælges og behandles af Apple gennem køb i appen og opkræves via dit Apple ID. Dit abonnement fornys automatisk til den til enhver tid gældende pris ved udgangen af hver betalingsperiode, medmindre du opsiger senest 24 timer før periodens udløb. Du kan altid administrere eller opsige dit abonnement i dine Apple ID-indstillinger (Indstillinger, dit navn, Abonnementer). At slette appen opsiger ikke dit abonnement.' },
           { t: 'p', x: '**Betaling.** Betalingen opkræves af Apple. Vi ser eller gemmer aldrig dine betalingskortoplysninger. Priserne vises i appen og kan ændre sig; vi varsler prisændringer i det omfang, det er påkrævet, og en ændring berører ikke en betalingsperiode, der allerede er betalt.' },
         ],
@@ -390,26 +390,28 @@ export const da: LegalDict = {
 
   credits: {
     metaTitle: 'Priser',
-    metaDesc: 'Symponias priser: begynd med en gratis mængde, derefter £12.99 om måneden for 350 refleksionssamtaler.',
+    metaDesc: 'Symponias priser: begynd med 10 gratis samtaler, derefter et månedsabonnement med 350 samtaler. Prisen vises i App Store.',
     kicker: 'Priser',
     h1: 'Vælg din dybde',
     lead: 'Begynd gratis. Gå månedligt, når du er klar.',
     free: {
       k: 'Nye ankomster',
       price: 'Gratis',
-      sub: 'En lille gratis mængde til at udforske Symponia',
-      body: 'Nævn dine syv dyrearketyper, få dit konstellationsportræt, og prøv nogle få refleksionssamtaler. Ingen binding.',
+      sub: '10 gratis refleksionssamtaler til at udforske Symponia',
+      body: 'Navngiv dine syv dyrearketyper, få dit konstellationsportræt, og brug 10 gratis refleksionssamtaler. Ingen binding.',
       cta: 'Hent i App Store',
     },
     monthly: {
       badge: 'Anbefalet',
       k: 'Symponia Månedlig',
+      price: 'I App Store',
       sub: 'om måneden · 350 refleksionssamtaler',
       bullets: [
-        '350 samtaler på tværs af tilstandene Arketype, Min dag og Samtale',
-        'Gratis daglige refleksioner (de tæller ikke med i dine samtaler)',
+        '350 samtaler i tilstandene Arketyper, Min dag og Samtale',
+        'Gratis daglige refleksioner, op til 10 om dagen, der ikke tæller med',
         'Ny mængde hver måned, samtaler overføres ikke',
-        'Opsig når som helst i dine Apple ID-indstillinger',
+        'Apple fastsætter prisen for dit land, se App Store',
+        'Opsig når som helst i Apple ID-indstillingerne',
       ],
       cta: 'Tilgængelig i appen',
     },

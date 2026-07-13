@@ -68,8 +68,8 @@ export const pt: LegalDict = {
         h: '7. Subscrições, preços e renovação automática',
         id: 'tokens',
         blocks: [
-          { t: 'p', x: '**Saldo gratuito.** Os novos utilizadores recebem um saldo gratuito limitado, para poderem experimentar Symponia antes de subscrever.' },
-          { t: 'p', x: '**Symponia Mensal (£12.99 por mês).** A subscrição dá acesso a 350 sessões de reflexão por mês de calendário. Em cada renovação é atribuído um novo saldo de 350 sessões; as sessões não utilizadas não transitam para o mês seguinte. As reflexões diárias são gratuitas e não são descontadas das suas sessões.' },
+          { t: 'p', x: '**Saldo gratuito.** Os novos utilizadores recebem 10 sessões de reflexão gratuitas para experimentar a Symponia antes de subscrever.' },
+          { t: 'p', x: '**Symponia Mensal.** A subscrição dá acesso a 350 sessões de reflexão por mês de calendário. Aplica-se o preço apresentado na App Store no momento da compra; a Apple define os preços por país e pode alterá-los. Em cada renovação é atribuído um novo saldo de 350 sessões; as sessões não utilizadas não transitam. As reflexões diárias são gratuitas, não são descontadas das suas sessões e estão limitadas a 10 em cada período de 24 horas.' },
           { t: 'p', x: '**Faturação e renovação.** As subscrições são vendidas e processadas pela Apple através de compra integrada na aplicação (In-App Purchase) e são faturadas ao seu Apple ID. A sua subscrição renova-se automaticamente ao preço então em vigor no final de cada período de faturação, salvo se a cancelar com, pelo menos, 24 horas de antecedência em relação ao fim desse período. Pode gerir ou cancelar a sua subscrição a qualquer momento nas definições do seu Apple ID (Definições, o seu nome, Subscrições). Eliminar a aplicação não cancela a subscrição.' },
           { t: 'p', x: '**Pagamento.** O pagamento é cobrado pela Apple. Nunca vemos nem armazenamos os dados do seu cartão de pagamento. Os preços são apresentados na aplicação e podem ser alterados; comunicaremos as alterações de preço conforme exigido, e nenhuma alteração afetará um período de faturação já pago.' },
         ],
@@ -391,28 +391,30 @@ export const pt: LegalDict = {
 
   credits: {
     metaTitle: 'Preços',
-    metaDesc: 'Preços de Symponia: comece com um saldo gratuito e siga por £12.99 por mês com 350 sessões de reflexão.',
+    metaDesc: 'Preços da Symponia: comece com 10 sessões gratuitas e siga com uma subscrição mensal de 350 sessões. O preço é apresentado na App Store.',
     kicker: 'Preços',
     h1: 'Escolha a sua profundidade',
     lead: 'Comece gratuitamente. Passe ao plano mensal quando quiser.',
     free: {
       k: 'Recém-chegados',
       price: 'Gratuito',
-      sub: 'Um pequeno saldo gratuito para explorar Symponia',
-      body: 'Escolha os seus sete arquétipos animais, receba o retrato da sua constelação e experimente algumas sessões de reflexão. Sem compromisso.',
+      sub: '10 sessões de reflexão gratuitas para conhecer a Symponia',
+      body: 'Dê nome aos seus sete arquétipos animais, receba o seu retrato de constelação e use 10 sessões de reflexão gratuitas. Sem compromisso.',
       cta: 'Descarregar na App Store',
     },
     monthly: {
       badge: 'Recomendado',
       k: 'Symponia Mensal',
+      price: 'Na App Store',
       sub: 'por mês · 350 sessões de reflexão',
       bullets: [
-        '350 sessões entre os modos Arquétipo, O Meu Dia e Conversa',
-        'Reflexões diárias gratuitas (não são descontadas das sessões)',
+        '350 sessões nos modos Arquétipos, O meu dia e Conversa',
+        'Reflexões diárias gratuitas, até 10 por dia, que não descontam sessões',
         'Saldo novo todos os meses, as sessões não transitam',
-        'Cancele quando quiser nas definições do seu Apple ID',
+        'A Apple define o preço do seu país, consulte a App Store',
+        'Cancele quando quiser nas definições do ID Apple',
       ],
-      cta: 'Disponível na aplicação',
+      cta: 'Disponível na app',
     },
     how: {
       h2: 'Como funciona',

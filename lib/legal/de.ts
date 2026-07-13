@@ -68,7 +68,7 @@ export const de: LegalDict = {
         id: 'tokens',
         blocks: [
           { t: 'p', x: '**Kostenloses Startguthaben.** Neue Nutzerinnen und Nutzer erhalten ein begrenztes kostenloses Guthaben, um Symponia vor einem Abonnement auszuprobieren.' },
-          { t: 'p', x: '**Symponia Monatlich (£12.99 pro Monat).** Ein Abonnement umfasst 350 Reflexionsgespräche pro Kalendermonat. Bei jeder Verlängerung wird ein neues Guthaben von 350 Gesprächen gewährt; nicht genutzte Gespräche werden nicht übertragen. Die täglichen Reflexionen sind kostenlos und werden nicht auf Ihre Gespräche angerechnet.' },
+          { t: 'p', x: '**Symponia Monatlich.** Ein Abonnement umfasst 350 Reflexionsgespräche pro Kalendermonat. Es gilt der Preis, der zum Zeitpunkt des Kaufs im App Store angezeigt wird; Apple legt die Preise je Land fest und kann sie ändern. Bei jeder Verlängerung wird ein neues Guthaben von 350 Gesprächen gewährt; nicht genutzte Gespräche werden nicht übertragen. Die täglichen Reflexionen sind kostenlos, werden nicht auf Ihre Gespräche angerechnet und sind auf 10 innerhalb von 24 Stunden begrenzt.' },
           { t: 'p', x: '**Abrechnung und Verlängerung.** Abonnements werden von Apple über den In-App-Kauf verkauft und abgewickelt und über Ihre Apple ID abgerechnet. Ihr Abonnement verlängert sich am Ende jedes Abrechnungszeitraums automatisch zum dann geltenden Preis, sofern Sie nicht mindestens 24 Stunden vor Ende des Zeitraums kündigen. Sie können Ihr Abonnement jederzeit in Ihren Apple-ID-Einstellungen verwalten oder kündigen (Einstellungen, Ihr Name, Abonnements). Das Löschen der App kündigt Ihr Abonnement nicht.' },
           { t: 'p', x: '**Zahlung.** Die Zahlung wird von Apple eingezogen. Wir sehen und speichern Ihre Zahlungskartendaten zu keinem Zeitpunkt. Die Preise werden in der App angezeigt und können sich ändern; wir werden Preisänderungen im erforderlichen Umfang ankündigen, und eine Änderung berührt keinen bereits bezahlten Abrechnungszeitraum.' },
         ],
@@ -390,25 +390,27 @@ export const de: LegalDict = {
 
   credits: {
     metaTitle: 'Preise',
-    metaDesc: 'Preise für Symponia: Beginnen Sie mit einem kostenlosen Guthaben, danach £12.99 im Monat für 350 Reflexionsgespräche.',
+    metaDesc: 'Symponia Preise: Beginnen Sie mit 10 kostenlosen Reflexionsgesprächen, danach ein Monatsabo mit 350 Gesprächen. Der Preis wird im App Store angezeigt.',
     kicker: 'Preise',
     h1: 'Wählen Sie Ihre Tiefe',
     lead: 'Kostenlos beginnen. Monatlich weitermachen, wenn Sie so weit sind.',
     free: {
       k: 'Neu dabei',
       price: 'Kostenlos',
-      sub: 'Ein kleines kostenloses Guthaben, um Symponia zu erkunden',
-      body: 'Nennen Sie Ihre sieben Tier-Archetypen, erhalten Sie Ihr Konstellationsporträt und probieren Sie ein paar Reflexionsgespräche aus. Ohne Verpflichtung.',
+      sub: '10 kostenlose Reflexionsgespräche zum Ausprobieren',
+      body: 'Benennen Sie Ihre sieben Tierarchetypen, erhalten Sie Ihr Konstellationsporträt und nutzen Sie 10 kostenlose Reflexionsgespräche. Keine Verpflichtung.',
       cta: 'Im App Store laden',
     },
     monthly: {
       badge: 'Empfohlen',
       k: 'Symponia Monatlich',
+      price: 'Im App Store',
       sub: 'pro Monat · 350 Reflexionsgespräche',
       bullets: [
-        '350 Gespräche über die Modi Archetyp, Mein Tag und Gespräch hinweg',
-        'Kostenlose tägliche Reflexionen (sie werden nicht angerechnet)',
-        'Jeden Monat ein neues Guthaben, Gespräche werden nicht übertragen',
+        '350 Gespräche in den Modi Archetypen, Mein Tag und Gespräch',
+        'Kostenlose tägliche Reflexionen, bis zu 10 pro Tag, ohne Anrechnung',
+        'Neues Guthaben jeden Monat, Gespräche werden nicht übertragen',
+        'Apple legt den Preis für Ihr Land fest, siehe App Store',
         'Jederzeit über die Apple-ID-Einstellungen kündbar',
       ],
       cta: 'In der App verfügbar',

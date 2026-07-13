@@ -65,8 +65,8 @@ export const en: LegalDict = {
         h: '7. Subscriptions, pricing and auto-renewal',
         id: 'tokens',
         blocks: [
-          { t: 'p', x: '**Free allowance.** New users receive a limited free allowance so they can try Symponia before subscribing.' },
-          { t: 'p', x: '**Symponia Monthly (£12.99 per month).** A subscription provides 350 reflection sessions per calendar month. A fresh allowance of 350 sessions is granted at each renewal; unused sessions do not carry over. Daily reflections are free and do not count against your sessions.' },
+          { t: 'p', x: '**Free allowance.** New users receive 10 free reflection sessions so they can try Symponia before subscribing.' },
+          { t: 'p', x: '**Symponia Monthly.** A subscription provides 350 reflection sessions per calendar month. The price is the one shown in the App Store at the time of purchase; Apple sets prices for each country and they may change. A fresh allowance of 350 sessions is granted at each renewal; unused sessions do not carry over. Daily reflections are free and do not count against your sessions, and are limited to 10 in any rolling 24-hour period.' },
           { t: 'p', x: '**Billing and renewal.** Subscriptions are sold and processed by Apple through In-App Purchase and are billed to your Apple ID. Your subscription renews automatically at the then-current price at the end of each billing period unless you cancel at least 24 hours before the period ends. You can manage or cancel your subscription at any time in your Apple ID settings (Settings, your name, Subscriptions). Deleting the app does not cancel your subscription.' },
           { t: 'p', x: '**Payment.** Payment is taken by Apple. We never see or store your payment card details. Prices are shown in the app and may change; we will give notice of price changes as required, and any change will not affect a billing period already paid for.' },
         ],
@@ -388,25 +388,27 @@ export const en: LegalDict = {
 
   credits: {
     metaTitle: 'Pricing',
-    metaDesc: 'Symponia pricing: start with a free allowance, then £12.99 a month for 350 reflection sessions.',
+    metaDesc: 'Symponia pricing: start with 10 free reflection sessions, then a monthly subscription for 350 sessions. The price is shown in the App Store.',
     kicker: 'Pricing',
     h1: 'Choose your depth',
     lead: 'Start free. Go monthly when you’re ready.',
     free: {
       k: 'New arrivals',
       price: 'Free',
-      sub: 'A small free allowance to explore Symponia',
-      body: 'Name your seven animal archetypes, receive your constellation portrait, and try a few reflection sessions. No commitment.',
+      sub: '10 free reflection sessions to explore Symponia',
+      body: 'Name your seven animal archetypes, receive your constellation portrait, and use 10 free reflection sessions. No commitment, no card.',
       cta: 'Download on the App Store',
     },
     monthly: {
       badge: 'Recommended',
       k: 'Symponia Monthly',
+      price: 'In the App Store',
       sub: 'per month · 350 reflection sessions',
       bullets: [
         '350 sessions across Archetype, My Day, and Conversation modes',
-        'Free daily reflections (they don’t count against sessions)',
+        'Free daily reflections, up to 10 a day, that do not count against your sessions',
         'Fresh allotment each month, sessions do not carry over',
+        'Apple sets the price for your country, see the App Store',
         'Cancel anytime via Apple ID settings',
       ],
       cta: 'Available in the app',

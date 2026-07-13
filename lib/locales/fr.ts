@@ -61,9 +61,9 @@ export const fr: Dict = {
     lead: 'Ce qui t’amène ici. Le trait qui t’irrite le plus chez les autres. L’histoire que tu racontes sur toi. Courtes, inconfortables, honnêtes. C’est ainsi que Symponia apprend à te connaître avant même d’avoir dit un mot.',
   },
   langs: {
-    k: 'Toutes les langues',
-    h2: 'Écris dans ta langue. La réponse viendra dans la même.',
-    lead: 'Ta vie intérieure ne se déroule pas dans ta seconde langue. Écris à Symponia en italien, en russe, en portugais, en français, en allemand, en espagnol, en danois ou en anglais : Symponia comprend et répond dans la langue où tu as écrit.',
+    k: 'Neuf langues',
+    h2: 'Écrivez dans votre langue. Elle répond de même.',
+    lead: 'Votre vie intérieure ne se déroule pas dans votre seconde langue. Écrivez à Symponia en français, suédois, anglais, italien, russe, portugais, allemand, espagnol ou danois : elle vous comprend et répond dans la langue où vous avez écrit. Pas de traduction automatique plaquée : chaque écran, chaque notification et la voix elle-même sont écrits comme s’ils avaient été composés dans cette langue.',
   },
   modes: {
     k: 'Trois façons d’entrer',
@@ -108,11 +108,11 @@ export const fr: Dict = {
     lead: 'Vous soupçonnez déjà que le schéma vient de vous. Ce qui vous manque, c’est un moyen de le voir à l’œuvre: le trait que vous fuyez, la raison pour laquelle vous prenez toujours le même virage, l’instant où il prend les commandes. C’est tout ce que fait Symponia.',
     gets: [
       'Nommez votre ombre en quatre minutes environ, par les sept animaux',
-      'Allez plus loin qu’une question, chaque réponse est écrite pour ce que vous avez réellement dit',
-      'Écrivez dans votre langue et soyez compris dans cette langue',
-      'Un compagnon qui se souvient encore de ce que vous lui avez dit le mois dernier',
+      'Réflexion illimitée, rien à compter et aucun solde à rationner',
+      'Votre semaine d’humeur : comment vous êtes arrivé, reparti, et l’écart',
+      'Neuf langues, écrites comme si elles avaient été composées dans chacune',
     ],
-    reassure: 'Débuter est gratuit, et les réflexions quotidiennes le restent. Résiliez quand vous voulez dans les réglages de votre identifiant Apple.',
+    reassure: 'Sept jours gratuits. Puis une réflexion illimitée. Résiliez quand vous voulez dans les réglages de votre identifiant Apple.',
   },
 
   compare: {

@@ -64,9 +64,9 @@ export const en: Dict = {
     lead: 'What brings you here. The trait that irritates you most in others. The story you tell about yourself. Short, uncomfortable, honest. This is how Symponia comes to know you before it says a word.',
   },
   langs: {
-    k: 'Any language',
+    k: 'Nine languages',
     h2: 'Write in your own language. It answers in kind.',
-    lead: 'Your inner life does not happen in your second language. Write to Symponia in Italian, Russian, Portuguese, French, German, Spanish, Danish or English, and it understands and replies in the language you wrote in.',
+    lead: 'Your inner life does not happen in your second language. Write to Symponia in English, Swedish, Italian, Russian, Portuguese, French, German, Spanish or Danish, and it understands and replies in the language you wrote in. Not machine translation bolted on: every screen, every notification and the voice itself are written to read as though composed in that language.',
   },
   modes: {
     k: 'Three ways in',
@@ -111,11 +111,11 @@ export const en: Dict = {
     lead: 'You already suspect the pattern is yours. What you do not have is a way to watch it work: the trait you avoid, the reason you keep making the same turn, the moment it takes the wheel. That is the whole of what Symponia does.',
     gets: [
       'Name your shadow in about four minutes, through the seven animals',
-      'Go deeper than a prompt, every reply is written for what you actually said',
-      'Write in your own language and be understood in it',
-      'A companion that still remembers what you told it last month',
+      'Unlimited reflection, with nothing to count and no balance to ration',
+      'Your mood week: how you arrived, how you left, and the lift between',
+      'Nine languages, written to read as though composed in each one',
     ],
-    reassure: 'Free to start, and daily reflections stay free. Cancel any time in your Apple ID settings.',
+    reassure: 'Seven days free. Then unlimited reflection. Cancel any time in your Apple ID settings.',
   },
 
   compare: {

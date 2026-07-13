@@ -65,9 +65,9 @@ export const de: Dict = {
     lead: 'Was dich herführt. Die Eigenschaft, die dich an anderen am meisten reizt. Die Geschichte, die du über dich selbst erzählst. Kurz, unbequem, ehrlich. So lernt Symponia dich kennen, noch bevor ein einziges Wort fällt.',
   },
   langs: {
-    k: 'Jede Sprache',
-    h2: 'Schreib in deiner Sprache. Die Antwort kommt in derselben.',
-    lead: 'Dein Innenleben findet nicht in deiner Zweitsprache statt. Schreib Symponia auf Deutsch, Italienisch, Russisch, Portugiesisch, Französisch, Spanisch, Dänisch oder Englisch, Symponia versteht dich und antwortet in der Sprache, in der du geschrieben hast.',
+    k: 'Neun Sprachen',
+    h2: 'Schreib in deiner Sprache. Sie antwortet darin.',
+    lead: 'Dein Innenleben findet nicht in deiner Zweitsprache statt. Schreib Symponia auf Deutsch, Schwedisch, Englisch, Italienisch, Russisch, Portugiesisch, Französisch, Spanisch oder Dänisch, und sie versteht dich und antwortet in der Sprache, in der du geschrieben hast. Keine aufgesetzte Maschinenübersetzung: jeder Bildschirm, jede Mitteilung und die Stimme selbst sind so geschrieben, als wären sie in dieser Sprache entstanden.',
   },
   modes: {
     k: 'Drei Wege hinein',
@@ -112,11 +112,11 @@ export const de: Dict = {
     lead: 'Du ahnst längst, dass das Muster deins ist. Was fehlt, ist eine Möglichkeit, ihm bei der Arbeit zuzusehen: der Zug, den du meidest, der Grund, warum du immer dieselbe Abzweigung nimmst, der Moment, in dem er das Steuer übernimmt. Genau das tut Symponia.',
     gets: [
       'Benenne deinen Schatten in etwa vier Minuten, über die sieben Tiere',
-      'Geh tiefer als eine Frage, jede Antwort ist auf das geschrieben, was du wirklich gesagt hast',
-      'Schreib in deiner Sprache und werde darin verstanden',
-      'Ein Begleiter, der sich noch erinnert, was du ihm vor einem Monat erzählt hast',
+      'Unbegrenzte Reflexion, nichts zu zählen und kein Guthaben zu rationieren',
+      'Deine Stimmungswoche: wie du ankamst, wie du gingst, und der Unterschied',
+      'Neun Sprachen, geschrieben, als wären sie in jeder entstanden',
     ],
-    reassure: 'Der Einstieg ist kostenlos, und die täglichen Reflexionen bleiben es. Jederzeit kündbar in den Einstellungen deiner Apple-ID.',
+    reassure: 'Sieben Tage kostenlos. Danach unbegrenzte Reflexion. Jederzeit kündbar in den Einstellungen deiner Apple-ID.',
   },
 
   compare: {

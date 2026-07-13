@@ -6,8 +6,8 @@ import type { Locale } from '@/lib/i18n';
 //
 // A flag is a country, not a language, so the mapping is a judgement call:
 //   en -> GB   (the app's English is British; US is the other defensible pick)
-//   pt -> PT   (Portugal, not Brazil)
-// Both are worth revisiting if the audience skews US or Brazilian.
+//   pt -> BR   (the app's Portuguese is Brazilian, so the flag follows it)
+//   sv -> SE
 
 const FLAGS: Record<Locale, React.ReactNode> = {
   en: (
@@ -35,10 +35,16 @@ const FLAGS: Record<Locale, React.ReactNode> = {
   ),
   pt: (
     <>
-      <rect width="24" height="16" fill="#DA291C" />
-      <rect width="9.6" height="16" fill="#046A38" />
-      <circle cx="9.6" cy="8" r="3.4" fill="#FFE900" stroke="#fff" strokeWidth="0.5" />
-      <circle cx="9.6" cy="8" r="1.9" fill="#DA291C" />
+      <rect width="24" height="16" fill="#009B3A" />
+      <path d="M12 2.2 21.4 8 12 13.8 2.6 8Z" fill="#FEDF00" />
+      <circle cx="12" cy="8" r="3.3" fill="#002776" />
+      <path d="M8.9 7.1a6.2 6.2 0 0 1 6.2 1.5" stroke="#fff" strokeWidth="0.9" fill="none" />
+    </>
+  ),
+  sv: (
+    <>
+      <rect width="24" height="16" fill="#005293" />
+      <path d="M8 0v16M0 7h24" stroke="#FECB00" strokeWidth="2.6" />
     </>
   ),
   fr: (

@@ -13,8 +13,17 @@ import { da } from './da';
 
 export type { LegalDict, LegalDoc, EulaDoc, CreditsDoc, Block, LegalSection } from './types';
 
-const LEGAL: Record<Locale, LegalDict> = { en, it, ru, pt, fr, de, es, da };
+// Partial by design. A locale with no legal translation falls back to English,
+// which is the binding version in every language anyway. A rushed legal
+// translation is worse than an honest English one, so Swedish waits here until
+// it has been translated properly.
+const LEGAL: Partial<Record<Locale, LegalDict>> = { en, it, ru, pt, fr, de, es, da };
 
 export function getLegal(locale: Locale): LegalDict {
-  return LEGAL[locale] ?? LEGAL[DEFAULT_LOCALE];
+  return LEGAL[locale] ?? (LEGAL[DEFAULT_LOCALE] as LegalDict);
+}
+
+/** True when this locale is reading the English legal text rather than its own. */
+export function isLegalFallback(locale: Locale): boolean {
+  return LEGAL[locale] === undefined;
 }

@@ -159,14 +159,14 @@ const jsonLd = [
         name: 'Free allowance',
         price: '0',
         priceCurrency: 'GBP',
-        description: 'Free to download with a free allowance to explore before subscribing.',
+        description: 'Free to download, with a 7-day free trial of everything before you decide.',
       },
       {
         '@type': 'Offer',
         name: 'Symponia Monthly',
         category: 'subscription',
         description:
-          '350 reflection sessions per month. Daily reflections are free and do not count against them. Apple sets the price for each country; see the App Store for the current price in your region.',
+          'Unlimited reflection after a 7-day free trial. Nothing to count and no balance to ration. A published fair-use ceiling of 250 messages a week and 60 in any 5-hour period guards against automated abuse; most people never reach it. Apple sets the price for each country; see the App Store for the price where you live.',
         url: 'https://apps.apple.com/app/symponia/id6760951504',
       },
     ],

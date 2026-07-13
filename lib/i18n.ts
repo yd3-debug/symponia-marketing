@@ -19,14 +19,16 @@ import { fr } from './locales/fr';
 import { de } from './locales/de';
 import { es } from './locales/es';
 import { da } from './locales/da';
+import { sv } from './locales/sv';
 
 export type { Dict };
 
-export const LOCALES = ['en', 'it', 'ru', 'pt', 'fr', 'de', 'es', 'da'] as const;
+export const LOCALES = ['en', 'it', 'ru', 'pt', 'fr', 'de', 'es', 'da', 'sv'] as const;
 export type Locale = (typeof LOCALES)[number];
 export const DEFAULT_LOCALE: Locale = 'en';
 
 export const LOCALE_NAMES: Record<Locale, string> = {
+  sv: 'Svenska',
   en: 'English',
   it: 'Italiano',
   ru: 'Русский',
@@ -37,7 +39,8 @@ export const LOCALE_NAMES: Record<Locale, string> = {
   da: 'Dansk',
 };
 
-export const DICTS: Record<Locale, Dict> = { en, it, ru, pt, fr, de, es, da };
+export const DICTS: Record<Locale, Dict> = {
+  sv, en, it, ru, pt, fr, de, es, da };
 
 export function isLocale(value: string): value is Locale {
   return (LOCALES as readonly string[]).includes(value);

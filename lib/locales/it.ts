@@ -61,9 +61,9 @@ export const it: Dict = {
     lead: 'Cosa ti porta qui. Il tratto che negli altri ti irrita di più. La storia che racconti su di te. Brevi, scomode, oneste. È così che Symponia inizia a conoscerti prima ancora di parlare.',
   },
   langs: {
-    k: 'Qualsiasi lingua',
-    h2: 'Scrivi nella tua lingua. Ti risponde nella stessa.',
-    lead: 'La tua vita interiore non accade nella tua seconda lingua. Scrivi a Symponia in italiano, russo, portoghese, francese, tedesco, spagnolo, danese o inglese: capisce e risponde nella lingua in cui hai scritto.',
+    k: 'Nove lingue',
+    h2: 'Scrivi nella tua lingua. Risponde nella stessa.',
+    lead: 'La tua vita interiore non accade nella tua seconda lingua. Scrivi a Symponia in italiano, svedese, inglese, russo, portoghese, francese, tedesco, spagnolo o danese, e ti capisce e risponde nella lingua in cui hai scritto. Non è traduzione automatica applicata sopra: ogni schermata, ogni notifica e la voce stessa sono scritte come se fossero nate in quella lingua.',
   },
   modes: {
     k: 'Tre modi per entrare',
@@ -108,11 +108,11 @@ export const it: Dict = {
     lead: 'Già sospetti che lo schema sia tuo. Quello che ti manca è un modo per vederlo all’opera: il tratto che eviti, il motivo per cui prendi sempre la stessa curva, l’istante in cui prende il comando. Symponia fa esattamente questo.',
     gets: [
       'Dai un nome alla tua ombra in circa quattro minuti, attraverso i sette animali',
-      'Vai più a fondo di una domanda: ogni risposta è scritta su ciò che hai detto davvero',
-      'Scrivi nella tua lingua e fatti capire in quella lingua',
-      'Un compagno che ricorda ancora ciò che gli hai detto un mese fa',
+      'Riflessione illimitata, niente da contare e nessun credito da razionare',
+      'La tua settimana dell’umore: come sei arrivato, come sei uscito e la differenza',
+      'Nove lingue, scritte come se fossero nate in ciascuna',
     ],
-    reassure: 'Iniziare è gratuito e le riflessioni quotidiane restano gratuite. Disdici quando vuoi dalle impostazioni del tuo ID Apple.',
+    reassure: 'Sette giorni gratis. Poi riflessione illimitata. Disdici quando vuoi dalle impostazioni del tuo ID Apple.',
   },
 
   compare: {

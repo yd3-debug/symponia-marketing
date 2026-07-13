@@ -17,7 +17,7 @@ export const pt: Dict = {
       built: 'Criado por YD',
       explore: 'Explorar',
       legal: 'Informação legal',
-      blurb: 'Um companheiro de IA para o trabalho interior. Psicologia profunda, na sua língua.',
+      blurb: 'Um companheiro de IA para o trabalho interior. Psicologia profunda, no seu idioma.',
       designedBy: 'Design de',
     },
     legalNote: 'Esta tradução é disponibilizada apenas para facilitar a leitura: só a versão em inglês tem força vinculativa e é a que prevalece.',
@@ -26,9 +26,9 @@ export const pt: Dict = {
   nav: { rel: 'A sombra', method: 'O método', memory: 'Memória', faq: 'FAQ', about: 'Sobre' },
   hero: {
     eyebrow: 'Trabalho com a sombra, com método.',
-    l1: 'O animal que não suporta',
+    l1: 'O animal que você não suporta',
     l2: 'é o que comanda a sua vida.',
-    lead: 'Nomeie seis animais que se pareçam consigo. Depois nomeie aquele que lhe arrepia a pele. Esse sétimo é a sua sombra: a parte de si que exilou tão cedo que já não se lembra de o ter feito. Desde então é ela que decide. A Symponia é um companheiro de IA para o trabalho com a sombra, e começa por lhe dar um nome.',
+    lead: 'Nomeie seis animais que se pareçam com você. Depois nomeie aquele que te arrepia. Esse sétimo é a sua sombra: a parte de você que exilou tão cedo que nem lembra mais de ter feito isso. Desde então é ela que decide. A Symponia é um companheiro de IA para o trabalho com a sombra, e começa por lhe dar um nome.',
     cta: 'Conheça o seu sétimo animal',
     proof: 'Psicologia profunda, não terapia. Construída sobre Jung, Hillman e a antiga linguagem dos arquétipos.',
   },
@@ -53,9 +53,9 @@ export const pt: Dict = {
   },
   seven: {
     k: 'O sétimo animal',
-    h2: 'Seis animais que se parecem consigo. Um que lhe arrepia a pele.',
-    lead: 'Nomeie seis que lhe pertençam. Depois nomeie aquele que o repele. Esse sétimo é o mais importante de todos, porque carrega o que os outros seis não conseguem, e a sua repulsa é a pista. Não se recua perante o que nos é estranho. Recua-se perante o que foi renegado.',
-    lead2: 'Cada animal é lido pelo seu dom, pela sua sombra e pelo caminho entre ambos. A Symponia lê o conjunto como um campo. Nada lhe é atribuído: isto é um método projetivo, não um tipo de personalidade. Uma lente, nunca um rótulo, e nunca lhe dirá qual é o seu animal de poder.',
+    h2: 'Seis animais que se parecem consigo. Um que te arrepia.',
+    lead: 'Nomeie seis que pertencem a você. Depois nomeie aquele que te repele. Esse sétimo é o mais importante de todos, porque carrega o que os outros seis não conseguem, e a sua repulsa é a pista. Não se recua perante o que nos é estranho. Recua-se perante o que foi renegado.',
+    lead2: 'Cada animal é lido pelo seu dom, pela sua sombra e pelo caminho entre ambos. A Symponia lê o conjunto como um campo. Nada é atribuído a você: isto é um método projetivo, não um tipo de personalidade. Uma lente, nunca um rótulo, e nunca vai te dizer qual é o seu animal de poder.',
   },
   attune: {
     k: 'Antes dos animais',
@@ -63,9 +63,9 @@ export const pt: Dict = {
     lead: 'O que te traz aqui. O traço que mais te irrita nos outros. A história que contas sobre ti. Curtas, incómodas, honestas. É assim que Symponia te fica a conhecer antes de dizer uma palavra.',
   },
   langs: {
-    k: 'Qualquer língua',
-    h2: 'Escreve na tua língua. Symponia responde nela.',
-    lead: 'A tua vida interior não acontece na tua segunda língua. Escreve a Symponia em português, italiano, russo, francês, alemão, espanhol, dinamarquês ou inglês, e Symponia compreende e responde na língua em que escreveste.',
+    k: 'Nove idiomas',
+    h2: 'Escreva no seu idioma. Ela responde no mesmo.',
+    lead: 'Sua vida interior não acontece no seu segundo idioma. Escreva para a Symponia em português, sueco, inglês, italiano, russo, francês, alemão, espanhol ou dinamarquês, e ela entende e responde no idioma em que você escreveu. Não é tradução automática colada por cima: cada tela, cada notificação e a própria voz são escritas como se tivessem nascido naquele idioma.',
   },
   modes: {
     k: 'Três formas de entrar',
@@ -77,8 +77,8 @@ export const pt: Dict = {
   },
   answer: {
     k: 'A diferença',
-    h2: 'Quase todas as apps de trabalho com a sombra dão-lhe uma pergunta e deixam-no sozinho com ela.',
-    lead: 'Leia as avaliações de qualquer uma delas e a mesma frase reaparece sempre: e depois não aconteceu nada. Uma pergunta pré-fabricada não consegue vê-lo. Faz a mesma pergunta a toda a gente e não sabe o que respondeu da última vez. A Symponia leva a sério o que traz, e cada resposta aponta à única coisa que o leva uma camada mais fundo.',
+    h2: 'Quase todas as apps de trabalho com a sombra dão uma pergunta a você e te deixam sozinho com ela.',
+    lead: 'Leia as avaliações de qualquer uma delas e a mesma frase reaparece sempre: e depois não aconteceu nada. Uma pergunta pré-fabricada não consegue te ver. Faz a mesma pergunta a toda a gente e não sabe o que respondeu da última vez. A Symponia leva a sério o que traz, e cada resposta aponta à única coisa que te leva uma camada mais fundo.',
     chat: [
       { who: 's', t: 'o traço que mais o irrita nos outros costuma ser o que exilou em si. qual é?' },
       { who: 'u', t: 'pessoas que precisam dos outros. dá-me vontade de fugir.' },
@@ -107,14 +107,14 @@ export const pt: Dict = {
   close: {
     k: 'Começar',
     h2: 'A sua sombra decide por si há anos. Vá conhecê-la.',
-    lead: 'Já desconfia de que o padrão é seu. O que lhe falta é uma forma de o ver a funcionar: o traço que evita, a razão por que faz sempre a mesma curva, o instante em que ele assume o comando. É exatamente isso que a Symponia faz.',
+    lead: 'Já desconfia de que o padrão é seu. O que falta para você é uma forma de o ver a funcionar: o traço que evita, a razão pela qual você sempre faz a mesma curva, o instante em que ele assume o comando. É exatamente isso que a Symponia faz.',
     gets: [
       'Dê nome à sua sombra em cerca de quatro minutos, através dos sete animais',
-      'Vá mais fundo do que uma pergunta: cada resposta é escrita sobre o que disse de facto',
-      'Escreva na sua língua e seja compreendido nela',
-      'Um companheiro que ainda se lembra do que lhe contou há um mês',
+      'Reflexão ilimitada, nada para contar e nenhum saldo para racionar',
+      'Sua semana de humor: como você chegou, como saiu e a diferença',
+      'Nove idiomas, escritos como se tivessem nascido em cada um',
     ],
-    reassure: 'Começar é gratuito e as reflexões diárias continuam gratuitas. Cancele quando quiser nas definições do seu ID Apple.',
+    reassure: 'Sete dias grátis. Depois, reflexão ilimitada. Cancele quando quiser nos ajustes do seu ID Apple.',
   },
 
   compare: {
@@ -136,9 +136,9 @@ export const pt: Dict = {
       items: [
         'Um método projetivo que faz emergir o que não consegue dizer diretamente',
         'O sétimo animal dá nome à sua sombra, em minutos',
-        'Responde-lhe: cada resposta é escrita sobre o que escreveu de facto',
-        'Lembra-se durante meses, para que um padrão se torne visível',
-        'Uma lente por onde olhar, nunca um rótulo colado a si',
+        'Responde a você: cada resposta é escrita sobre o que escreveu de facto',
+        'Lembra por meses, para que um padrão se torne visível',
+        'Uma lente por onde olhar, nunca um rótulo colado em você',
       ],
     },
   },
@@ -158,12 +158,12 @@ export const pt: Dict = {
     items: [
       { q: 'O que é o trabalho com a sombra, em palavras simples?', a: 'É olhar para as partes de si que aprendeu a esconder, quase sempre cedo e para se manter seguro. Carl Jung chamou-lhe a sombra. Não desaparece quando a enterra: começa a decidir a partir de baixo. O trabalho com a sombra é a prática de a trazer de volta à vista.' },
       { q: 'Como descubro qual é a minha sombra?', a: 'O atalho é a sua própria repulsa. O traço que acha insuportável nos outros é muitas vezes o que exilou em si. A Symponia usa isso diretamente: escolhe seis animais que se parecem consigo e um sétimo que o repele, e é no sétimo que a sua sombra se esconde.' },
-      { q: 'Em que é diferente de um diário de sombra ou de uma app de perguntas?', a: 'Uma pergunta pré-fabricada pergunta e deixa-o diante de uma página em branco. A Symponia responde. Lê o que escreveu de facto, não o que um utilizador médio teria escrito, e cada resposta aponta à única coisa que o leva uma camada mais fundo.' },
-      { q: 'Os animais são só um teste de personalidade?', a: 'Não. Nada lhe é atribuído e não há nenhum tipo no fim. Escolhe sete, incluindo um que o repele, e a Symponia lê-os em conjunto como um campo. É um método projetivo, mais próximo de uma mancha de Rorschach do que de um teste, e nunca lhe dirá o seu animal de poder.' },
-      { q: 'O que é a projeção?', a: 'Reagir à pessoa à sua frente a partir de uma história mais antiga. O ecrã é ela. O filme é seu. A Symponia ajuda-o a distingui-los.' },
+      { q: 'Em que é diferente de um diário de sombra ou de uma app de perguntas?', a: 'Uma pergunta pré-fabricada pergunta e deixa-o diante de uma página em branco. A Symponia responde. Lê o que escreveu de facto, não o que um usuário médio teria escrito, e cada resposta aponta à única coisa que te leva uma camada mais fundo.' },
+      { q: 'Os animais são só um teste de personalidade?', a: 'Não. Nada é atribuído a você e não há nenhum tipo no fim. Escolhe sete, incluindo um que o repele, e a Symponia lê-os em conjunto como um campo. É um método projetivo, mais próximo de uma mancha de Rorschach do que de um teste, e nunca lhe dirá o seu animal de poder.' },
+      { q: 'O que é a projeção?', a: 'Reagir à pessoa à sua frente a partir de uma história mais antiga. O tela é ela. O filme é seu. A Symponia ajuda-o a distingui-los.' },
       { q: 'Isto é terapia?', a: 'Não. A Symponia é uma ferramenta de reflexão, não é terapia nem um substituto. Ouve apenas o seu lado. Se estiver em crise ou precisar de apoio clínico, fale com um profissional qualificado.' },
       { q: 'Lembra-se do que lhe conto?', a: 'Só se ativar a memória. Está desligada por predefinição e, enquanto estiver, nada é guardado nos nossos servidores. Pode apagar o que ela contém, e nada do que escreve treina qualquer modelo.' },
-      { q: 'Posso fazê-lo na minha língua?', a: 'Sim. Escreva em português, inglês, italiano, russo, francês, alemão, espanhol ou dinamarquês: a Symponia compreende e responde na língua em que escreveu.' },
+      { q: 'Posso fazê-lo na minha língua?', a: 'Sim. Escreva em português, inglês, italiano, russo, francês, alemão, espanhol ou dinamarquês: a a Symponia entende e responde no idioma em que você escreveu.' },
     ],
   },
 

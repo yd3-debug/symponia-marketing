@@ -13,7 +13,8 @@ The method: you name six animals that feel like you, and a seventh that repels y
 - Three modes: meet your archetypes, talk through your day, or just talk with no structure.
 - Replies written for what you actually wrote, rather than a fixed prompt served to every user.
 - Optional long-term memory, so a pattern becomes visible across months.
-- Works in eight languages, understanding and replying in the language you wrote in.
+- Works in nine languages, understanding and replying in the language you wrote in. Not machine translation bolted on: every screen, notification and the voice itself are written to read as though composed in that language.
+- Mood check-ins: a 1 to 5 rating before and after a reflection, drawn over a week to show whether the practice is helping. This deliberately replaces a streak: a streak measures obedience, this measures whether the thing works.
 
 ## How it differs from other shadow work apps
 
@@ -29,11 +30,11 @@ Symponia is not therapy and not a substitute for it. It hears only one side, the
 
 ## Pricing
 
-Free to download, with a free allowance to begin. Daily reflections are always free. A monthly subscription unlocks the full session allowance. Prices are set by the App Store and vary by country. Cancel any time in Apple ID settings.
+Free to download, with a 7-day free trial. After the trial, Symponia Monthly is £19.99 in the UK; Apple sets the price for each country and it varies. The subscription is unlimited reflection: there is nothing to count and no balance to ration. A published fair-use ceiling of 250 messages a week and 60 in any 5-hour period protects the service from automated abuse; most people never reach it. Cancel any time in Apple ID settings.
 
 ## Languages
 
-English, Italian, Russian, Portuguese, French, German, Spanish, Danish.
+English, Swedish, Italian, Russian, Portuguese (Brazilian), French, German, Spanish, Danish.
 
 ## Who built it
 

@@ -64,9 +64,9 @@ export const da: Dict = {
     lead: 'Hvad der bringer dig hertil. Det træk, der irriterer dig mest hos andre. Den historie, du fortæller om dig selv. Korte, ubehagelige, ærlige. Sådan lærer Symponia dig at kende, før den siger et eneste ord.',
   },
   langs: {
-    k: 'Ethvert sprog',
-    h2: 'Skriv på dit eget sprog. Symponia svarer på det samme.',
-    lead: 'Dit indre liv foregår ikke på dit andetsprog. Skriv til Symponia på dansk, italiensk, russisk, portugisisk, fransk, tysk, spansk eller engelsk. Den forstår og svarer på det sprog, du skrev på.',
+    k: 'Ni sprog',
+    h2: 'Skriv på dit eget sprog. Den svarer på samme.',
+    lead: 'Dit indre liv foregår ikke på dit andetsprog. Skriv til Symponia på dansk, svensk, engelsk, italiensk, russisk, portugisisk, fransk, tysk eller spansk, så forstår den dig og svarer på det sprog, du skrev på. Ingen påklistret maskinoversættelse: hver skærm, hver notifikation og selve stemmen er skrevet, som var de forfattet på det sprog.',
   },
   modes: {
     k: 'Tre veje ind',
@@ -111,11 +111,11 @@ export const da: Dict = {
     lead: 'Du aner allerede, at mønsteret er dit. Det, du mangler, er en måde at se det arbejde på: det træk, du undgår, grunden til at du tager det samme sving hver gang, øjeblikket hvor det tager rattet. Det er præcis det, Symponia gør.',
     gets: [
       'Sæt navn på din skygge på cirka fire minutter, gennem de syv dyr',
-      'Gå dybere end et spørgsmål, hvert svar er skrevet til det, du faktisk sagde',
-      'Skriv på dit eget sprog, og bliv forstået på det',
-      'En ledsager, der stadig husker, hvad du fortalte for en måned siden',
+      'Ubegrænset refleksion, intet at tælle og intet forbrug at rationere',
+      'Din humøruge: hvordan du kom, hvordan du gik, og forskellen imellem',
+      'Ni sprog, skrevet som var de forfattet på hvert enkelt',
     ],
-    reassure: 'Det er gratis at begynde, og de daglige refleksioner forbliver gratis. Opsig når som helst i dine Apple ID-indstillinger.',
+    reassure: 'Syv dage gratis. Derefter ubegrænset refleksion. Opsig når som helst i dine Apple ID-indstillinger.',
   },
 
   compare: {

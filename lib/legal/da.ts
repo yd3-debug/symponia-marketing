@@ -64,13 +64,14 @@ export const da: LegalDict = {
         ],
       },
       {
-        h: '7. Abonnement, priser og automatisk fornyelse',
+        h: '7. Abonnementer, priser og automatisk fornyelse',
         id: 'tokens',
         blocks: [
-          { t: 'p', x: '**Gratis startmængde.** Nye brugere får en begrænset gratis mængde, så de kan prøve Symponia, før de tegner abonnement.' },
-          { t: 'p', x: '**Symponia Månedlig.** Et abonnement giver 350 refleksionssamtaler pr. kalendermåned. Prisen er den, der vises i App Store på købstidspunktet; Apple fastsætter priserne for hvert land og kan ændre dem. Ved hver fornyelse tildeles en ny mængde på 350 samtaler; ubrugte samtaler overføres ikke. De daglige refleksioner er gratis, tæller ikke med i dine samtaler og er begrænset til 10 inden for 24 timer.' },
-          { t: 'p', x: '**Betaling og fornyelse.** Abonnementer sælges og behandles af Apple gennem køb i appen og opkræves via dit Apple ID. Dit abonnement fornys automatisk til den til enhver tid gældende pris ved udgangen af hver betalingsperiode, medmindre du opsiger senest 24 timer før periodens udløb. Du kan altid administrere eller opsige dit abonnement i dine Apple ID-indstillinger (Indstillinger, dit navn, Abonnementer). At slette appen opsiger ikke dit abonnement.' },
-          { t: 'p', x: '**Betaling.** Betalingen opkræves af Apple. Vi ser eller gemmer aldrig dine betalingskortoplysninger. Priserne vises i appen og kan ændre sig; vi varsler prisændringer i det omfang, det er påkrævet, og en ændring berører ikke en betalingsperiode, der allerede er betalt.' },
+          { t: 'p', x: '**Gratis prøveperiode.** Nye abonnenter får en **7-dages gratis prøveperiode**. Medmindre du opsiger mindst 24 timer før prøveperioden udløber, overgår den automatisk til et betalt abonnement, og dit Apple ID bliver trukket. Du kan opsige når som helst i prøveperioden uden at blive opkrævet.' },
+          { t: 'p', x: '**Symponia Månedlig (£19.99 om måneden).** Abonnementet giver ubegrænset refleksion, med forbehold for fair use-grænserne i afsnit 9. Apple fastsætter prisen for hvert land og kan ændre den; den pris, der vises i App Store på købstidspunktet, er den, der gælder for dig.' },
+          { t: 'p', x: '**Sådan opkræves du.** Betalingen trækkes på dit Apple ID ved bekræftelse af købet eller ved prøveperiodens udløb. Abonnementet fornys automatisk hver måned, medmindre automatisk fornyelse slås fra mindst 24 timer før den aktuelle periodes udløb. Beløbet trækkes inden for 24 timer før periodens udløb.' },
+          { t: 'p', x: '**Administration af abonnementet.** Du kan administrere eller opsige dit abonnement og slå automatisk fornyelse fra når som helst i dine Apple ID-indstillinger. At slette appen opsiger ikke abonnementet.' },
+          { t: 'p', x: 'Alle køb foretages gennem Apple. Vi behandler ikke dine betalingsoplysninger og ser aldrig dine kortoplysninger.' },
         ],
       },
       {
@@ -82,6 +83,8 @@ export const da: LegalDict = {
       {
         h: '9. Acceptabel brug',
         blocks: [
+          { t: 'p', x: '**Fair use.** Symponia er ubegrænset ved normal personlig brug. For at beskytte tjenesten mod automatiseret misbrug anvender vi et fair use-loft på **250 beskeder om ugen** og **60 beskeder inden for 5 timer**. Grænserne ligger langt over, hvad reflekterende brug kræver, og de fleste vil aldrig komme i nærheden af dem. Nås en grænse, er det midlertidigt, og adgangen vender tilbage, når perioden er gået.' },
+          { t: 'p', x: 'De daglige refleksioner er adskilt fra dine samtaler og tæller ikke med i disse grænser.' },
           { t: 'p', x: 'Du forpligter dig til ikke at:' },
           {
             t: 'ul',
@@ -192,6 +195,9 @@ export const da: LegalDict = {
             x: [
               'dit fornavn og, hvis du vælger at oplyse det, dit køn;',
               'dine syv dyrearketyper og dine svar på de indstillende spørgsmål;',
+              'dine **indledende svar**: de spørgsmål, du besvarer, før du begynder. De gemmes og bruges til at forme, hvordan Symponia taler til dig. De citeres aldrig tilbage til dig;',
+              'dine **humør-check-ins**: en vurdering fra 1 til 5, som du kan registrere før og efter en refleksion, og som udelukkende bruges til at vise dig din egen uge;',
+              'dine **gemte refleksioner**, men kun hvis du slår hukommelsen til. Den er slået fra som standard, og så længe den er det, gemmes intet af det, du skriver, på vores servere;',
               'din foretrukne resonansfrekvens;',
               'de beskeder og refleksioner, du skriver i hver tilstand;',
               'dine notifikationsindstillinger, og om du siger ja til lejlighedsvise nyhedsmails.',
@@ -201,7 +207,7 @@ export const da: LegalDict = {
           {
             t: 'ul',
             x: [
-              'kontooplysninger, der er nødvendige for at logge dig ind og holde dine data sikre;',
+              'de kontooplysninger, der er nødvendige for at logge dig ind og holde dine data sikre. Bruger du «Log ind med Apple» eller «Log ind med Google», modtager vi kun den identifikator og e-mailadresse, disse tjenester giver, og vi ser eller gemmer aldrig en adgangskode;',
               'din saldo af samtaler (tokens) og din abonnementsstatus;',
               'begrænsede tekniske og diagnostiske oplysninger (såsom appversion og grundlæggende enhedsoplysninger), der bruges til at holde tjenesten kørende og sikker.',
             ],
@@ -390,40 +396,41 @@ export const da: LegalDict = {
 
   credits: {
     metaTitle: 'Priser',
-    metaDesc: 'Symponias priser: begynd med 10 gratis samtaler, derefter et månedsabonnement med 350 samtaler. Prisen vises i App Store.',
+    metaDesc: 'Symponias priser: 7 dage gratis, derefter £19.99 om måneden for ubegrænset refleksion. Intet at tælle, intet at rationere.',
     kicker: 'Priser',
-    h1: 'Vælg din dybde',
-    lead: 'Begynd gratis. Gå månedligt, når du er klar.',
+    h1: 'Én pris. Ingen optælling.',
+    lead: 'Syv dage gratis. Derefter ubegrænset refleksion, så længe den gavner dig.',
     free: {
-      k: 'Nye ankomster',
-      price: 'Gratis',
-      sub: '10 gratis refleksionssamtaler til at udforske Symponia',
-      body: 'Navngiv dine syv dyrearketyper, få dit konstellationsportræt, og brug 10 gratis refleksionssamtaler. Ingen binding.',
+      k: 'Gratis prøveperiode',
+      price: '7 dage',
+      sub: 'Det hele, gratis, i en uge',
+      body: 'Navngiv dine syv dyrearketyper, mød det syvende, og reflekter så meget du vil. Opsig inden prøveperioden slutter, og du bliver ikke opkrævet.',
       cta: 'Hent i App Store',
     },
     monthly: {
-      badge: 'Anbefalet',
+      badge: 'Efter prøveperioden',
       k: 'Symponia Månedlig',
-      price: 'I App Store',
-      sub: 'om måneden · 350 refleksionssamtaler',
+      price: '£19.99',
+      sub: 'om måneden · ubegrænset refleksion',
       bullets: [
-        '350 samtaler i tilstandene Arketyper, Min dag og Samtale',
-        'Gratis daglige refleksioner, op til 10 om dagen, der ikke tæller med',
-        'Ny mængde hver måned, samtaler overføres ikke',
-        'Apple fastsætter prisen for dit land, se App Store',
-        'Opsig når som helst i Apple ID-indstillingerne',
+        'Ubegrænset refleksion i Arketyper, Min dag og Samtale',
+        'Ingen samtaler at tælle, intet forbrug at rationere',
+        'Din humøruge: hvordan du kom, hvordan du gik, og forskellen imellem',
+        'Ni sprog, skrevet som var de forfattet på hvert enkelt',
+        'Opsig når som helst i dine Apple ID-indstillinger',
       ],
       cta: 'Tilgængelig i appen',
     },
     how: {
       h2: 'Sådan fungerer det',
       items: [
-        { t: 'Én samtale pr. refleksion', d: 'Hver udveksling med Symponia bruger én samtale. De daglige refleksioner er gratis og tæller ikke med i din mængde.' },
-        { t: 'Månedlig nulstilling', d: 'Dine 350 månedlige samtaler nulstilles ved hver fornyelse. Ubrugte samtaler overføres ikke.' },
-        { t: 'Køb inde i appen', d: 'Alle køb sker inde i Symponias iOS-app via Apples køb i appen.' },
-        { t: 'Sikker betaling via Apple', d: 'Alle betalinger behandles af Apple. Vi ser eller gemmer aldrig dine kortoplysninger.' },
+        { t: 'Syv dage, gratis', d: 'Prøveperioden er hele produktet, ikke en smagsprøve. Opsiger du mindst 24 timer før den slutter, bliver du aldrig opkrævet.' },
+        { t: 'Derefter fornys det månedligt', d: 'Betalingen trækkes på dit Apple ID ved prøveperiodens udløb og hver måned derefter, medmindre fornyelsen slås fra mindst 24 timer før periodens udløb.' },
+        { t: 'Ubegrænset, med et offentliggjort loft', d: 'Ubegrænset ved normal personlig brug. Mod automatiseret misbrug anvender vi en grænse på 250 beskeder om ugen og 60 inden for 5 timer. Næsten ingen kommer i nærheden, og vi offentliggør hellere tallet end at skjule det.' },
+        { t: 'Apple fastsætter prisen, hvor du bor', d: 'Prisen ovenfor er den britiske. Apple fastsætter en pris pr. land og kan ændre den. App Store viser din, før du køber.' },
+        { t: 'Opsig med to tryk', d: 'Administrer eller opsig når som helst i dine Apple ID-indstillinger. At slette appen opsiger ikke et abonnement.' },
       ],
     },
-    contact: 'Spørgsmål om abonnement eller betaling? Kontakt os på [hello@symponia.io](mailto:hello@symponia.io). Se alle detaljer i vores [vilkår for brug](/terms#tokens).',
+    contact: 'Spørgsmål om abonnement eller betaling? Skriv til [hello@symponia.io](mailto:hello@symponia.io). Se vores [Servicevilkår](/terms) for detaljerne.',
   },
 };

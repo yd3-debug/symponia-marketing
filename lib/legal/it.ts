@@ -67,10 +67,11 @@ export const it: LegalDict = {
         h: '7. Abbonamenti, prezzi e rinnovo automatico',
         id: 'tokens',
         blocks: [
-          { t: 'p', x: '**Credito gratuito.** I nuovi utenti ricevono 10 sessioni di riflessione gratuite per provare Symponia prima di abbonarsi.' },
-          { t: 'p', x: '**Symponia Mensile.** L’abbonamento comprende 350 sessioni di riflessione per mese solare. Si applica il prezzo indicato nell’App Store al momento dell’acquisto; Apple stabilisce i prezzi per ciascun Paese e può modificarli. A ogni rinnovo viene concesso un nuovo credito di 350 sessioni; le sessioni non utilizzate non vengono riportate. Le riflessioni quotidiane sono gratuite, non vengono scalate dalle Sue sessioni e sono limitate a 10 in un periodo di 24 ore.' },
-          { t: 'p', x: '**Fatturazione e rinnovo.** Gli abbonamenti sono venduti e gestiti da Apple tramite acquisto in-app e sono addebitati sul Suo Apple ID. L’abbonamento si rinnova automaticamente al prezzo in vigore al termine di ciascun periodo di fatturazione, salvo disdetta almeno 24 ore prima della fine del periodo. Può gestire o disdire l’abbonamento in qualsiasi momento nelle impostazioni del Suo Apple ID (Impostazioni, il Suo nome, Abbonamenti). L’eliminazione dell’app non comporta la disdetta dell’abbonamento.' },
-          { t: 'p', x: '**Pagamento.** Il pagamento è incassato da Apple. Non vediamo né conserviamo mai i dati della Sua carta di pagamento. I prezzi sono indicati nell’app e possono variare; comunicheremo le variazioni di prezzo nella misura richiesta e nessuna variazione inciderà su un periodo di fatturazione già pagato.' },
+          { t: 'p', x: '**Prova gratuita.** I nuovi abbonati ricevono una **prova gratuita di 7 giorni**. Se non disdice almeno 24 ore prima del termine, la prova si converte automaticamente in un abbonamento a pagamento e il Suo ID Apple viene addebitato. Può disdire in qualsiasi momento durante la prova senza alcun addebito.' },
+          { t: 'p', x: '**Symponia Mensile (£19.99 al mese).** L’abbonamento offre riflessione illimitata, nei limiti di uso corretto indicati alla sezione 9. Apple stabilisce il prezzo per ciascun Paese e può modificarlo; si applica il prezzo indicato nell’App Store al momento dell’acquisto.' },
+          { t: 'p', x: '**Addebito.** Il pagamento viene addebitato sul Suo ID Apple alla conferma dell’acquisto o al termine della prova gratuita. L’abbonamento si rinnova automaticamente ogni mese salvo disattivazione del rinnovo automatico almeno 24 ore prima della fine del periodo in corso. L’addebito avviene nelle 24 ore precedenti la fine del periodo.' },
+          { t: 'p', x: '**Gestione dell’abbonamento.** Può gestire o disdire l’abbonamento, e disattivare il rinnovo automatico, in qualsiasi momento nelle impostazioni del Suo ID Apple. La disinstallazione dell’app non disdice l’abbonamento.' },
+          { t: 'p', x: 'Tutti gli acquisti avvengono tramite Apple. Non trattiamo i Suoi dati di pagamento e non vediamo mai i dati della Sua carta.' },
         ],
       },
       {
@@ -82,6 +83,8 @@ export const it: LegalDict = {
       {
         h: '9. Uso consentito',
         blocks: [
+          { t: 'p', x: '**Uso corretto.** Symponia è illimitata per il normale uso personale. Per proteggere il servizio da abusi automatizzati applichiamo un limite di uso corretto di **250 messaggi a settimana** e **60 messaggi in un periodo di 5 ore**. Questi limiti sono ben oltre ciò che richiede una pratica riflessiva e la maggior parte delle persone non vi si avvicinerà mai. Se raggiunge un limite, è temporaneo e l’accesso torna al termine del periodo.' },
+          { t: 'p', x: 'Le riflessioni quotidiane sono separate dalle Sue conversazioni e non vengono conteggiate in questi limiti.' },
           { t: 'p', x: 'Lei si impegna a non:' },
           {
             t: 'ul',
@@ -192,6 +195,9 @@ export const it: LegalDict = {
             x: [
               'il Suo nome e, se sceglie di indicarlo, il Suo genere;',
               'i Suoi sette archetipi animali e le Sue risposte alle domande di sintonizzazione;',
+              'le Sue **risposte iniziali**: le domande a cui risponde prima di cominciare. Vengono conservate e servono a plasmare il modo in cui Symponia Le parla. Non Le vengono mai citate;',
+              'i Suoi **check-in dell’umore**: una valutazione da 1 a 5 che può registrare prima e dopo una riflessione, usata unicamente per mostrarLe la Sua settimana;',
+              'le Sue **riflessioni salvate**, ma solo se attiva la memoria. È disattivata per impostazione predefinita e, finché lo è, nulla di ciò che scrive viene conservato sui nostri server;',
               'la Sua preferenza di frequenza di risonanza;',
               'i messaggi e le riflessioni che scrive in ciascuna modalità;',
               'le Sue preferenze di notifica e l’eventuale consenso a ricevere saltuari aggiornamenti via email.',
@@ -202,7 +208,7 @@ export const it: LegalDict = {
             t: 'ul',
             x: [
               'i dati dell’account necessari per l’accesso e per la sicurezza dei Suoi dati;',
-              'il Suo saldo di sessioni (token) e lo stato del Suo abbonamento;',
+              'lo stato del Suo abbonamento e della Sua prova gratuita;',
               'informazioni tecniche e diagnostiche limitate (come la versione dell’app e informazioni di base sul dispositivo), utilizzate per mantenere il Servizio funzionante e sicuro.',
             ],
           },
@@ -390,27 +396,27 @@ export const it: LegalDict = {
 
   credits: {
     metaTitle: 'Prezzi',
-    metaDesc: 'Prezzi di Symponia: si inizia con 10 sessioni gratuite, poi un abbonamento mensile da 350 sessioni. Il prezzo è indicato nell’App Store.',
+    metaDesc: 'Prezzi di Symponia: 7 giorni gratis, poi £19.99 al mese per riflessione illimitata. Niente da contare, niente da razionare.',
     kicker: 'Prezzi',
-    h1: 'Scelga la Sua profondità',
-    lead: 'Inizi gratuitamente. Passi al mensile quando se la sente.',
+    h1: 'Un prezzo. Nessun conteggio.',
+    lead: 'Sette giorni gratis. Poi riflessione illimitata, finché Le è utile.',
     free: {
-      k: 'Nuovi arrivi',
-      price: 'Gratuito',
-      sub: '10 sessioni di riflessione gratuite per provare Symponia',
-      body: 'Nomini i suoi sette animali archetipici, riceva il ritratto della sua costellazione e usi 10 sessioni di riflessione gratuite. Nessun impegno.',
+      k: 'Prova gratuita',
+      price: '7 giorni',
+      sub: 'Tutto, gratis, per una settimana',
+      body: 'Nomini i suoi sette animali archetipici, incontri il settimo e rifletta quanto vuole. Disdica prima della fine della prova e non pagherà nulla.',
       cta: 'Scarica su App Store',
     },
     monthly: {
-      badge: 'Consigliato',
+      badge: 'Dopo la prova',
       k: 'Symponia Mensile',
-      price: 'Nell’App Store',
-      sub: 'al mese · 350 sessioni di riflessione',
+      price: '£19.99',
+      sub: 'al mese · riflessione illimitata',
       bullets: [
-        '350 sessioni nelle modalità Archetipi, La mia giornata e Conversazione',
-        'Riflessioni quotidiane gratuite, fino a 10 al giorno, non scalate dalle sessioni',
-        'Nuovo credito ogni mese, le sessioni non vengono riportate',
-        'Apple stabilisce il prezzo per il suo Paese, veda l’App Store',
+        'Riflessione illimitata in Archetipi, La mia giornata e Conversazione',
+        'Nessuna sessione da contare, nessun credito da razionare',
+        'La Sua settimana dell’umore: come è arrivato, come è uscito e la differenza',
+        'Nove lingue, scritte come se fossero state composte in ciascuna',
         'Disdetta in qualsiasi momento dalle impostazioni dell’ID Apple',
       ],
       cta: 'Disponibile nell’app',
@@ -418,12 +424,13 @@ export const it: LegalDict = {
     how: {
       h2: 'Come funziona',
       items: [
-        { t: 'Una sessione per riflessione', d: 'Ogni scambio con Symponia consuma una sessione. Le riflessioni quotidiane sono gratuite e non vengono scalate dal Suo credito.' },
-        { t: 'Azzeramento mensile', d: 'Le Sue 350 sessioni mensili vengono riassegnate a ogni rinnovo. Le sessioni non utilizzate non si riportano al mese successivo.' },
-        { t: 'Acquisto dentro l’app', d: 'Tutti gli acquisti avvengono nell’app iOS Symponia tramite l’acquisto in-app di Apple.' },
-        { t: 'Pagamento sicuro tramite Apple', d: 'Tutti i pagamenti sono gestiti da Apple. Non vediamo né conserviamo mai i dati della Sua carta.' },
+        { t: 'Sette giorni, gratis', d: 'La prova è il prodotto intero, non un assaggio. Se disdice almeno 24 ore prima della fine, non paga mai nulla.' },
+        { t: 'Poi si rinnova ogni mese', d: 'Il pagamento viene addebitato sul Suo ID Apple al termine della prova e ogni mese successivo, salvo disattivazione del rinnovo almeno 24 ore prima della fine del periodo.' },
+        { t: 'Illimitata, con un tetto pubblicato', d: 'Illimitata per il normale uso personale. Contro gli abusi automatizzati applichiamo un limite di 250 messaggi a settimana e 60 in un periodo di 5 ore. Quasi nessuno vi si avvicinerà, e preferiamo pubblicare il numero anziché nasconderlo.' },
+        { t: 'Apple stabilisce il prezzo dove vive', d: 'Il prezzo sopra è quello del Regno Unito. Apple fissa un prezzo per ciascun Paese e può modificarlo. L’App Store Le mostra il Suo prima dell’acquisto.' },
+        { t: 'Disdetta in due tocchi', d: 'Gestisca o disdica in qualsiasi momento dalle impostazioni dell’ID Apple. Disinstallare l’app non disdice l’abbonamento.' },
       ],
     },
-    contact: 'Ha domande sugli abbonamenti o sulla fatturazione? Ci contatti a [hello@symponia.io](mailto:hello@symponia.io). Per tutti i dettagli, consulti le nostre [Condizioni del servizio](/terms#tokens).',
+    contact: 'Domande su abbonamenti o fatturazione? Ci scriva a [hello@symponia.io](mailto:hello@symponia.io). Per il dettaglio veda i nostri [Termini di servizio](/terms).',
   },
 };

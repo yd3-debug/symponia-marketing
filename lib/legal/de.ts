@@ -67,10 +67,11 @@ export const de: LegalDict = {
         h: '7. Abonnements, Preise und automatische Verlängerung',
         id: 'tokens',
         blocks: [
-          { t: 'p', x: '**Kostenloses Startguthaben.** Neue Nutzerinnen und Nutzer erhalten ein begrenztes kostenloses Guthaben, um Symponia vor einem Abonnement auszuprobieren.' },
-          { t: 'p', x: '**Symponia Monatlich.** Ein Abonnement umfasst 350 Reflexionsgespräche pro Kalendermonat. Es gilt der Preis, der zum Zeitpunkt des Kaufs im App Store angezeigt wird; Apple legt die Preise je Land fest und kann sie ändern. Bei jeder Verlängerung wird ein neues Guthaben von 350 Gesprächen gewährt; nicht genutzte Gespräche werden nicht übertragen. Die täglichen Reflexionen sind kostenlos, werden nicht auf Ihre Gespräche angerechnet und sind auf 10 innerhalb von 24 Stunden begrenzt.' },
-          { t: 'p', x: '**Abrechnung und Verlängerung.** Abonnements werden von Apple über den In-App-Kauf verkauft und abgewickelt und über Ihre Apple ID abgerechnet. Ihr Abonnement verlängert sich am Ende jedes Abrechnungszeitraums automatisch zum dann geltenden Preis, sofern Sie nicht mindestens 24 Stunden vor Ende des Zeitraums kündigen. Sie können Ihr Abonnement jederzeit in Ihren Apple-ID-Einstellungen verwalten oder kündigen (Einstellungen, Ihr Name, Abonnements). Das Löschen der App kündigt Ihr Abonnement nicht.' },
-          { t: 'p', x: '**Zahlung.** Die Zahlung wird von Apple eingezogen. Wir sehen und speichern Ihre Zahlungskartendaten zu keinem Zeitpunkt. Die Preise werden in der App angezeigt und können sich ändern; wir werden Preisänderungen im erforderlichen Umfang ankündigen, und eine Änderung berührt keinen bereits bezahlten Abrechnungszeitraum.' },
+          { t: 'p', x: '**Kostenlose Testphase.** Neue Abonnentinnen und Abonnenten erhalten eine **7-tägige kostenlose Testphase**. Wenn Sie nicht mindestens 24 Stunden vor Ablauf der Testphase kündigen, geht sie automatisch in ein kostenpflichtiges Abonnement über und Ihre Apple-ID wird belastet. Sie können während der Testphase jederzeit kündigen, ohne dass Kosten entstehen.' },
+          { t: 'p', x: '**Symponia Monatlich (£19.99 pro Monat).** Das Abonnement bietet unbegrenzte Reflexion, vorbehaltlich der Fair-Use-Grenzen in Abschnitt 9. Apple legt den Preis für jedes Land fest und kann ihn ändern; es gilt der Preis, der zum Zeitpunkt des Kaufs im App Store angezeigt wird.' },
+          { t: 'p', x: '**Abrechnung.** Die Zahlung wird bei Bestätigung des Kaufs oder am Ende der kostenlosen Testphase über Ihre Apple-ID abgerechnet. Das Abonnement verlängert sich automatisch jeden Monat, sofern die automatische Verlängerung nicht mindestens 24 Stunden vor Ablauf des laufenden Zeitraums deaktiviert wird. Die Belastung erfolgt innerhalb von 24 Stunden vor Ablauf des laufenden Zeitraums.' },
+          { t: 'p', x: '**Abonnement verwalten.** Sie können Ihr Abonnement jederzeit in den Einstellungen Ihrer Apple-ID verwalten, kündigen und die automatische Verlängerung deaktivieren. Das Löschen der App kündigt das Abonnement nicht.' },
+          { t: 'p', x: 'Alle Käufe erfolgen über Apple. Wir verarbeiten Ihre Zahlungsdaten nicht und sehen Ihre Kartendaten zu keinem Zeitpunkt.' },
         ],
       },
       {
@@ -82,6 +83,8 @@ export const de: LegalDict = {
       {
         h: '9. Zulässige Nutzung',
         blocks: [
+          { t: 'p', x: '**Faire Nutzung.** Symponia ist für die normale persönliche Nutzung unbegrenzt. Zum Schutz vor automatisiertem Missbrauch gilt eine Fair-Use-Obergrenze von **250 Nachrichten pro Woche** und **60 Nachrichten in einem Zeitraum von 5 Stunden**. Diese Grenzen liegen weit über dem, was reflektierende Nutzung erfordert; die meisten Menschen werden ihnen nie nahekommen. Wird eine Grenze erreicht, ist dies vorübergehend, und der Zugang kehrt zurück, sobald der Zeitraum abgelaufen ist.' },
+          { t: 'p', x: 'Die täglichen Reflexionen sind von Ihren Gesprächen getrennt und werden nicht auf diese Grenzen angerechnet.' },
           { t: 'p', x: 'Sie verpflichten sich, Folgendes zu unterlassen:' },
           {
             t: 'ul',
@@ -192,6 +195,9 @@ export const de: LegalDict = {
             x: [
               'Ihren Vornamen und, wenn Sie es angeben möchten, Ihr Geschlecht;',
               'Ihre sieben Tier-Archetypen und Ihre Antworten auf die einstimmenden Fragen;',
+              'Ihre **Aufnahmeantworten**: die Fragen, die Sie vor dem Beginn beantworten. Sie werden gespeichert und prägen, wie Symponia mit Ihnen spricht. Sie werden Ihnen niemals zitiert;',
+              'Ihre **Stimmungs-Check-ins**: eine Bewertung von 1 bis 5, die Sie vor und nach einer Reflexion erfassen können und die ausschließlich dazu dient, Ihnen Ihre eigene Woche zu zeigen;',
+              'Ihre **gespeicherten Reflexionen**, jedoch nur, wenn Sie das Gedächtnis einschalten. Es ist standardmäßig ausgeschaltet, und solange es aus ist, wird nichts von dem, was Sie schreiben, auf unseren Servern gespeichert;',
               'Ihre bevorzugte Resonanzfrequenz;',
               'die Nachrichten und Reflexionen, die Sie in den einzelnen Modi schreiben;',
               'Ihre Benachrichtigungseinstellungen und ob Sie gelegentliche E-Mail-Updates abonnieren.',
@@ -390,27 +396,27 @@ export const de: LegalDict = {
 
   credits: {
     metaTitle: 'Preise',
-    metaDesc: 'Symponia Preise: Beginnen Sie mit 10 kostenlosen Reflexionsgesprächen, danach ein Monatsabo mit 350 Gesprächen. Der Preis wird im App Store angezeigt.',
+    metaDesc: 'Symponia Preise: 7 Tage kostenlos, danach £19.99 im Monat für unbegrenzte Reflexion. Nichts zu zählen, nichts zu rationieren.',
     kicker: 'Preise',
-    h1: 'Wählen Sie Ihre Tiefe',
-    lead: 'Kostenlos beginnen. Monatlich weitermachen, wenn Sie so weit sind.',
+    h1: 'Ein Preis. Kein Zählen.',
+    lead: 'Sieben Tage kostenlos. Danach unbegrenzte Reflexion, so lange sie Ihnen nützt.',
     free: {
-      k: 'Neu dabei',
-      price: 'Kostenlos',
-      sub: '10 kostenlose Reflexionsgespräche zum Ausprobieren',
-      body: 'Benennen Sie Ihre sieben Tierarchetypen, erhalten Sie Ihr Konstellationsporträt und nutzen Sie 10 kostenlose Reflexionsgespräche. Keine Verpflichtung.',
+      k: 'Kostenlose Testphase',
+      price: '7 Tage',
+      sub: 'Alles, eine Woche lang kostenlos',
+      body: 'Benennen Sie Ihre sieben Tierarchetypen, begegnen Sie dem siebten und reflektieren Sie so viel Sie möchten. Kündigen Sie jederzeit vor Ablauf der Testphase, und es entstehen keine Kosten.',
       cta: 'Im App Store laden',
     },
     monthly: {
-      badge: 'Empfohlen',
+      badge: 'Nach der Testphase',
       k: 'Symponia Monatlich',
-      price: 'Im App Store',
-      sub: 'pro Monat · 350 Reflexionsgespräche',
+      price: '£19.99',
+      sub: 'pro Monat · unbegrenzte Reflexion',
       bullets: [
-        '350 Gespräche in den Modi Archetypen, Mein Tag und Gespräch',
-        'Kostenlose tägliche Reflexionen, bis zu 10 pro Tag, ohne Anrechnung',
-        'Neues Guthaben jeden Monat, Gespräche werden nicht übertragen',
-        'Apple legt den Preis für Ihr Land fest, siehe App Store',
+        'Unbegrenzte Reflexion in Archetypen, Mein Tag und Gespräch',
+        'Keine Gespräche zu zählen, kein Guthaben zu rationieren',
+        'Ihre Stimmungswoche: wie Sie ankamen, wie Sie gingen, und der Unterschied dazwischen',
+        'Neun Sprachen, geschrieben, als wären sie in jeder verfasst worden',
         'Jederzeit über die Apple-ID-Einstellungen kündbar',
       ],
       cta: 'In der App verfügbar',
@@ -418,12 +424,13 @@ export const de: LegalDict = {
     how: {
       h2: 'So funktioniert es',
       items: [
-        { t: 'Ein Gespräch pro Reflexion', d: 'Jeder Austausch mit Symponia verbraucht ein Gespräch. Die täglichen Reflexionen sind kostenlos und werden nicht auf Ihr Guthaben angerechnet.' },
-        { t: 'Monatlicher Neustart', d: 'Ihre 350 monatlichen Gespräche werden bei jeder Verlängerung neu gewährt. Nicht genutzte Gespräche werden nicht übertragen.' },
-        { t: 'Kauf in der App', d: 'Alle Käufe erfolgen in der Symponia-iOS-App über den In-App-Kauf von Apple.' },
-        { t: 'Sichere Zahlung über Apple', d: 'Alle Zahlungen werden von Apple abgewickelt. Wir sehen und speichern Ihre Kartendaten zu keinem Zeitpunkt.' },
+        { t: 'Sieben Tage, kostenlos', d: 'Die Testphase ist das ganze Produkt, keine Kostprobe. Wenn Sie mindestens 24 Stunden vor Ablauf kündigen, zahlen Sie nie etwas.' },
+        { t: 'Danach monatliche Verlängerung', d: 'Die Zahlung wird am Ende der Testphase und danach monatlich über Ihre Apple-ID abgerechnet, sofern die automatische Verlängerung nicht mindestens 24 Stunden vor Ablauf deaktiviert wird.' },
+        { t: 'Unbegrenzt, mit veröffentlichter Grenze', d: 'Unbegrenzt für die normale persönliche Nutzung. Gegen automatisierten Missbrauch gilt eine Fair-Use-Grenze von 250 Nachrichten pro Woche und 60 in einem Zeitraum von 5 Stunden. Die meisten werden ihr nie nahekommen, und wir nennen die Zahl lieber, als sie zu verschweigen.' },
+        { t: 'Apple legt den Preis fest', d: 'Der obige Preis gilt für Großbritannien. Apple legt für jedes Land einen Preis fest und kann ihn ändern. Der App Store zeigt Ihnen vor dem Kauf den für Sie geltenden Preis.' },
+        { t: 'Kündigen mit zwei Tipps', d: 'Verwalten oder kündigen Sie jederzeit in den Einstellungen Ihrer Apple-ID. Das Löschen der App kündigt kein Abonnement.' },
       ],
     },
-    contact: 'Fragen zu Abonnements oder zur Abrechnung? Kontaktieren Sie uns unter [hello@symponia.io](mailto:hello@symponia.io). Alle Einzelheiten finden Sie in unseren [Nutzungsbedingungen](/terms#tokens).',
+    contact: 'Fragen zu Abonnements oder Abrechnung? Schreiben Sie uns an [hello@symponia.io](mailto:hello@symponia.io). Vollständige Angaben finden Sie in unseren [Nutzungsbedingungen](/terms).',
   },
 };

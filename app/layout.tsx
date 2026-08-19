@@ -227,6 +227,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
           />
         ))}
+        {/* Google Analytics 4 */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VFM6HGRNEN"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-VFM6HGRNEN');`,
+          }}
+        />
       </head>
       <body>{children}
         <script defer src="/yd-beacon.js"></script></body>

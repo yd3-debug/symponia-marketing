@@ -5,6 +5,7 @@ import { LocaleSchema } from '@/components/LocaleSchema';
 import { LangMenu } from '@/components/LangMenu';
 import { Flag } from '@/components/Flag';
 import { MobileMenu } from '@/components/MobileMenu';
+import { ARTICLES } from '@/lib/content';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/symponia/id6760951504';
 
@@ -258,6 +259,28 @@ export default function Landing({ locale }: { locale: Locale }) {
         </div>
       </section>
 
+      {/* GUIDE. The shadow-work hub and its articles were only reachable from
+          one nav link, and Search Console listed 7 of the 10 as
+          "Discovered, currently not indexed" with no referring page. Every
+          locale's landing page now links to all of them. English only, like
+          the hub itself. */}
+      <section className="sec guide" id="guide">
+        <div className="w">
+          <p className="k">Guide</p>
+          <h2>Read before you download.</h2>
+          <p className="lead">Plain-language essays on the shadow, projection, Jung, and the seven-animals method. No account needed.</p>
+          <div className="glist">
+            {ARTICLES.map(a => (
+              <a key={a.slug} className="gcard" href={`/shadow-work/${a.slug}`}>
+                <h3>{a.title}</h3>
+                <p>{a.standfirst}</p>
+              </a>
+            ))}
+          </div>
+          <p className="fcta"><a href="/shadow-work">The complete guide &rarr;</a></p>
+        </div>
+      </section>
+
       <footer className="foot">
         <div className="w">
           <div className="foot-grid">
@@ -477,6 +500,16 @@ const CSS = `
 .sy .reassure{margin:22px auto 0;max-width:44ch;font:400 14px/1.7 var(--font-inter),'Helvetica Neue',sans-serif;color:#B4ACC9}
 .sy .big{font-family:var(--font-inter),'Helvetica Neue',sans-serif;font-size:clamp(3rem,8vw,5.2rem);font-weight:600;margin:10px 0 2px;
   background:linear-gradient(92deg,var(--teal),var(--vio));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* guide */
+.sy .guide{background:var(--paper)}
+.sy .glist{display:grid;gap:12px;grid-template-columns:1fr;margin-top:30px}
+.sy .gcard{display:block;background:var(--cream);border:1px solid rgba(13,11,20,.08);border-radius:14px;padding:18px 20px;text-decoration:none;color:var(--ink);transition:border-color .15s,transform .15s}
+.sy .gcard:hover{border-color:rgba(18,168,184,.5);transform:translateY(-1px)}
+.sy .gcard h3{font-size:1.05rem;margin:0 0 6px;line-height:1.3}
+.sy .gcard p{font-size:.92rem;line-height:1.55;color:var(--dim);margin:0}
+@media(min-width:720px){.sy .glist{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.sy .glist{grid-template-columns:repeat(3,1fr)}}
 
 /* faq */
 .sy details{background:var(--paper);border-radius:14px;padding:17px 20px;margin-bottom:10px;box-shadow:0 2px 14px rgba(30,20,70,.06)}

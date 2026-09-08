@@ -143,12 +143,17 @@ export function PageShell({
   // Every internal href hangs off this prefix. English has none.
   const p = locale === DEFAULT_LOCALE ? '' : `/${locale}`;
 
+  // Anchors must match the section ids in components/Landing.tsx (#how, #modes,
+  // #faq). They used to point at #how-it-works, which no longer exists, so the
+  // first two links in this nav went nowhere.
+  const home = p || '/';
   const links: [string, string][] = [
-    [t.nav.how, `${p}/#how-it-works`],
-    [t.nav.modes, `${p}/#modes`],
+    [t.nav.how, `${home}#how`],
+    [t.nav.modes, `${home}#modes`],
+    ['Guide', '/shadow-work'],
     [t.nav.about, `${p}/about`],
     [t.nav.credits, `${p}/credits`],
-    [t.nav.faq, `${p}/#faq`],
+    [t.nav.faq, `${home}#faq`],
   ];
 
   const footerLinks: [string, string][] = [
@@ -192,7 +197,7 @@ export function PageShell({
       <AnimatePresence>
         {open && (
           <motion.div initial={{opacity:0,y:-4}} animate={{opacity:1,y:0}} exit={{opacity:0,y:-4}} transition={{duration:0.18}}
-            style={{position:'fixed',top:64,left:0,right:0,zIndex:49,background:'rgba(245,242,232,0.98)',backdropFilter:'blur(24px)',borderBottom:`0.5px solid ${C.border}`,padding:'24px 28px 28px'}}
+            style={{position:'fixed',top:64,left:0,right:0,zIndex:49,maxHeight:'calc(100dvh - 64px)',overflowY:'auto',background:'rgba(245,242,232,0.98)',backdropFilter:'blur(24px)',borderBottom:`0.5px solid ${C.border}`,padding:'12px 28px 28px'}}
           >
             {links.map(([l,h]) => (
               <a key={h} href={h} onClick={() => setOpen(false)}

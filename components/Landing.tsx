@@ -4,6 +4,7 @@ import { LangSync } from '@/components/LangSync';
 import { LocaleSchema } from '@/components/LocaleSchema';
 import { LangMenu } from '@/components/LangMenu';
 import { Flag } from '@/components/Flag';
+import { MobileMenu } from '@/components/MobileMenu';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/symponia/id6760951504';
 
@@ -49,6 +50,18 @@ export default function Landing({ locale }: { locale: Locale }) {
           <div className="nav-right">
             <LangMenu locale={locale} />
             <Badge top={t.shell.badge.top} bottom={t.shell.badge.bottom} />
+            <MobileMenu
+              locale={locale}
+              links={[
+                { label: t.nav.rel, href: `${base}#rel` },
+                { label: t.nav.method, href: `${base}#how` },
+                { label: t.nav.memory, href: `${base}#mem` },
+                { label: t.nav.about, href: `${base}/about` },
+                { label: t.nav.faq, href: `${base}#faq` },
+                { label: 'Guide', href: '/shadow-work' },
+              ]}
+              languagesLabel={t.langs.k}
+            />
           </div>
         </div>
       </nav>
@@ -56,7 +69,7 @@ export default function Landing({ locale }: { locale: Locale }) {
       {/* HERO */}
       <header className="hero">
         <div className="w hero-in">
-          <div>
+          <div className="hero-copy">
             <p className="k">{t.hero.eyebrow}</p>
             <h1>{t.hero.l1}<br /><em>{t.hero.l2}</em></h1>
             <p className="lead">{t.hero.lead}</p>
@@ -64,7 +77,7 @@ export default function Landing({ locale }: { locale: Locale }) {
               <Badge top={t.shell.badge.top} bottom={t.shell.badge.bottom} />
               <a className="ghost" href={`${base}#how`}>{t.hero.cta}</a>
             </div>
-            <p className="strip"><b>[ social proof ]</b> {t.hero.proof}</p>
+            <p className="strip">{t.hero.proof}</p>
           </div>
           <div className="hero-shot">
             <img src="/device/home.png" width={620} height={1283} alt="Symponia daily reflection" />
@@ -114,7 +127,7 @@ export default function Landing({ locale }: { locale: Locale }) {
               <p className="lead">{t.attune.lead}</p>
             </div>
           </div>
-          <p className="k mt">{t.modes.k}</p>
+          <p className="k mt" id="modes">{t.modes.k}</p>
           <div className="grid g3">
             {t.modes.items.map((m, i) => (
               <div key={i} className="mcard"><h3>{m.t}</h3><p>{m.d}</p></div>
@@ -314,7 +327,8 @@ const CSS = `
 .sy .ink .k,.sy .dark .k,.sy .hero .k{color:#5CE8D0}
 .sy .k.mt{margin-top:56px}
 .sy .lead{font-size:clamp(1.02rem,2vw,1.24rem);color:var(--dim);max-width:60ch;line-height:1.7;margin-top:16px}
-.sy .sec{padding:clamp(58px,8vw,110px) 0}
+.sy .sec{padding:clamp(58px,8vw,110px) 0;scroll-margin-top:66px}
+.sy #modes{scroll-margin-top:90px}
 .sy .dark{background:var(--ink2);color:#fff}
 .sy .ink{background:var(--ink);color:#fff}
 .sy .dark .lead,.sy .ink .lead{color:#C6BFDA}
@@ -500,7 +514,6 @@ const CSS = `
 @media(min-width:760px){
   .sy .foot-grid{grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px}
 }
-}
 
 /* sticky mobile cta */
 .sy .sticky{display:none}
@@ -515,14 +528,56 @@ const CSS = `
   .sy .grid{grid-template-columns:repeat(3,1fr)}
   .sy .grid.g4{grid-template-columns:repeat(4,1fr)}
 }
+/* mobile menu (hidden on desktop, where .nav-links is inline) */
+.sy .mm{display:none}
+.sy .mm-btn{position:relative;width:44px;height:44px;margin-right:-8px;background:none;border:0;cursor:pointer;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;border-radius:10px}
+.sy .mm-btn span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;transition:transform .2s,opacity .2s}
+.sy .mm-btn.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.sy .mm-btn.is-open span:nth-child(2){opacity:0}
+.sy .mm-btn.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.sy .mm-backdrop{position:fixed;inset:66px 0 0 0;background:rgba(13,11,20,.55);z-index:58}
+.sy .mm-panel{position:fixed;top:66px;left:0;right:0;z-index:59;max-height:calc(100dvh - 66px);overflow-y:auto;
+  background:#0D0B14;color:#fff;padding:12px 22px 96px;border-top:1px solid rgba(255,255,255,.08);
+  box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.sy .mm-links{display:flex;flex-direction:column}
+.sy .mm-links a{display:block;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.1);color:#fff;text-decoration:none;
+  font:600 17px/1.2 var(--font-inter),'Helvetica Neue',sans-serif}
+.sy .mm-links a:last-child{border-bottom:0}
+.sy .mm-k{font:700 11px/1.4 Arial,'Helvetica Neue',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8F86AD;margin:26px 0 10px}
+.sy .mm-langs{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.sy .mm-langs a{display:inline-flex;align-items:center;gap:7px;padding:8px 12px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.18);color:#E4E0F0;text-decoration:none;
+  font:500 13px/1 var(--font-inter),'Helvetica Neue',sans-serif}
+.sy .mm-langs a[aria-current]{background:#fff;color:#0D0B14;border-color:#fff;font-weight:600}
+
 @media(max-width:760px){
   .sy .nav-links{display:none}
   .sy .nav-right .badge{display:none}
+  .sy .nav-right .lang{display:none}
+  .sy .mm{display:block}
+  .sy .nav-in{height:60px}
+  .sy .mm-backdrop{inset:60px 0 0 0}
+  .sy .mm-panel{top:60px;max-height:calc(100dvh - 60px)}
+  /* hero on a phone: headline, CTA, the product itself, then the long lead.
+     .hero-copy dissolves (display:contents) so its children sit in the same
+     single-column grid as the phone shot and can be ordered around it. */
+  .sy .hero{padding-top:34px;padding-bottom:44px}
+  .sy .hero-in{gap:0}
+  .sy .hero-copy{display:contents}
+  .sy .hero-copy .k{order:0}
+  .sy .hero-copy h1{order:1;font-size:clamp(2.1rem,9.5vw,2.6rem);margin:14px 0 0}
+  .sy .hero-copy .cta{order:2;margin-top:22px}
+  .sy .hero-shot{order:3;margin-top:34px}
+  .sy .hero-shot img{max-width:230px}
+  .sy .hero-copy .lead{order:4;margin-top:30px;font-size:1.02rem}
+  .sy .hero-copy .strip{order:5;margin-top:24px}
+  .sy .hero-copy .cta .badge{display:none}
+  .sy .hero-copy .ghost{display:block;width:100%;text-align:center;background:linear-gradient(92deg,var(--teal),var(--vio));border:0;padding:16px 20px;font-size:15px}
   .sy .sticky{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:70;padding:11px 16px;
     background:rgba(13,11,20,.96);backdrop-filter:blur(16px);justify-content:center}
   .sy .sticky .badge{width:100%;max-width:340px;justify-content:center}
   .sy{padding-bottom:74px}
-  .sy .hero-shot img{max-width:250px}
   .sy .stat{max-width:none}
   .sy .foot .w{flex-direction:column}
   .sy .foot-links a{margin:0 14px 0 0}

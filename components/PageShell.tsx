@@ -171,7 +171,7 @@ export function PageShell({
       <nav style={{ position: 'sticky', top: 0, zIndex: 50, background: 'rgba(245,242,232,0.94)', backdropFilter: 'blur(24px)', borderBottom: `0.5px solid ${C.border}` }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 28px', height: 64, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <a href={p || '/'} style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
-            <img src="/logo.jpg" alt="Symponia" style={{ width: 28, height: 28, borderRadius: 7, objectFit: 'cover' }} />
+            <img src="/logo-64.webp" alt="Symponia" style={{ width: 28, height: 28, borderRadius: 7, objectFit: 'cover' }} />
             <span style={{ fontFamily: C.heading, fontSize: '1.3rem', fontWeight: 400, letterSpacing: '0.08em', color: C.fg }}>Symponia</span>
           </a>
           <div style={{ display: 'flex', alignItems: 'center', gap: 24 }} className="desk-links">
@@ -217,7 +217,7 @@ export function PageShell({
       <footer style={{ borderTop: `0.5px solid ${C.border}`, background: C.bg, padding: '48px 28px' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: 24 }}>
           <a href={p || '/'} style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
-            <img src="/logo.jpg" alt="Symponia" style={{ width: 24, height: 24, borderRadius: 6, objectFit: 'cover' }} />
+            <img src="/logo-64.webp" alt="Symponia" style={{ width: 24, height: 24, borderRadius: 6, objectFit: 'cover' }} />
             <span style={{ fontFamily: C.heading, fontSize: '1.2rem', fontWeight: 300, color: C.fg }}>Symponia</span>
           </a>
           <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>

@@ -227,14 +227,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
           />
         ))}
-        {/* Google Analytics 4 */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VFM6HGRNEN"></script>
+        {/* Google Analytics 4. Loaded after first paint (or first interaction,
+            whichever comes first): gtag.js is ~170 KB and was the largest
+            third-party cost on the page, and nothing above the fold needs it. */}
         <script
           dangerouslySetInnerHTML={{
             __html: `window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-VFM6HGRNEN');`,
+gtag('config', 'G-VFM6HGRNEN');
+(function(){var d=false;function l(){if(d)return;d=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-VFM6HGRNEN';document.head.appendChild(s);}
+['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,l,{once:true,passive:true});});
+if(document.readyState==='complete'){setTimeout(l,1500);}else{addEventListener('load',function(){setTimeout(l,1500);});}})();`,
           }}
         />
       </head>

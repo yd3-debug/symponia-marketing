@@ -37,7 +37,7 @@ export default function Landing({ locale }: { locale: Locale }) {
       <nav className="nav">
         <div className="w nav-in">
           <a className="logo" href={hrefFor(locale)}>
-            <img src="/logo.jpg" alt="" width={30} height={30} />
+            <img src="/logo-64.webp" alt="" width={30} height={30} />
             <span>Symponia</span>
           </a>
           <div className="nav-links">
@@ -81,7 +81,7 @@ export default function Landing({ locale }: { locale: Locale }) {
             <p className="strip">{t.hero.proof}</p>
           </div>
           <div className="hero-shot">
-            <img src="/device/home.png" width={620} height={1283} alt="Symponia daily reflection" />
+            <img src="/device/home.webp" width={600} height={1242} alt="Symponia daily reflection" fetchPriority="high" decoding="async" />
           </div>
         </div>
       </header>
@@ -112,7 +112,7 @@ export default function Landing({ locale }: { locale: Locale }) {
       <section className="sec" id="how">
         <div className="w">
           <div className="split">
-            <div className="shot"><img src="/device/animals.png" width={620} height={1283} alt="Choose your seven animals" loading="lazy" /></div>
+            <div className="shot"><img src="/device/animals.webp" width={600} height={1242} alt="Choose your seven animals" loading="lazy" decoding="async" /></div>
             <div>
               <p className="k">{t.seven.k}</p>
               <h2>{t.seven.h2}</h2>
@@ -121,7 +121,7 @@ export default function Landing({ locale }: { locale: Locale }) {
             </div>
           </div>
           <div className="split rev">
-            <div className="shot"><img src="/device/attune.png" width={620} height={1283} alt="The attuning questions" loading="lazy" /></div>
+            <div className="shot"><img src="/device/attune.webp" width={600} height={1242} alt="The attuning questions" loading="lazy" decoding="async" /></div>
             <div>
               <p className="k">{t.attune.k}</p>
               <h2>{t.attune.h2}</h2>
@@ -286,7 +286,7 @@ export default function Landing({ locale }: { locale: Locale }) {
           <div className="foot-grid">
             <div className="foot-brand">
               <a className="foot-logo" href={hrefFor(locale)}>
-                <img src="/logo.jpg" alt="" width={32} height={32} />
+                <img src="/logo-64.webp" alt="" width={32} height={32} />
                 <span>Symponia</span>
               </a>
               <p>{t.shell.footer.blurb}</p>

@@ -229,9 +229,9 @@ export function PageShell({
             <p style={{ fontFamily: C.body, fontSize: '0.7rem', color: C.dim, opacity: 0.4, margin: 0 }}>
               © {new Date().getFullYear()} {t.footer.rights}
             </p>
-            <a href="https://yektad.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://yektad.com/" title="Website by YektaD"
               style={{ fontFamily: C.body, fontSize: '0.68rem', color: C.dim, opacity: 0.35, textDecoration: 'none' }}
-            >{t.footer.built}</a>
+            >YD</a>
           </div>
         </div>
       </footer>

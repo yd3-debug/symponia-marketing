@@ -321,8 +321,7 @@ export default function Landing({ locale }: { locale: Locale }) {
           <div className="foot-base">
             <span>© {new Date().getFullYear()} {t.shell.footer.rights}</span>
             <span>
-              {t.shell.footer.designedBy}{' '}
-              <a href="https://yektad.com" target="_blank" rel="noopener noreferrer">YD</a>
+              <a href="https://yektad.com/" title="Website by YektaD">YD</a>
             </span>
           </div>
         </div>

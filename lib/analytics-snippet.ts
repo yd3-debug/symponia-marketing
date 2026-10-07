@@ -14,7 +14,9 @@
 //
 // 3. THE ONE EVENT THAT MATTERS. Every link to the App Store fires
 //    'app_store_click' with where on the page it was. It is the site's only
-//    conversion, and is marked as a key event in GA4.
+//    conversion, and is marked as a key event in GA4. It is also counted
+//    without cookies by public/yd-beacon.js, so the number survives a visitor
+//    declining analytics.
 //
 // No backslashes below: this is a template literal, which would eat them.
 export const GA_ID = 'G-VFM6HGRNEN';
@@ -51,5 +53,6 @@ addEventListener('click',function(e){
 var a=e.target&&e.target.closest&&e.target.closest('a[href*="apps.apple.com"]');if(!a)return;
 var where=a.closest('.sticky')?'sticky_mobile':a.closest('.cta-block')?'article_cta':a.closest('#start')?'closing_cta':a.closest('.hero')?'hero':a.closest('nav,.nav')?'nav':a.closest('footer')?'footer':'body';
 gtag('event','app_store_click',{link_location:where,page_language:document.documentElement.lang||'en'});
+if(window.__syHit)window.__syHit('app_store_click',where);
 },true);
 })();`;

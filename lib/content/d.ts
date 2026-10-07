@@ -135,7 +135,7 @@ export const isShadowWorkDangerous: Article = {
       a: 'When it has become compulsive, when the same material never resolves, when you are using it to explain away how others treat you, or when the people around you say it is making things worse.',
     },
   ],
-  related: ['what-is-shadow-work', 'shadow-work-exercises', 'projection-psychology'],
+  related: ['what-is-shadow-work', 'shadow-work-vs-therapy', 'shadow-work-for-beginners', 'shadow-work-exercises'],
 };
 
 export const sevenAnimalsMethod: Article = {

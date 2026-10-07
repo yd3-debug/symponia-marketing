@@ -268,9 +268,9 @@ export default function Landing({ locale }: { locale: Locale }) {
         <div className="w">
           <p className="k">Guide</p>
           <h2>Read before you download.</h2>
-          <p className="lead">Plain-language essays on the shadow, projection, Jung, and the seven-animals method. No account needed.</p>
+          <p className="lead">Plain-language essays on the shadow, projection, Jung, journaling, and the seven-animals method. No account needed.</p>
           <div className="glist">
-            {ARTICLES.map(a => (
+            {ARTICLES.slice(0, 9).map(a => (
               <a key={a.slug} className="gcard" href={`/shadow-work/${a.slug}`}>
                 <h3>{a.title}</h3>
                 <p>{a.standfirst}</p>

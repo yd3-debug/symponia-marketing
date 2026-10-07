@@ -158,7 +158,7 @@ export const whatIsShadowWork: Article = {
       a: 'No. A notebook and honesty will do. What an app can add is a method for surfacing the shadow in the first place, and something that responds to what you actually wrote rather than serving you the same prompt as everyone else.',
     },
   ],
-  related: ['how-to-find-your-shadow', 'shadow-work-prompts', 'carl-jung-shadow', 'is-shadow-work-dangerous'],
+  related: ['shadow-work-for-beginners', 'how-to-find-your-shadow', 'shadow-work-prompts', 'carl-jung-shadow', 'is-shadow-work-dangerous'],
 };
 
 export const howToFindYourShadow: Article = {
@@ -267,5 +267,5 @@ export const howToFindYourShadow: Article = {
       a: 'Partly. The limit of doing it alone is that you are using the awareness in question to inspect itself. Another perspective, whether a person or a method that surfaces material you did not choose, gets past that ceiling.',
     },
   ],
-  related: ['what-is-shadow-work', 'shadow-work-prompts', 'projection-psychology', 'seven-animals-method'],
+  related: ['what-is-shadow-work', 'signs-of-your-shadow-self', 'shadow-work-prompts', 'projection-psychology', 'seven-animals-method'],
 };

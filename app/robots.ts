@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-const PRIVATE = ['/api/', '/dashboard', '/sign-in', '/sign-up', '/onboarding'];
+const PRIVATE = ['/api/'];
 
 // Every named user-agent group must repeat the disallow list. A crawler obeys
 // only the most specific group that matches it, and ignores the rest: giving

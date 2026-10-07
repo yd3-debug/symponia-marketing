@@ -147,7 +147,7 @@ export const shadowWorkPrompts: Article = {
       a: 'One. The urge to work through a list quickly is usually the same avoidance that put the material out of sight to begin with. One question, held longer than is comfortable, does more.',
     },
   ],
-  related: ['what-is-shadow-work', 'how-to-find-your-shadow', 'shadow-work-exercises', 'choosing-a-shadow-work-app'],
+  related: ['what-is-shadow-work', 'shadow-work-journal', 'how-to-find-your-shadow', 'shadow-work-exercises', 'choosing-a-shadow-work-app'],
 };
 
 export const projectionPsychology: Article = {
@@ -242,5 +242,5 @@ export const projectionPsychology: Article = {
       a: 'No, and believing that is its own trap. Sometimes people are inconsiderate and sometimes they are harmful. Projection is a hypothesis worth testing, not a verdict that overrides your judgement.',
     },
   ],
-  related: ['what-is-shadow-work', 'how-to-find-your-shadow', 'carl-jung-shadow'],
+  related: ['what-is-shadow-work', 'golden-shadow', 'signs-of-your-shadow-self', 'carl-jung-shadow'],
 };

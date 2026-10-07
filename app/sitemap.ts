@@ -22,7 +22,10 @@ const PAGES: {
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date('2026-09-08');
+  // Site-wide pages move when the newest article moves; avoids a hand-edited date going stale.
+  const lastModified = new Date(
+    ARTICLES.map(a => a.updated).sort().at(-1) ?? '2026-10-07',
+  );
 
   // The content hub is English only, so these entries carry no hreflang
   // alternates. Advertising translations that do not exist is worse than

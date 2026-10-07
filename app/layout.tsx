@@ -133,21 +133,17 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
+    '@id': `${BASE_URL}/#website`,
     name: 'Symponia',
     url: BASE_URL,
     description: DESCRIPTION,
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${BASE_URL}/?q={search_term_string}`,
-      },
-      'query-input': 'required name=search_term_string',
-    },
+    inLanguage: 'en',
+    publisher: { '@id': `${BASE_URL}/#organization` },
   },
   {
     '@context': 'https://schema.org',
     '@type': 'MobileApplication',
+    '@id': `${BASE_URL}/#app`,
     name: 'Symponia',
     description: DESCRIPTION,
     url: BASE_URL,
@@ -184,15 +180,12 @@ const jsonLd = [
     ],
     keywords: 'shadow work app, shadow work, jungian shadow work, shadow self, animal archetypes, projective method, depth psychology app, inner work, AI companion, iOS wellness app',
     inLanguage: 'en',
-    publisher: {
-      '@type': 'Organization',
-      name: 'Symponia',
-      url: BASE_URL,
-    },
+    publisher: { '@id': `${BASE_URL}/#organization` },
   },
   {
     '@context': 'https://schema.org',
     '@type': 'Organization',
+    '@id': `${BASE_URL}/#organization`,
     name: 'Symponia',
     legalName: 'Boroto Ltd',
     url: BASE_URL,
@@ -208,7 +201,8 @@ const jsonLd = [
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer support',
-      availableLanguage: 'English',
+      email: 'hello@symponia.io',
+      availableLanguage: ['English', 'Swedish', 'Italian', 'Russian', 'Portuguese', 'French', 'German', 'Spanish', 'Danish'],
     },
   },
 ];

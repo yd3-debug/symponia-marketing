@@ -177,7 +177,7 @@ export const es: LegalDict = {
     metaDesc: 'Cómo Boroto Ltd recoge, utiliza y protege sus datos personales cuando usted usa Symponia.',
     kicker: 'Legal',
     title: 'Política de privacidad',
-    updated: 'Última actualización: julio de 2026',
+    updated: 'Última actualización: octubre de 2026',
     intro:
       'Esta Política de privacidad explica cómo Boroto Ltd (“Boroto”, “nosotros” o “nuestro”) recoge, utiliza, comunica y protege sus datos personales cuando usted usa la app y el sitio web de Symponia. Symponia es un espacio de reflexión privada: recogemos lo mínimo posible y nunca vendemos sus datos.',
     sections: [
@@ -304,7 +304,7 @@ export const es: LegalDict = {
       {
         h: '11. Cookies y sitio web',
         blocks: [
-          { t: 'p', x: 'Nuestro sitio web utiliza únicamente las cookies y el almacenamiento local estrictamente necesarios para que el sitio funcione y para recordar preferencias básicas. No utilizamos cookies publicitarias ni de seguimiento entre sitios. Si en el futuro incorporamos herramientas de analítica, actualizaremos esta política y, cuando sea preceptivo, le pediremos antes su consentimiento.' },
+          { t: 'p', x: 'Nuestro sitio web utiliza las cookies y el almacenamiento local necesarios para que el sitio funcione y para recordar preferencias básicas, incluida su elección sobre las cookies. Cuando la ley exige su consentimiento, se lo pedimos antes; con él, utilizamos Google Analytics 4, un servicio de Google, para entender cómo los visitantes encuentran y usan el sitio. Google Analytics instala cookies (como _ga) y trata datos de uso como las páginas que visita, su ubicación aproximada deducida de su dirección IP, el tipo de dispositivo y de navegador y la página desde la que llegó. No utilizamos cookies publicitarias ni de seguimiento entre sitios, y no vendemos estos datos. Puede aceptar o rechazar las cookies de analítica en el aviso que aparece en su primera visita y cambiar su elección en cualquier momento mediante el enlace «Configuración de cookies» al pie de cada página. También contamos las páginas vistas con una medición propia que no utiliza cookies ni registra direcciones IP; solo guarda un identificador aleatorio de visitante en su dispositivo si ha aceptado la analítica o si el consentimiento no es necesario.' },
         ],
       },
       {

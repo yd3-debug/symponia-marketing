@@ -177,7 +177,7 @@ export const fr: LegalDict = {
     metaDesc: 'Comment Boroto Ltd collecte, utilise et protège vos données personnelles lorsque vous utilisez Symponia.',
     kicker: 'Informations légales',
     title: 'Politique de confidentialité',
-    updated: 'Dernière mise à jour : juillet 2026',
+    updated: 'Dernière mise à jour : octobre 2026',
     intro:
       'La présente politique de confidentialité explique comment Boroto Ltd (« Boroto », « nous » ou « notre ») collecte, utilise, partage et protège vos données personnelles lorsque vous utilisez l’application et le site Symponia. Symponia est un espace de réflexion intime : nous collectons le strict minimum et nous ne vendons jamais vos données.',
     sections: [
@@ -304,7 +304,7 @@ export const fr: LegalDict = {
       {
         h: '11. Cookies et site web',
         blocks: [
-          { t: 'p', x: 'Notre site n’utilise que les cookies et le stockage local strictement nécessaires à son fonctionnement et à la mémorisation de préférences de base. Nous n’utilisons pas de cookies publicitaires ni de traceurs intersites. Si nous ajoutons des outils de mesure d’audience à l’avenir, nous mettrons à jour la présente politique et, lorsque cela est requis, nous vous demanderons d’abord votre consentement.' },
+          { t: 'p', x: 'Notre site utilise les cookies et le stockage local nécessaires à son fonctionnement et à la mémorisation de préférences de base, y compris votre choix en matière de cookies. Lorsque la loi exige votre consentement, nous vous le demandons au préalable ; avec votre accord, nous utilisons Google Analytics 4, un service fourni par Google, pour comprendre comment les visiteurs trouvent et utilisent le site. Google Analytics dépose des cookies (tels que _ga) et traite des données d’utilisation comme les pages consultées, votre localisation approximative déduite de votre adresse IP, le type d’appareil et de navigateur, ainsi que la page d’où vous venez. Nous n’utilisons pas de cookies publicitaires ni de traceurs intersites, et nous ne vendons pas ces données. Vous pouvez accepter ou refuser les cookies de mesure d’audience dans le bandeau affiché lors de votre première visite, et modifier votre choix à tout moment grâce au lien « Paramètres des cookies » en bas de chaque page. Nous comptons également les pages vues au moyen d’une mesure interne qui n’utilise aucun cookie et n’enregistre aucune adresse IP ; elle ne conserve un identifiant de visiteur aléatoire sur votre appareil que si vous avez accepté la mesure d’audience ou si le consentement n’est pas requis.' },
         ],
       },
       {

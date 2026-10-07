@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import { ANALYTICS_SNIPPET } from '@/lib/analytics-snippet';
+import { CookieConsent } from '@/components/CookieConsent';
 
 // Cal Sans replaced by Syne (similar geometric semi-bold, Google Fonts)
 // --font-cal-sans is aliased to --font-syne for headings
@@ -221,22 +223,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
           />
         ))}
-        {/* Google Analytics 4. Loaded after first paint (or first interaction,
-            whichever comes first): gtag.js is ~170 KB and was the largest
-            third-party cost on the page, and nothing above the fold needs it. */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-VFM6HGRNEN');
-(function(){var d=false;function l(){if(d)return;d=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-VFM6HGRNEN';document.head.appendChild(s);}
-['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,l,{once:true,passive:true});});
-if(document.readyState==='complete'){setTimeout(l,1500);}else{addEventListener('load',function(){setTimeout(l,1500);});}})();`,
-          }}
-        />
+        {/* Google Analytics 4, behind consent where the law asks for it, plus the
+            App Store click event. See lib/analytics-snippet.ts. */}
+        <script dangerouslySetInnerHTML={{ __html: ANALYTICS_SNIPPET }} />
       </head>
       <body>{children}
+        <CookieConsent />
         <script defer src="/yd-beacon.js"></script></body>
     </html>
   );

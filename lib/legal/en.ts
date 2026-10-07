@@ -173,7 +173,7 @@ export const en: LegalDict = {
     metaDesc: 'How Boroto Ltd collects, uses, and protects your personal data when you use Symponia.',
     kicker: 'Legal',
     title: 'Privacy Policy',
-    updated: 'Last updated: July 2026',
+    updated: 'Last updated: October 2026',
     intro:
       'This Privacy Policy explains how Boroto Ltd (“Boroto”, “we”, “us” or “our”) collects, uses, shares, and protects your personal data when you use the Symponia app and website. Symponia is a space for private reflection, so we collect as little as we can and we never sell your data.',
     sections: [
@@ -300,7 +300,7 @@ export const en: LegalDict = {
       {
         h: '11. Cookies and the website',
         blocks: [
-          { t: 'p', x: 'Our website uses only the cookies and local storage strictly necessary to make the site work and to remember basic preferences. We do not use advertising or cross-site tracking cookies. If we add analytics in future, we will update this policy and, where required, ask for your consent first.' },
+          { t: 'p', x: 'Our website uses the cookies and local storage needed to make the site work and to remember basic preferences, including your cookie choice. Where the law requires your consent, we ask for it first; with it, we use Google Analytics 4, a service provided by Google, to understand how visitors find and use the site. Google Analytics sets cookies (such as _ga) and processes usage data such as the pages you view, your approximate location derived from your IP address, your device and browser type, and the page that referred you. We do not use advertising or cross-site tracking cookies, and we do not sell this data. You can accept or decline analytics cookies in the banner shown on your first visit, and change your choice at any time using the “Cookie settings” link at the bottom of every page. We also count page views with our own first-party measure, which uses no cookies and records no IP address; it stores a random visitor identifier on your device only if you have accepted analytics or where consent is not required.' },
         ],
       },
       {

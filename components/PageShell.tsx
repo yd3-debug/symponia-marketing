@@ -10,6 +10,7 @@ import {
   type Locale,
 } from '@/lib/i18n';
 import { LangSync } from '@/components/LangSync';
+import { CONSENT_COPY } from '@/lib/consent';
 
 // Chrome for every routed page (about, legal, pricing). The landing page has its
 // own nav because it is a one-pager of anchors; this one links across routes.
@@ -224,6 +225,7 @@ export function PageShell({
             {footerLinks.map(([l, h]) => (
               <a key={h} href={h} style={{ fontFamily: C.body, fontSize: '0.78rem', fontWeight: 300, color: C.dim, textDecoration: 'none' }}>{l}</a>
             ))}
+            <a href={`${p}/privacy`} data-cookie-settings style={{ fontFamily: C.body, fontSize: '0.78rem', fontWeight: 300, color: C.dim, textDecoration: 'none' }}>{CONSENT_COPY[locale].settings}</a>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 4 }}>
             <p style={{ fontFamily: C.body, fontSize: '0.7rem', color: C.dim, opacity: 0.4, margin: 0 }}>

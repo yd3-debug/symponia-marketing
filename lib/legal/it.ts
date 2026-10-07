@@ -176,7 +176,7 @@ export const it: LegalDict = {
     metaDesc: 'Come Boroto Ltd raccoglie, utilizza e protegge i Suoi dati personali quando utilizza Symponia.',
     kicker: 'Note legali',
     title: 'Informativa sulla privacy',
-    updated: 'Ultimo aggiornamento: luglio 2026',
+    updated: 'Ultimo aggiornamento: ottobre 2026',
     intro:
       'La presente Informativa sulla privacy spiega come Boroto Ltd (“Boroto”, “noi” o “nostro”) raccoglie, utilizza, comunica e protegge i Suoi dati personali quando utilizza l’app e il sito Symponia. Symponia è uno spazio di riflessione privata: raccogliamo il minimo indispensabile e non vendiamo mai i Suoi dati.',
     sections: [
@@ -303,7 +303,7 @@ export const it: LegalDict = {
       {
         h: '11. Cookie e sito web',
         blocks: [
-          { t: 'p', x: 'Il nostro sito utilizza esclusivamente i cookie e l’archiviazione locale strettamente necessari al funzionamento del sito e alla memorizzazione di preferenze di base. Non utilizziamo cookie pubblicitari né di tracciamento tra siti. Se in futuro introdurremo strumenti di analisi, aggiorneremo la presente informativa e, ove richiesto, Le chiederemo prima il consenso.' },
+          { t: 'p', x: 'Il nostro sito utilizza i cookie e l’archiviazione locale necessari al funzionamento del sito e alla memorizzazione di preferenze di base, compresa la Sua scelta sui cookie. Quando la legge richiede il Suo consenso, lo chiediamo prima; con il consenso utilizziamo Google Analytics 4, un servizio fornito da Google, per capire come i visitatori trovano e usano il sito. Google Analytics imposta cookie (come _ga) e tratta dati di utilizzo quali le pagine visitate, la Sua posizione approssimativa ricavata dall’indirizzo IP, il tipo di dispositivo e di browser e la pagina di provenienza. Non utilizziamo cookie pubblicitari né di tracciamento tra siti e non vendiamo questi dati. Può accettare o rifiutare i cookie di analisi nel banner mostrato alla prima visita e modificare la Sua scelta in qualsiasi momento tramite il link «Impostazioni cookie» in fondo a ogni pagina. Contiamo inoltre le visualizzazioni di pagina con una misurazione di prima parte che non usa cookie e non registra indirizzi IP; conserva un identificativo casuale del visitatore sul Suo dispositivo solo se ha accettato l’analisi o se il consenso non è richiesto.' },
         ],
       },
       {

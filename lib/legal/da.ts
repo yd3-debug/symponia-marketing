@@ -176,7 +176,7 @@ export const da: LegalDict = {
     metaDesc: 'Sådan indsamler, bruger og beskytter Boroto Ltd dine personoplysninger, når du bruger Symponia.',
     kicker: 'Juridisk',
     title: 'Privatlivspolitik',
-    updated: 'Sidst opdateret: juli 2026',
+    updated: 'Sidst opdateret: oktober 2026',
     intro:
       'Denne privatlivspolitik forklarer, hvordan Boroto Ltd (»Boroto«, »vi«, »os« eller »vores«) indsamler, bruger, videregiver og beskytter dine personoplysninger, når du bruger Symponia-appen og websitet. Symponia er et rum for privat refleksion, så vi indsamler så lidt som overhovedet muligt, og vi sælger aldrig dine data.',
     sections: [
@@ -303,7 +303,7 @@ export const da: LegalDict = {
       {
         h: '11. Cookies og websitet',
         blocks: [
-          { t: 'p', x: 'Vores website bruger kun de cookies og den lokale lagring, der er strengt nødvendige for, at siden fungerer, og for at huske grundlæggende præferencer. Vi bruger ikke cookies til reklame eller sporing på tværs af websites. Tilføjer vi analyseværktøjer i fremtiden, opdaterer vi denne politik og indhenter, hvor det er påkrævet, dit samtykke først.' },
+          { t: 'p', x: 'Vores website bruger de cookies og den lokale lagring, der er nødvendige for, at siden fungerer, og for at huske grundlæggende præferencer, herunder dit cookievalg. Hvor loven kræver dit samtykke, beder vi om det først; med samtykket bruger vi Google Analytics 4, en tjeneste fra Google, til at forstå, hvordan besøgende finder og bruger siden. Google Analytics sætter cookies (f.eks. _ga) og behandler brugsdata såsom de sider, du ser, din omtrentlige placering udledt af din IP-adresse, din enheds- og browsertype og den side, du kom fra. Vi bruger ikke cookies til reklame eller sporing på tværs af websites, og vi sælger ikke disse data. Du kan acceptere eller afvise analysecookies i det banner, der vises ved dit første besøg, og du kan til enhver tid ændre dit valg via linket “Cookieindstillinger” nederst på hver side. Vi tæller også sidevisninger med vores egen førstepartsmåling, som ikke bruger cookies og ikke registrerer IP-adresser; den gemmer kun et tilfældigt besøgs-id på din enhed, hvis du har accepteret analyse, eller hvor samtykke ikke er påkrævet.' },
         ],
       },
       {

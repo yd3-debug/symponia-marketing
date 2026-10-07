@@ -176,7 +176,7 @@ export const de: LegalDict = {
     metaDesc: 'Wie Boroto Ltd Ihre personenbezogenen Daten erhebt, nutzt und schützt, wenn Sie Symponia verwenden.',
     kicker: 'Rechtliches',
     title: 'Datenschutzerklärung',
-    updated: 'Zuletzt aktualisiert: Juli 2026',
+    updated: 'Zuletzt aktualisiert: Oktober 2026',
     intro:
       'Diese Datenschutzerklärung erläutert, wie Boroto Ltd („Boroto“, „wir“, „uns“ oder „unser“) Ihre personenbezogenen Daten erhebt, nutzt, weitergibt und schützt, wenn Sie die Symponia-App und die Website nutzen. Symponia ist ein Raum für private Reflexion, deshalb erheben wir so wenig wie möglich und verkaufen Ihre Daten niemals.',
     sections: [
@@ -303,7 +303,7 @@ export const de: LegalDict = {
       {
         h: '11. Cookies und die Website',
         blocks: [
-          { t: 'p', x: 'Unsere Website verwendet nur die Cookies und den lokalen Speicher, die unbedingt erforderlich sind, damit die Seite funktioniert und einfache Einstellungen erhalten bleiben. Wir setzen keine Werbe- oder seitenübergreifenden Tracking-Cookies ein. Sollten wir künftig Analysefunktionen hinzufügen, aktualisieren wir diese Erklärung und holen, wo erforderlich, zuvor Ihre Einwilligung ein.' },
+          { t: 'p', x: 'Unsere Website verwendet die Cookies und den lokalen Speicher, die erforderlich sind, damit die Seite funktioniert und einfache Einstellungen erhalten bleiben, einschließlich Ihrer Cookie-Auswahl. Wo das Gesetz Ihre Einwilligung verlangt, holen wir sie zuvor ein; mit Ihrer Einwilligung nutzen wir Google Analytics 4, einen Dienst von Google, um zu verstehen, wie Besucher die Website finden und nutzen. Google Analytics setzt Cookies (etwa _ga) und verarbeitet Nutzungsdaten wie die aufgerufenen Seiten, Ihren ungefähren Standort, abgeleitet aus Ihrer IP-Adresse, Geräte- und Browsertyp sowie die Seite, von der Sie gekommen sind. Wir setzen keine Werbe- oder seitenübergreifenden Tracking-Cookies ein und verkaufen diese Daten nicht. Sie können Analyse-Cookies im Banner bei Ihrem ersten Besuch akzeptieren oder ablehnen und Ihre Auswahl jederzeit über den Link „Cookie-Einstellungen“ am Ende jeder Seite ändern. Außerdem zählen wir Seitenaufrufe mit einer eigenen Erstanbieter-Messung, die keine Cookies verwendet und keine IP-Adressen speichert; eine zufällige Besucherkennung wird nur dann auf Ihrem Gerät gespeichert, wenn Sie der Analyse zugestimmt haben oder keine Einwilligung erforderlich ist.' },
         ],
       },
       {

@@ -6,6 +6,7 @@ import { LangMenu } from '@/components/LangMenu';
 import { Flag } from '@/components/Flag';
 import { MobileMenu } from '@/components/MobileMenu';
 import { ARTICLES } from '@/lib/content';
+import { CONSENT_COPY } from '@/lib/consent';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/symponia/id6760951504';
 
@@ -310,6 +311,7 @@ export default function Landing({ locale }: { locale: Locale }) {
               <a href={`${base}/refunds`}>{t.shell.footer.refunds}</a>
               <a href={`${base}/eula`}>{t.shell.footer.eula}</a>
               <a href={`${base}/credits`}>{t.shell.footer.credits}</a>
+              <a href={`${base}/privacy`} data-cookie-settings>{CONSENT_COPY[locale].settings}</a>
             </nav>
 
             <nav className="foot-col" aria-label={t.shell.footer.contact}>
